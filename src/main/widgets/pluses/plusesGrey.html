@@ -1,0 +1,25 @@
+<section class="section _grey">
+    <div class="container">
+        <div class="section__cols">
+            <div class="section__col animation-wrap">
+                {if $_modx->resource.plusesGreyTitle}
+                <h2 class="h2" data-aos="slide-up" data-aos-duration="2500" role="heading" role="heading">{$_modx->resource.plusesGreyTitle}</h2>
+                {/if}
+            </div>
+
+            <div class="section__col">
+                {set $pluses = json_decode($_modx->resource.plusesGrey, true)}
+                {if $pluses | length > 0}
+                <div class="pluses">
+                    {foreach $pluses as $row}
+                    <div class="pluses__item">
+                        <h3 class="pluses__title _iteration _black" role="heading">{$row.title}</h3>
+                        <div class="pluses__text _black">{$row.text}</div>
+                    </div>
+                    {/foreach}
+                </div>
+                {/if}
+            </div>
+        </div>
+    </div>
+</section>

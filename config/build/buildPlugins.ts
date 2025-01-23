@@ -11,7 +11,7 @@ export function buildPlugins(options: BuildOptions): webpack.WebpackPluginInstan
         isDev,
         paths
     } = options
-    
+
     return [
         new MiniCssExtractPlugin({
             filename: isDev ? 'css/[name].[contenthash:4].css' : 'css/[name].css',
@@ -25,19 +25,8 @@ export function buildPlugins(options: BuildOptions): webpack.WebpackPluginInstan
         new CopyPlugin({
             patterns: [
                 {
-                    from: "src/main/shared/images",
-                    to: "./assets/images/",
-                    noErrorOnMissing: true,
-                },
-                {
-                    from: "src/main/shared/favicons",
-                    to: "./assets/favicons/",
-                    noErrorOnMissing: true,
-                },
-                {
-                    from: "src/main/shared/fonts",
-                    to: "./assets/fonts/",
-                    noErrorOnMissing: true,
+                    from: paths.assets,
+                    to: paths.buildAssets,
                 },
             ],
         }),

@@ -1,0 +1,114 @@
+.h1,
+h1 {
+	font-size: 3.3rem;
+	font-weight: 300;
+	margin: 0 0 60px;
+	padding: 0;
+	line-height: 90%;
+
+	@media (max-width: 1200px) {
+		font-size: 3rem;
+	}
+
+	@media (max-width: 991px) {
+		font-size: 2.8rem;
+		margin-bottom: 30px;
+	}
+
+	@media (max-width: 575px) {
+		font-size: 2.6rem;
+	}
+
+	&._white {
+		color: $color_white;
+	}
+
+	&._yellow {
+		color: $color_yellow;
+	}
+
+	&._center {
+		text-align: center;
+	}
+
+	& span {
+		color: $color_yellow;
+		display: block;
+	}
+
+	& em {
+		color: $color_yellow;
+		font-style: normal;
+	}
+}
+
+.h2 {
+	font-size: 2.66rem;
+	padding: 0;
+	margin: 0;
+	font-weight: 300;
+	line-height: 110%;
+
+	@media (max-width: 991px) {
+		font-size: 3.33rem;
+		margin-bottom: 55px;
+	}
+
+	@media (max-width: 575px) {
+		font-size: 3rem;
+		margin-bottom: 30px;
+	}
+}
+
+.text {
+	& p {
+		margin: 0 0 25px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	& ul {
+		margin: 0 0 25px;
+		list-style: none;
+		padding: 0;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		& li {
+			display: flex;
+			align-items: flex-start;
+			margin-bottom: 15px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&::before {
+				content: url('../img/list.svg');
+				min-width: 16px;
+				max-width: 16px;
+				margin-right: 16px;
+			}
+		}
+	}
+
+	& h2,
+	& .h2 {
+		font-size: 2.08rem;
+		padding: 0;
+		margin: 0 0 25px;
+		font-weight: 300;
+	}
+
+	&__width {
+		max-width: 80%;
+
+		@media (max-width: 767px) {
+			max-width: 100%;
+		}
+	}
+}

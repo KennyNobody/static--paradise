@@ -1,0 +1,59 @@
+<nav class="nav _services" role="navigation">
+    <div class="container nav__content hidden-scroll">
+        <div class="nav__top">
+            {'pdoMenu' | snippet : [
+            'parents' => 3,
+            'level' => 1,
+            'includeTVs' => '',
+            'plPrefix' => '',
+            'selfClass' => '_active',
+            'tplOuter' => '@INLINE <ul class="nav__list" role="list">{$wrapper}</ul>',
+            'tpl' => '@INLINE <li role="listitem"><a href="{$link}" {$classes} role="link" data-item="{$id}">{$menutitle}</a></li>'
+            ]}
+
+            {'pdoResources' | snippet : [
+            'parents'  => 3,
+            'depth' => 0,
+            'sortby' => 'menuindex',
+            'sortdir' => 'ASC',
+            'limit' => 0,
+            'tpl' => 'tpl.serviceIntro.item',
+            'includeContent' => 0,
+            'includeTVs' => 'serviceIntroText,serviceIntroImg',
+            'tvPrefix' => ''
+            ]}
+        </div>
+
+        {include 'tpl.nav_socials'}
+    </div>
+</nav>
+
+<nav class="nav _about" role="navigation">
+    <div class="container nav__content hidden-scroll">
+        <div class="nav__top">
+            {'pdoMenu' | snippet : [
+            'parents' => 15,
+            'level' => 1,
+            'includeTVs' => '',
+            'plPrefix' => '',
+            'selfClass' => '_active',
+            'tplOuter' => '@INLINE <ul class="nav__list" role="list">{$wrapper}</ul>',
+            'tpl' => '@INLINE <li role="listitem"><a href="{$link}" {$classes} role="link" data-item="{$id}">{$menutitle}</a></li>'
+            ]}
+
+            {'pdoResources' | snippet : [
+            'parents'  => 15,
+            'depth' => 0,
+            'sortby' => 'menuindex',
+            'sortdir' => 'ASC',
+            'limit' => 0,
+            'tpl' => 'tpl.serviceIntro.item',
+            'includeContent' => 0,
+            'includeTVs' => 'serviceIntroText,serviceIntroImg',
+            'tvPrefix' => ''
+            ]}
+        </div>
+
+        {include 'tpl.nav_socials'}
+    </div>
+</nav>

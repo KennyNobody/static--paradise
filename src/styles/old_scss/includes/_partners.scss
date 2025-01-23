@@ -1,0 +1,52 @@
+.partners {
+
+	&__cols {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 40px -30px -70px;
+
+		@media (max-width: 575px) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
+	&__col {
+		width: 33.33%;
+		padding: 0 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 70px;
+
+		@media (max-width: 767px) {
+			width: 50%;
+		}
+
+		@media (max-width: 575px) {
+			width: 100%;
+		}
+	}
+
+	&__item {
+		width: auto;
+		height: auto;
+		max-width: 100%;
+	}
+
+	& .swiper-wrapper {
+		display: flex;
+		align-items: stretch;
+	}
+
+	& .swiper {
+		overflow: visible;
+	}
+
+	& .swiper-slide {
+		display: flex;
+		height: unset;
+		align-items: center;
+		justify-content: center;
+	}
+}

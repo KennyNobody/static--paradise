@@ -1,0 +1,25 @@
+.rooms {
+	&__col {
+		&._mb40 {
+			@media (max-width: 991px) {
+				margin-bottom: 40px;
+			}
+
+			@media (max-width: 575px) {
+				margin-bottom: 30px;
+			}
+		}
+
+		&._img {
+			@media (max-width: 991px) {
+				width: 100%;
+			}
+		}
+	}
+
+	&__section-mb0 {
+		@media (max-width: 991px) {
+			padding-bottom: 0;
+		}
+	}
+}

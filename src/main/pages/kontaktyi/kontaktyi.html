@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <%= htmlWebpackPlugin.options.widgets.meta %>
+</head>
+<body class="body _home">
+    <%= htmlWebpackPlugin.options.widgets.header %>
+    <%= htmlWebpackPlugin.options.widgets.nav %>
+    <%= htmlWebpackPlugin.options.widgets.navMobile %>
+
+
+    <main class="main contacts" role="main">
+        <%= htmlWebpackPlugin.options.widgets.innerIntroContacts %>
+
+        <section class="section contacts__border _pt0 _pb0">
+            <div class="container">
+                <div class="section__cols contacts__cols">
+                    <div class="section__col contacts__items">
+                        <div class="contacts__item" data-map-lat="55.694139" data-map-long="37.665677" data-map-marker="./assets/images/map/placemark-zelenograd.png">
+
+                            <div class="contacts__name">Офис метро Технопарк</div>
+
+                            <div class="contacts__row">
+                                <div class="contacts__value">Адрес</div>
+                                <div class="contacts__value">Москва, просп. Андропова, 10, БЦ Technopark Plaza, этаж 6, офис 6.008</div>
+                            </div>
+
+                            <div class="contacts__row">
+                                <div class="contacts__value">Телефон</div>
+                                <a class="contacts__value contacts__link" href="tel:+74997317731" role="link">+7 499 731-7-731</a>
+                            </div>
+
+                            <div class="contacts__row">
+                                <div class="contacts__value">Email</div>
+                                <a class="contacts__value contacts__link" href="mailto:office@paradise-nedvizhimost.ru" role="link">office@paradise-nedvizhimost.ru</a>
+                            </div>
+                        </div>
+                        <div class="contacts__item" data-map-lat="55.98367556875671" data-map-long="37.17369699999997" data-map-marker="./assets/images/map/placemark-zelenograd.png">
+
+                            <div class="contacts__name">Офис  г. Зеленоград</div>
+
+                            <div class="contacts__row">
+                                <div class="contacts__value">Адрес</div>
+                                <div class="contacts__value">Зеленоград, ул. Гоголя д. 2, этаж 4, офис 411</div>
+                            </div>
+
+                            <div class="contacts__row">
+                                <div class="contacts__value">Телефон</div>
+                                <a class="contacts__value contacts__link" href="tel:+74997317731" role="link">+7 499 731-7-731</a>
+                            </div>
+
+                            <div class="contacts__row">
+                                <div class="contacts__value">Email</div>
+                                <a class="contacts__value contacts__link" href="mailto:office@paradise-nedvizhimost.ru" role="link">office@paradise-nedvizhimost.ru</a>
+                            </div>
+                        </div>
+                        <div class="contacts__item" data-map-lat="55.788515" data-map-long="37.567482" data-map-marker="./assets/images/map/placemark-moscow.png">
+
+                            <div class="contacts__name">Офис метро Динамо</div>
+
+                            <div class="contacts__row">
+                                <div class="contacts__value">Адрес</div>
+                                <div class="contacts__value">Москва, Ленинградский проспект, 36с1, этаж 3, офис 309</div>
+                            </div>
+
+                            <div class="contacts__row">
+                                <div class="contacts__value">Телефон</div>
+                                <a class="contacts__value contacts__link" href="tel:+74997317731" role="link">+7 499 731-7-731</a>
+                            </div>
+
+                            <div class="contacts__row">
+                                <div class="contacts__value">Email</div>
+                                <a class="contacts__value contacts__link" href="mailto:office@paradise-nedvizhimost.ru" role="link">office@paradise-nedvizhimost.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacts__map" id="map" data-map-center-lat="55.833823232769916" data-map-center-long="37.2495429994864" data-zoom="9"></div>
+        </section>
+
+        <%= htmlWebpackPlugin.options.widgets.feedback %>
+    </main>
+
+    <%= htmlWebpackPlugin.options.widgets.footer %>
+
+
+    <%= htmlWebpackPlugin.options.widgets.modalFeedback %>
+    {block 'modals'}{/block}
+    <%= htmlWebpackPlugin.options.widgets.thankYou %>
+    {insert 'tpl.thankyou'}
+    <%= htmlWebpackPlugin.options.widgets.scripts %>
+</body>
+</html>

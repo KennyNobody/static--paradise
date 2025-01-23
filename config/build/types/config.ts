@@ -6,6 +6,8 @@ export interface BuildPaths {
     htmlEntry: string;
     htmlPages: string;
     htmlWidgets: string;
+    assets: string;
+    buildAssets: string;
 }
 
 export interface BuildEnv {

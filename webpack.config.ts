@@ -9,6 +9,8 @@ export default (env: BuildEnv) => {
         htmlEntry: path.resolve(__dirname, 'src', 'main', 'pages', 'index', 'index.html'),
         htmlPages: path.resolve(__dirname, 'src', 'main', 'pages'),
         htmlWidgets: path.resolve(__dirname, 'src', 'main', 'widgets'),
+        assets: path.resolve(__dirname, 'src', 'assets'),
+        buildAssets: path.resolve(__dirname, 'dist', 'assets'),
     }
 
     const mode = env.mode || 'development';

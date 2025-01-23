@@ -1,0 +1,27 @@
+.main {
+	padding-top: 135px;
+
+	@media (max-width: 991px) {
+		padding-top: 142px;
+	}
+
+	@media (max-width: 575px) {
+		padding-top: 78px;
+	}
+
+	&._home {
+		padding-top: 0;
+	}
+
+	&._pb60 {
+		padding-bottom: 60px;
+
+		@media (max-width: 991px) {
+			padding-bottom: 40px;
+		}
+
+		@media (max-width: 575px) {
+			padding-bottom: 30px;
+		}
+	}
+}

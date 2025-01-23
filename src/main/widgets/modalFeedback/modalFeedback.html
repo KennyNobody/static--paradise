@@ -1,0 +1,34 @@
+<div class="agents-modal modal" data-item="feedback">
+    <div class="agents-modal__block hidden-scroll">
+        <button class="agents-modal__close" type="button" role="button">
+			<span>
+				<svg width="14" height="14">
+					<use xlink:href="./assets/img/sprite.svg#close"></use>
+				</svg>
+			</span>
+        </button>
+
+        <div class="agents-modal__content">
+            <div class="agents-modal__name h2">Оставить <br>заявку</div>
+
+            <div class="agents-modal__text text">
+                Поможем подобрать подходящий вариант для вас и вашей семьи
+            </div>
+
+            {'!FetchIt' | snippet : [
+            'form' => 'tpl.feedbackModal.form',
+            'validate' => 'name:required:regexp=^/[А-Яа-я]+/^,phone:required,info:blank',
+            'hooks' => 'spam,email,FormItSaveForm',
+            'submitVar' => 'feedbackModal',
+            'emailTpl' => 'tpl.feedback.report',
+            'emailSubject' => 'Заявка с сайта ' ~ 'site_name' | config,
+            'emailTo' => 5 | resource : 'emailForm',
+            'emailFrom' => 'emailsender' | config,
+            'emailFromName' => 'site_name' | config,
+            'formName' => 'Заявка',
+            'formFields' => 'page,pageName,name,phone,message',
+            'fieldNames' => 'pageName==Название страницы,page==Ссылка на страницу,name==ФИО,phone==Телефон,message==Сообщение'
+            ]}
+        </div>
+    </div>
+</div>

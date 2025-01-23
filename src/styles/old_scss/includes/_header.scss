@@ -1,0 +1,290 @@
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: $color_white;
+	border-bottom: 1px solid #dedede;
+	font-size: .66rem;
+	z-index: 10;
+
+	&__cols {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 72px;
+
+		@media (max-width: 991px) {
+			height: 102px;
+		}
+
+		@media (max-width: 575px) {
+			height: 50px;
+		}
+	}
+
+	&__col {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+
+		&-svg {
+			&._icon {
+				fill: $color_yellow;
+				margin-right: 9px;
+
+				@media (max-width: 991px) {
+					width: auto;
+					height: 54px;
+				}
+
+				@media (max-width: 575px) {
+					height: 31px;
+				}
+			}
+
+			&._letters {
+				fill: $color_black;
+
+				@media (max-width: 991px) {
+					width: auto;
+					height: 30px;
+				}
+
+				@media (max-width: 575px) {
+					height: 17px;
+				}
+			}
+		}
+	}
+
+	&__nav {
+		margin-left: 80px;
+		margin-right: 80px;
+
+		@media (max-width: 1400px) {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		@media (max-width: 1280px) {
+			display: none;
+		}
+
+		& ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: flex;
+			align-items: center;
+
+			& li {
+				margin-right: 40px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				& a {
+					text-decoration: none;
+					color: inherit;
+
+					&._active {
+						color: $color_yellow;
+					}
+
+					&._opacity {
+						opacity: .5;
+					}
+				}
+			}
+		}
+	}
+
+	&__start {
+		margin-right: 8px;
+		padding: 0 24px;
+		height: 35px;
+		font-size: inherit;
+
+		@media (max-width: 1280px) {
+			display: none;
+		}
+	}
+
+	&__phone {
+		min-width: 32px;
+		max-width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		border: 1px solid rgba(0,0,0,.25);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $color_black;
+
+		@media (max-width: 1280px) {
+			display: none;
+		}
+
+		&:hover {
+			background: $color_black;
+			border-color: $color_black;
+			color: $color_white;
+
+			& svg {
+				stroke: $color_white;
+			}
+		}
+
+		&:not(:last-child) {
+			margin-right: 8px;
+		}
+
+		& svg {
+			stroke: $color_black;
+		}
+	}
+
+	&__telegram {
+		& svg {
+			transition: none;
+		}
+	}
+
+	&__burger {
+		flex-direction: column;
+		justify-content: center;
+		display: none;
+		position: relative;
+		width: 24px;
+		height: 27px;
+
+		@media (max-width: 1280px) {
+			display: flex;
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			width: 32px;
+			height: 1px;
+			background: $color_black;
+
+			@media (max-width: 575px) {
+				width: 24px;
+			}
+		}
+
+		&::before {
+			margin-bottom: 7px;
+
+			@media (max-width: 575px) {
+				margin-bottom: 5px;
+			}
+		}
+
+		&._active {
+			&::before,
+			&::after {
+				position: absolute;
+				top: 50%;
+			}
+
+			&::before {
+				transform: rotate(45deg);
+			}
+
+			&::after {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+
+	&._transparent {
+		border-color: rgba(255,255,255,.5);
+		background: transparent;
+		color: $color_white;
+
+		@media (max-width: 991px) {
+			border-bottom: 0;
+		}
+
+		& .header__logo {
+			&-svg {
+				&._letters {
+					fill: $color_white;
+				}
+			}
+		}
+
+		& .header__phone {
+			border-color: rgba(255,255,255,.3);
+			color: $color_white;
+
+			& svg {
+				stroke: $color_white;
+			}
+
+			&:hover {
+				background: $color_white;
+				border-color: $color_white;
+				color: $color_black;
+
+				& svg {
+					stroke: $color_black;
+				}
+			}
+		}
+
+		& .header__burger {
+			&::before,
+			&::after {
+				background: $color_white;
+			}
+		}
+	}
+
+	&._black {
+		background: #0D0E12;
+		color: $color_white;
+		border-bottom: 1px solid rgba(37,37,37,.5);
+
+		& .header__logo {
+			&-svg {
+				&._letters {
+					fill: $color_white;
+				}
+			}
+		}
+
+		& .header__phone {
+			border-color: rgba(255,255,255,.3);
+			color: $color_white;
+
+			& svg {
+				stroke: $color_white;
+			}
+
+			&:hover {
+				background: $color_white;
+				border-color: $color_white;
+				color: $color_black;
+
+				& svg {
+					stroke: $color_black;
+				}
+			}
+		}
+
+		& .header__burger {
+			&::before,
+			&::after {
+				background: $color_white;
+			}
+		}
+	}
+}

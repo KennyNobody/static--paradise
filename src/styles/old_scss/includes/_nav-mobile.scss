@@ -1,0 +1,168 @@
+.nav-mobile {
+	position: fixed;
+	width: 100%;
+	top: -100vh;
+	background: #0D0E12;
+	z-index: 9;
+	transition: .5s ease;
+
+	@media (min-width: 1281px) {
+		display: none;
+	}
+
+	&._active {
+		top: 72px;
+
+		@media (max-width: 991px) {
+			top: 102px;
+		}
+
+		@media (max-width: 575px) {
+			top: 50px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		overflow-y: auto;
+		padding-top: 50px;
+		padding-bottom: 65px;
+		color: $color_white;
+		height: calc(100vh - 102px);
+
+		@media (max-width: 575px) {
+			padding-top: 30px;
+			padding-bottom: 26px;
+			height: calc(100vh - 50px);
+		}
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		font-size: 1.33rem;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+
+		@media (max-width: 575px) {
+			font-size: 1.5rem;
+		}
+
+		&._sub {
+			position: absolute;
+			width: 100%;
+			top: 0;
+			left: -100vw;
+			background: #0D0E12;
+			transition: .5s ease;
+			height: 100%;
+		}
+	}
+
+	&__list-item {
+		&:first-child {
+			& .nav-mobile__link {
+				padding-top: 0;
+			}
+		}
+
+		&._active {
+			& .nav-mobile__list._sub {
+				left: 0;
+			}
+		}
+	}
+
+	&__link {
+		padding: 30px 0;
+		color: inherit;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		border-bottom: 1px solid #323232;
+		text-decoration: none;
+		text-transform: uppercase;
+
+		@media (max-width: 575px) {
+			padding: 20px 0;
+		}
+
+		&:hover {
+			color: inherit;
+		}
+
+		& svg {
+			stroke: $color_white;
+		}
+
+		&._back {
+			justify-content: flex-start;
+			color: rgba(255,255,255,.5);
+
+			& svg {
+				margin-right: 10px;
+				stroke: rgba(255,255,255,.5);
+			}
+		}
+	}
+
+	&__controls {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 40px;
+	}
+
+	&__actions {
+		display: flex;
+		align-items: center;
+	}
+
+	&__start {
+		height: 64px;
+		border-radius: 48px;
+		flex-grow: 1;
+		margin-right: 16px;
+		font-size: 1.33rem;
+
+		@media (max-width: 575px) {
+			height: 48px;
+		}
+	}
+
+	&__action {
+		height: 64px;
+		width: 108px;
+		border: 1px solid #323232;
+		border-radius: 48px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 15px;
+		color: $color_white;
+
+		@media (max-width: 575px) {
+			height: 48px;
+			width: 55px;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		& svg {
+			&._fill {
+				fill: $color_white;
+			}
+
+			&._stroke {
+				stroke: $color_white;
+			}
+		}
+	}
+}

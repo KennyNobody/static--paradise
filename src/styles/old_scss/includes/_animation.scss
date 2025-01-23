@@ -1,0 +1,15 @@
+[data-aos="animation-picture"] {
+	overflow: hidden;
+	display: flex;
+
+	& img {
+		transform: scale(1.2);
+		transition: 2s ease;
+	}
+
+	&.aos-animate {
+		& img {
+			transform: scale(1);
+		}
+	}
+}

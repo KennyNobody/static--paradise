@@ -1,10 +1,59 @@
-<header class="header">
-    <div class="container">
-        <a href="./">
-            Главная
-        </a>
-        <a href="./list.html">
-            Список
-        </a>
+<header class="header" role="banner">
+    <div class="container header__cols">
+        <div class="header__col">
+            <a class="header__logo" href="./" role="link">
+                <svg class="header__logo-svg _icon" width="44" height="43">
+                    <use xlink:href="./assets/img/sprite.svg#logo-icon"></use>
+                </svg>
+                <svg class="header__logo-svg _letters" width="84" height="24">
+                    <use xlink:href="./assets/img/sprite.svg#logo-letters"></use>
+                </svg>
+            </a>
+            <nav class="header__nav" role="navigation">
+                <ul role="list">
+                    <li role="listitem">
+                        <a href="./kvartiryi.html" role="link" class="first">Квартиры</a>
+                    </li>
+                    <li role="listitem">
+                        <a href="./trejdIn.html" role="link" class="">Трейд-ин</a>
+                    </li>
+                    <li role="listitem">
+                        <a href="./novostrojki.html" role="link" class="">Новостройки</a>
+                    </li>
+                    <li role="listitem">
+                        <a href="./investirovanie.html" role="link" class="">Инвестирование</a>
+                    </li>
+                    <li role="listitem">
+                        <a href="./about.html" role="link" data-toggle=".nav._about" class="">О компании</a>
+                    </li>
+                    <li role="listitem">
+                        <a href="./uslugi.html" role="link" data-toggle=".nav._services" class="">Услуги</a>
+                    </li>
+                    <li role="listitem">
+                        <a href="./kontaktyi.html" role="link" class="last">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header__col">
+            <button class="header__start btn js-show-modal _yellow-border" type="button" role="button" data-item="feedback">
+                Начать работу
+            </button>
+
+            <a class="header__phone" href="tel:#" role="link">
+                <svg width="15" height="15">
+                    <use xlink:href="./assets/img/sprite.svg#phone"></use>
+                </svg>
+            </a>
+
+            <a class="header__phone header__telegram" href="tg://resolve?domain='#'" role="link" target="_blank" rel="nofollow">
+                <svg width="20" height="20">
+                    <use xlink:href="./assets/img/sprite.svg#telegram-header"></use>
+                </svg>
+            </a>
+
+            <button class="header__burger" type="button" role="button"></button>
+        </div>
     </div>
 </header>

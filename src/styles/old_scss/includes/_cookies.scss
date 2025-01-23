@@ -1,0 +1,53 @@
+.cookies {
+	position: fixed;
+	width: 100%;
+	bottom: -100vh;
+	z-index: 8;
+	padding: 20px 0;
+	background: rgba(0,0,0,.9);
+	transition: $transition;
+
+	@media (max-width: 991px) {
+		padding: 15px 0;
+	}
+
+	&._active {
+		bottom: 0;
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__text {
+		font-size: .75rem;
+		color: $color_white;
+
+		@media (max-width: 575px) {
+			font-size: .87rem;
+		}
+	}
+
+	&__close {
+		min-width: 12px;
+		max-width: 12px;
+		height: 12px;
+		margin-left: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@media (max-width: 991px) {
+			min-width: 20px;
+			max-width: 20px;
+			height: 20px;
+			justify-content: flex-end;
+		}
+
+		& svg {
+			stroke: $color_white;
+		}
+	}
+}

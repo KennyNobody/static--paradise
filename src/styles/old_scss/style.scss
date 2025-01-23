@@ -1,0 +1,51 @@
+$color_black: #252525;
+$color_white: #fff;
+$color_yellow: #EEAE28;
+$color_grey: #515151;
+
+$transition: 0.5s ease;
+
+/* System */
+@import "includes/reboot";
+@import "includes/grid";
+@import "includes/fonts";
+@import "includes/default";
+
+/* UI */
+@import "includes/btn";
+@import "includes/text";
+@import "includes/hidden-scroll";
+
+/* Blocks */
+@import "includes/section";
+@import "includes/main";
+@import "includes/header";
+@import "includes/intro";
+@import "includes/main-section";
+@import "includes/nav";
+@import "includes/nav-mobile";
+@import "includes/services";
+@import "includes/feedback";
+@import "includes/form";
+@import "includes/footer";
+@import "includes/pluses";
+@import "includes/team";
+@import "includes/agents";
+@import "includes/carousel";
+@import "includes/video";
+@import "includes/agents-modal";
+@import "includes/contacts";
+@import "includes/rooms";
+@import "includes/other-services";
+@import "includes/partners";
+@import "includes/download";
+@import "includes/reviews";
+@import "includes/cookies";
+@import "includes/animation";
+@import "includes/banner";
+
+
+
+
+
+

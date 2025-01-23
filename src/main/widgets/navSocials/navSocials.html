@@ -1,0 +1,48 @@
+<div class="nav__socials">
+    {if 5 | resource : 'whatsapp'}
+    <a class="nav__social" href="https://api.whatsapp.com/send?phone={5 | resource : 'whatsapp'}" target="_blank" rel="nofollow" role="link">
+			<span class="footer__social-icon">
+				<svg width="19" height="18">
+					<use xlink:href="./assets/img/sprite.svg#whatsapp"></use>
+				</svg>
+			</span>
+        Whatsapp
+    </a>
+    {/if}
+
+    {if 5 | resource : 'vk'}
+    <a class="nav__social" href="{5 | resource : 'vk'}" target="_blank" rel="nofollow" role="link">
+        <svg width="20" height="12">
+            <use xlink:href="./assets/img/sprite.svg#vk"></use>
+        </svg>
+        Вконтакте
+    </a>
+    {/if}
+
+    {if 5 | resource : 'telegram'}
+    <a class="nav__social" href="tg://resolve?domain={5 | resource : 'telegram'}" target="_blank" rel="nofollow" role="link">
+        <svg width="19" height="16">
+            <use xlink:href="./assets/img/sprite.svg#telegram"></use>
+        </svg>
+        Telegram
+    </a>
+    {/if}
+
+    {if 5 | resource : 'dzen'}
+    <a class="nav__social" href="{5 | resource : 'dzen'}" target="_blank" rel="nofollow" role="link">
+        <svg width="24" height="24">
+            <use xlink:href="./assets/img/sprite.svg#dzen"></use>
+        </svg>
+        Дзен
+    </a>
+    {/if}
+
+    {if 5 | resource : 'youtube'}
+    <a class="nav__social" href="{5 | resource : 'youtube'}" target="_blank" rel="nofollow" role="link">
+        <svg width="26" height="18">
+            <use xlink:href="./assets/img/sprite.svg#youtube"></use>
+        </svg>
+        Ютуб
+    </a>
+    {/if}
+</div>

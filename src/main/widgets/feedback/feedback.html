@@ -1,0 +1,55 @@
+<section class="section main-section _yellow" id="feedback">
+    <div class="section__big-title _mb40 _pt0">
+        <div class="container">
+            <h2 data-aos="slide-up" data-aos-duration="2000" role="heading">Форма связи</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="feedback__cols">
+            <div class="feedback__title">Оставьте контакты <br>и мы свяжемся с вами<br><br>Обсудим варианты решения<br>вашей задачи с недвижимостью</div>
+
+            <form class="feedback__form form _big" id="feedback-form" action="" method="post" role="form">
+                <input type="text" style="position: absolute; left: -9999px; top: -99999px;" name="info" value="">
+                <input type="hidden" name="nospam:blank" value="">
+                <input type="hidden" name="feedback" value="1">
+                <input type="hidden" name="page" value="https://paradise-nedvizhimost.ru/">
+                <input type="hidden" name="pageName" value="Главная">
+
+                <fieldset class="form__fieldset">
+                    <label class="hidden" for="feedback-name"></label>
+                    <input class="form__input no-digits" type="text" name="name" id="feedback-name" placeholder="Ваше имя *" autocomplete="off">
+                </fieldset>
+
+                <fieldset class="form__fieldset">
+                    <label class="hidden" for="feedback-phone"></label>
+                    <input class="form__input" type="tel" name="phone" id="feedback-phone" placeholder="+7 (999) 000-00-00 *" autocomplete="off">
+                </fieldset>
+
+                <fieldset class="form__fieldset">
+                    <label class="hidden" for="feedback-message"></label>
+                    <textarea class="form__textarea" name="message" id="feedback-message" placeholder="Сообщение" autocomplete="off"></textarea>
+                </fieldset>
+
+                <fieldset class="form__fieldset form__checkbox">
+                    <input class="form__checkbox-input" type="checkbox" name="policy" id="feedback-policy" checked="">
+                    <label class="form__checkbox-label" for="feedback-policy">
+                        <span class="form__checkbox-check"></span>
+                        <span class="form__checkbox-title">
+                            Нажимая отправить вы даете согласие на обработку
+                            <a href="./obrabotka-personalnyix-dannyix/" target="_blank" role="link">персональных данных</a>
+                            соглашаетесь с условиями
+                            <a href="./politika-konfidenczialnosti/" target="_blank" role="link">
+                                политики конфиденциальности
+                            </a>
+                        </span>
+                    </label>
+                </fieldset>
+
+                <div class="form__btn">
+                    <button class="btn" type="submit" role="button">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

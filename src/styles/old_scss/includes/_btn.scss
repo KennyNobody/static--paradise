@@ -1,0 +1,119 @@
+.btn {
+	padding: 0 32px;
+	border: 1px solid $color_grey;
+	height: 47px;
+	border-radius: 47px;
+	letter-spacing: .5px;
+	font-size: .75rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: inherit;
+	text-align: center;
+
+	@media (max-width: 575px) {
+		font-size: 1rem;
+		padding: 0 24px;
+	}
+
+	&:hover {
+		color: inherit;
+
+		@media (min-width: 992px) {
+			background: $color_black;
+			color: $color_white;
+			border-color: $color_black;
+
+			&._fill {
+				& svg {
+					fill: $color_white;
+				}
+			}
+
+			&._stroke {
+				& svg {
+					stroke: $color_white;
+				}
+			}
+		}
+	}
+
+	&._yellow-border {
+		border-color: $color_yellow;
+
+		&:hover {
+			@media (min-width: 992px) {
+				background: $color_yellow;
+				color: $color_black;
+
+				&._fill {
+					& svg {
+						fill: $color_black;
+					}
+				}
+			}
+		}
+	}
+
+	&._yellow {
+		background: $color_yellow;
+		border-color: $color_yellow;
+
+		&:hover {
+			@media (min-width: 992px) {
+				background: $color_black;
+					border-color: $color_white;
+				
+					&._fill {
+						& svg {
+							fill: $color_white;
+						}
+					}
+			}
+		}
+	}
+
+	&._fill {
+		& svg {
+			fill: $color_black;
+		}
+	}
+
+	&._stroke {
+		& svg {
+			stroke: $color_black;
+		}
+	}
+
+	&._icon-right {
+		& svg {
+			margin-left: 10px;
+		}
+	}
+
+	&._icon-left {
+		& svg {
+			margin-right: 10px;
+		}
+	}
+
+	&._full-m {
+		@media (max-width: 575px) {
+			width: 100%;
+		}
+	}
+
+	&._inline {
+		display: inline-block;
+		line-height: 45px;
+	}
+
+	&._black {
+		&._fill {
+			& svg {
+				fill: $color_white;
+			}
+		}
+	}
+}
