@@ -88,7 +88,8 @@ h1 {
 			}
 
 			&::before {
-				content: url('../img/list.svg');
+                content: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDE2IDE3IiBmaWxsPSJub25lIj48cGF0aCBkPSJNOCAwLjVMOC44NDg1MyA3LjY1MTQ3TDE2IDguNUw4Ljg0ODUzIDkuMzQ4NTNMOCAxNi41TDcuMTUxNDcgOS4zNDg1M0wwIDguNUw3LjE1MTQ3IDcuNjUxNDdMOCAwLjVaIiBmaWxsPSIjRUVBRTI4Ii8+PC9zdmc+');
+				//content: url('../img/list.svg');
 				min-width: 16px;
 				max-width: 16px;
 				margin-right: 16px;

@@ -5,6 +5,11 @@ $color_grey: #515151;
 
 $transition: 0.5s ease;
 
+/* Libs */
+@import "libs/swiper-bundle.min";
+@import "libs/aos";
+@import "libs/nice-select2";
+
 /* System */
 @import "includes/reboot";
 @import "includes/grid";

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Отзывы</title>
+    <%= htmlWebpackPlugin.options.widgets.meta %>
+</head>
+<body class="body">
+<%= htmlWebpackPlugin.options.widgets.header %>
+<%= htmlWebpackPlugin.options.widgets.nav %>
+<%= htmlWebpackPlugin.options.widgets.navMobile %>
+
+<main class="main" role="main">
+    <%= htmlWebpackPlugin.options.widgets.innerIntroOtzyvui %>
+    <%= htmlWebpackPlugin.options.widgets.serviceImgOtzyvyi %>
+
+    <section class="section reviews">
+        <div class="container">
+            <div class="section__three-cols" style="align-items: flex-start">
+                <div class="section__three-col _left">
+                    <div class="reviews__wrap-rating">
+                        <div class="reviews__rating">5.0</div>
+
+                        <div class="reviews__stars">
+                            <svg class="_active" width="49" height="48">
+                                <use xlink:href="./assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="_active" width="49" height="48">
+                                <use xlink:href="./assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="_active" width="49" height="48">
+                                <use xlink:href="./assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="_active" width="49" height="48">
+                                <use xlink:href="./assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="_active" width="49" height="48">
+                                <use xlink:href="./assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+
+                        <div class="reviews__rating-title">звезд на яндексе</div>
+                    </div>
+                </div>
+
+                <div class="section__three-col _fix180"></div>
+
+                <div class="section__three-col _w50">
+                    <div style="width:100%;height:800px;overflow:hidden;position:relative;"><iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/11607453498?comments"></iframe><a href="https://yandex.ru/maps/org/paradays/11607453498/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Парадайс на карте Москвы — Яндекс Карты</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <%= htmlWebpackPlugin.options.widgets.feedback %>
+</main>
+
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.scripts %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Инвестирование</title>
+    <%= htmlWebpackPlugin.options.widgets.meta %>
+</head>
+<body class="body">
+<%= htmlWebpackPlugin.options.widgets.header %>
+<%= htmlWebpackPlugin.options.widgets.nav %>
+<%= htmlWebpackPlugin.options.widgets.navMobile %>
+
+<main class="main" role="main">
+    <%= htmlWebpackPlugin.options.widgets.innerIntroInvestirovanie %>
+    <%= htmlWebpackPlugin.options.widgets.serviceImgInvestirovanie %>
+    <%= htmlWebpackPlugin.options.widgets.serviceBlocksInvestirovanie %>
+
+    <section class="section _black">
+        <div class="container">
+            <div class="section__cols">
+                <div class="section__col animation-wrap">
+                    <h2 class="h2 pluses__h1 _white" data-aos="slide-up" data-aos-duration="2500" role="heading">Коммерческое предложение</h2>
+                </div>
+
+                <div class="section__col">
+                    <div class="text">
+                        <p>Мы честны и открыты по отношению к нашим клиентам,&nbsp;поэтому предлагаем настоящий трейд-ин.</p>
+                        <p>Ознакомьтесь с коммерческим предложением&nbsp;</p>
+                    </div>
+
+                    <div class="download">
+                        <a class="download__item" href="./assets/files/presentation/agentstvo-nedvizhimosti-paradajs.pdf" target="_blank">
+                            <span class="download__circle">
+                                <svg width="12" height="14">
+                                    <use xlink:href="./assets/img/sprite.svg#download"></use>
+                                </svg>
+                            </span>
+
+                            <span class="download__content">
+                                Получить презентацию для банков
+                                <span class="download__format">
+                                    pdf, 0,77 МБ
+                                </span>
+                            </span>
+                        </a>
+                        <a class="download__item" href="./assets/files/presentation/agentstvo-nedvizhimosti-paradajs.pdf" target="_blank">
+                            <span class="download__circle">
+                                <svg width="12" height="14">
+                                    <use xlink:href="./assets/img/sprite.svg#download"></use>
+                                </svg>
+                            </span>
+
+                            <span class="download__content">
+                                Получить презентацию для застройщика <span class="download__format">pdf, 0,77 МБ</span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <button class="btn js-show-modal _fill _black _icon-right _full-m" type="button" role="button" data-item="feedback">
+                        Получить консультацию
+                        <svg width="12" height="13">
+                            <use xlink:href="./assets/img/sprite.svg#btn-plus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <%= htmlWebpackPlugin.options.widgets.partnersInvestirovanie %>
+    <%= htmlWebpackPlugin.options.widgets.feedback %>
+</main>
+
+<%= htmlWebpackPlugin.options.widgets.footer %>
+<%= htmlWebpackPlugin.options.widgets.scripts %>
+<%= htmlWebpackPlugin.options.widgets.temp %>
+</body>
+</html>
