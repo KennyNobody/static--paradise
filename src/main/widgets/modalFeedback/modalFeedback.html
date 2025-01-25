@@ -15,20 +15,52 @@
                 Поможем подобрать подходящий вариант для вас и вашей семьи
             </div>
 
-            {'!FetchIt' | snippet : [
-            'form' => 'tpl.feedbackModal.form',
-            'validate' => 'name:required:regexp=^/[А-Яа-я]+/^,phone:required,info:blank',
-            'hooks' => 'spam,email,FormItSaveForm',
-            'submitVar' => 'feedbackModal',
-            'emailTpl' => 'tpl.feedback.report',
-            'emailSubject' => 'Заявка с сайта ' ~ 'site_name' | config,
-            'emailTo' => 5 | resource : 'emailForm',
-            'emailFrom' => 'emailsender' | config,
-            'emailFromName' => 'site_name' | config,
-            'formName' => 'Заявка',
-            'formFields' => 'page,pageName,name,phone,message',
-            'fieldNames' => 'pageName==Название страницы,page==Ссылка на страницу,name==ФИО,phone==Телефон,message==Сообщение'
-            ]}
+            <form data-fetchit="b7b3e0e7e5052bae3a6b44975375f838" class="form _modal" id="feedback-modal-form" action="" method="post" role="form">
+                <input type="text" style="position: absolute; left: -9999px; top: -99999px;" name="info" value="">
+                <input type="hidden" name="nospam:blank" value="">
+                <input type="hidden" name="feedbackModal" value="1">
+                <input type="hidden" name="page" value="https://paradise-nedvizhimost.ru/">
+                <input type="hidden" name="pageName" value="Главная">
+
+                <fieldset class="form__fieldset">
+                    <label class="hidden" for="feedback-modal-name"></label>
+                    <input class="form__input no-digits" type="text" name="name" id="feedback-modal-name" placeholder="Ваше имя *" autocomplete="off">
+                </fieldset>
+
+                <fieldset class="form__fieldset">
+                    <label class="hidden" for="feedback-modal-phone"></label>
+                    <input class="form__input" type="tel" name="phone" id="feedback-modal-phone" placeholder="+7 (999) 000-00-00 *" autocomplete="off">
+                </fieldset>
+
+                <fieldset class="form__fieldset">
+                    <label class="hidden" for="feedback-modal-message"></label>
+                    <textarea class="form__textarea" name="message" id="feedback-modal-message" placeholder="Сообщение" autocomplete="off"></textarea>
+                </fieldset>
+
+
+
+                <fieldset class="form__fieldset form__checkbox">
+                    <input class="form__checkbox-input" type="checkbox" name="policy" id="feedback-modal-policy" checked="">
+                    <label class="form__checkbox-label" for="feedback-modal-policy">
+                        <span class="form__checkbox-check"></span>
+                        <span class="form__checkbox-title">
+                            Нажимая отправить вы даете согласие на обработку
+                            <a href="obrabotka-personalnyix-dannyix/" target="_blank" role="link">персональных данных</a>
+                            соглашаетесь с условиями
+                            <a href="politika-konfidenczialnosti/" target="_blank" role="link">политики конфиденциальности</a>
+                        </span>
+                    </label>
+                </fieldset>
+
+                <div class="form__btn">
+                    <button class="btn _yellow _fill _icon-right" type="submit" role="button">
+                        Оставить заявку
+                        <svg width="12" height="13">
+                            <use xlink:href="./assets/img/sprite.svg#btn-plus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
