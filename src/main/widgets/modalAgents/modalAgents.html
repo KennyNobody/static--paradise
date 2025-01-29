@@ -13,9 +13,9 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <picture class="agents-modal__img">
-                            <source type="image/webp" data-srcset="./assets/cache_image/snimok-ekrana-2025-01-21-v-16.40.29_1272x720_b33.webp 2x, ./assets/cache_image/snimok-ekrana-2025-01-21-v-16.40.29_636x360_5ee.webp 1x">
-                            <source type="image/jpeg" data-srcset="./assets/cache_image/snimok-ekrana-2025-01-21-v-16.40.29_1272x720_460.jpg 2x, ./assets/cache_image/snimok-ekrana-2025-01-21-v-16.40.29_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/snimok-ekrana-2025-01-21-v-16.40.29_636x360_1f4.jpg" alt="Роман Рахматуллин" width="636" height="360" role="presentation">
+                            <source type="image/webp" srcset="./assets/cache_image/snimok-ekrana-2025-01-21-v-16.40.29_1272x720_b33.webp 2x, ./assets/cache_image/snimok-ekrana-2025-01-21-v-16.40.29_636x360_5ee.webp 1x">
+                            <source type="image/jpeg" srcset="./assets/cache_image/snimok-ekrana-2025-01-21-v-16.40.29_1272x720_460.jpg 2x, ./assets/cache_image/snimok-ekrana-2025-01-21-v-16.40.29_636x360_1f4.jpg 1x">
+                            <img class="swiper-lazy swiper-lazy-loaded" alt="Роман Рахматуллин" width="636" height="360" role="presentation" src="./assets/cache_image/snimok-ekrana-2025-01-21-v-16.40.29_636x360_1f4.jpg">
                         </picture>
                     </div>
                 </div>
@@ -45,9 +45,9 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <picture class="agents-modal__img">
-                            <source type="image/webp" data-srcset="./assets/cache_image/snimok-ekrana-2025-01-21-v-16.41.38_1272x720_b33.webp 2x, ./assets/cache_image/snimok-ekrana-2025-01-21-v-16.41.38_636x360_5ee.webp 1x">
-                            <source type="image/jpeg" data-srcset="./assets/cache_image/snimok-ekrana-2025-01-21-v-16.41.38_1272x720_460.jpg 2x, ./assets/cache_image/snimok-ekrana-2025-01-21-v-16.41.38_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/snimok-ekrana-2025-01-21-v-16.41.38_636x360_1f4.jpg" alt="Маргарита Листова" width="636" height="360" role="presentation">
+                            <source type="image/webp" srcset="/assets/cache_image/snimok-ekrana-2025-01-21-v-16.40.29_1272x720_b33.webp 2x, /assets/cache_image/snimok-ekrana-2025-01-21-v-16.40.29_636x360_5ee.webp 1x">
+                            <source type="image/jpeg" srcset="/assets/cache_image/snimok-ekrana-2025-01-21-v-16.40.29_1272x720_460.jpg 2x, /assets/cache_image/snimok-ekrana-2025-01-21-v-16.40.29_636x360_1f4.jpg 1x">
+                            <img class="swiper-lazy swiper-lazy-loaded" alt="Маргарита Листова" width="636" height="360" role="presentation" src="/assets/cache_image/snimok-ekrana-2025-01-21-v-16.40.29_636x360_1f4.jpg">
                         </picture>
                     </div>
                 </div>
@@ -77,9 +77,9 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <picture class="agents-modal__img">
-                            <source type="image/webp" data-srcset="./assets/cache_image/agents/galina-voronova_1272x720_b33.webp 2x, ./assets/cache_image/agents/galina-voronova_636x360_5ee.webp 1x">
-                            <source type="image/jpeg" data-srcset="./assets/cache_image/agents/galina-voronova_1272x720_460.jpg 2x, ./assets/cache_image/agents/galina-voronova_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/agents/galina-voronova_636x360_1f4.jpg" alt="Галина Воронова" width="636" height="360" role="presentation">
+                            <source type="image/webp" srcset="./assets/cache_image/agents/galina-voronova_1272x720_b33.webp 2x, ./assets/cache_image/agents/galina-voronova_636x360_5ee.webp 1x">
+                            <source type="image/jpeg" srcset="./assets/cache_image/agents/galina-voronova_1272x720_460.jpg 2x, ./assets/cache_image/agents/galina-voronova_636x360_1f4.jpg 1x">
+                            <img class="swiper-lazy swiper-lazy-loaded" alt="Галина Воронова" width="636" height="360" role="presentation" src="/assets/cache_image/agents/galina-voronova_636x360_1f4.jpg">
                         </picture>
                     </div>
                 </div>
@@ -95,7 +95,41 @@
         </div>
     </div>
 </div>
+<!-- TODO: Новый сотрудник -->
 <div class="agents-modal modal" data-item="team-3">
+    <div class="agents-modal__block hidden-scroll">
+        <button class="agents-modal__close" type="button" role="button">
+            <span>
+                <svg width="14" height="14">
+                    <use xlink:href="./assets/img/sprite.svg#close"></use>
+                </svg>
+            </span>
+        </button>
+
+        <div class="agents-modal__carousel-wrap">
+            <div class="agents-modal__carousel swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture class="agents-modal__img">
+                            <img class="swiper-lazy" src="./assets/images/agents/kuzko.png" alt="Светлана Кузько" width="636" height="360" role="presentation">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="agents-modal__pagination carousel__pagination"></div>
+        </div>
+
+        <div class="agents-modal__content">
+            <div class="agents-modal__name h2"><span>Светлана&nbsp;</span><span>Кузько</span></div>
+            <div class="agents-modal__text text">
+                <p>Оказывает спектр задач, направленных на обеспечение эффективной работы команды.</p>
+                <p>"Свяжитесь со мной сегодня , и давайте вместе найдем то , что Вы ищете!"</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -->
+<div class="agents-modal modal" data-item="team-4">
     <div class="agents-modal__block hidden-scroll">
         <button class="agents-modal__close" type="button" role="button">
             <span>
@@ -112,7 +146,7 @@
                         <picture class="agents-modal__img">
                             <source type="image/webp" data-srcset="./assets/cache_image/snimok-ekrana-2024-08-13-v-12.55.27_1272x720_b33.webp 2x, ./assets/cache_image/snimok-ekrana-2024-08-13-v-12.55.27_636x360_5ee.webp 1x">
                             <source type="image/jpeg" data-srcset="./assets/cache_image/snimok-ekrana-2024-08-13-v-12.55.27_1272x720_460.jpg 2x, ./assets/cache_image/snimok-ekrana-2024-08-13-v-12.55.27_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/snimok-ekrana-2024-08-13-v-12.55.27_636x360_1f4.jpg" alt="Алексей Гвоздев" width="636" height="360" role="presentation">
+                            <img class="swiper-lazy" src="./assets/cache_image/snimok-ekrana-2024-08-13-v-12.55.27_636x360_1f4.jpg" alt="Алексей Гвоздев" width="636" height="360" role="presentation">
                         </picture>
                     </div>
                 </div>
@@ -126,54 +160,6 @@
                 <p>Специалист, который решает &nbsp;все вопросы по оформлению и проведению сделки, даже если она проводится дистанционно. Профессиональный подбор недвижимости по Вашему запросу.</p>
                 <p>"Свяжитесь со мной сегодня , и давайте вместе найдем то , что Вы ищете!"</p>
             </div>
-        </div>
-    </div>
-</div>
-<div class="agents-modal modal" data-item="team-4">
-    <div class="agents-modal__block hidden-scroll">
-        <button class="agents-modal__close" type="button" role="button">
-            <span>
-                <svg width="14" height="14">
-                    <use xlink:href="./assets/img/sprite.svg#close"></use>
-                </svg>
-            </span>
-        </button>
-
-        <div class="agents-modal__carousel-wrap">
-            <div class="agents-modal__carousel swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <picture class="agents-modal__img">
-                            <source type="image/webp" data-srcset="./assets/cache_image/agents/agent-12x_1272x720_b33.webp 2x, ./assets/cache_image/agents/agent-12x_636x360_5ee.webp 1x">
-                            <source type="image/jpeg" data-srcset="./assets/cache_image/agents/agent-12x_1272x720_460.jpg 2x, ./assets/cache_image/agents/agent-12x_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/agents/agent-12x_636x360_1f4.jpg" alt="Екатерина Матвеева" width="636" height="360" role="presentation">
-                        </picture>
-                    </div>
-                    <div class="swiper-slide">
-                        <picture class="agents-modal__img">
-                            <source type="image/webp" data-srcset="./assets/cache_image/agents/agent-12x_1272x720_b33.webp 2x, ./assets/cache_image/agents/agent-12x_636x360_5ee.webp 1x">
-                            <source type="image/jpeg" data-srcset="./assets/cache_image/agents/agent-12x_1272x720_460.jpg 2x, ./assets/cache_image/agents/agent-12x_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/agents/agent-12x_636x360_1f4.jpg" alt="Екатерина Матвеева" width="636" height="360" role="presentation">
-                        </picture>
-                    </div>
-                    <div class="swiper-slide">
-                        <picture class="agents-modal__img">
-                            <source type="image/webp" data-srcset="./assets/cache_image/agents/agent-12x_1272x720_b33.webp 2x, ./assets/cache_image/agents/agent-12x_636x360_5ee.webp 1x">
-                            <source type="image/jpeg" data-srcset="./assets/cache_image/agents/agent-12x_1272x720_460.jpg 2x, ./assets/cache_image/agents/agent-12x_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/agents/agent-12x_636x360_1f4.jpg" alt="Екатерина Матвеева" width="636" height="360" role="presentation">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-            <div class="agents-modal__pagination carousel__pagination"></div>
-        </div>
-
-        <div class="agents-modal__content">
-            <div class="agents-modal__name h2"><span>Екатерина&nbsp;</span><span>Матвеева</span></div>
-            <div class="agents-modal__text text">
-                <p><span style="font-weight: 400;">Уверенно ведет переговоры, отстаивает&nbsp;</span><span style="font-weight: 400;">интересы и приоритеты клиентов.</span></p>
-                <p><span style="font-weight: 400;">В качестве клиента агентства оценила индивидуальный подход, экспертность и профессионализм сотрудников, приняла решение&nbsp; присоединиться к команде!</span></p>
-                <p><span style="font-weight: 400;">«Если вам необходимо решить вопрос с недвижимостью спокойно, профессионально, юридически грамотно, легко и без стресса – это ко мне! Пока я занимаюсь техническими моментами по организации сделки вы можете спокойно выбирать новые шторы в будущую квартиру».</span></p>							</div>
         </div>
     </div>
 </div>
@@ -192,24 +178,22 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <picture class="agents-modal__img">
-                            <source type="image/webp" data-srcset="./assets/cache_image/agents/agent3-x2_1272x720_b33.webp 2x, ./assets/cache_image/agents/agent3-x2_636x360_5ee.webp 1x">
-                            <source type="image/jpeg" data-srcset="./assets/cache_image/agents/agent3-x2_1272x720_460.jpg 2x, ./assets/cache_image/agents/agent3-x2_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/agents/agent3-x2_636x360_1f4.jpg" alt="Алла  Акчурина" width="636" height="360" role="presentation">
+                            <source type="image/webp" data-srcset="./assets/cache_image/agents/agent-12x_1272x720_b33.webp 2x, ./assets/cache_image/agents/agent-12x_636x360_5ee.webp 1x">
+                            <source type="image/jpeg" data-srcset="./assets/cache_image/agents/agent-12x_1272x720_460.jpg 2x, ./assets/cache_image/agents/agent-12x_636x360_1f4.jpg 1x">
+                            <img class="swiper-lazy" src="./assets/cache_image/agents/agent-12x_636x360_1f4.jpg" alt="Екатерина Матвеева" width="636" height="360" role="presentation">
                         </picture>
                     </div>
                 </div>
             </div>
-
             <div class="agents-modal__pagination carousel__pagination"></div>
         </div>
 
         <div class="agents-modal__content">
-            <div class="agents-modal__name h2"><span>Алла &nbsp;</span><span>Акчурина</span></div>
-
-
+            <div class="agents-modal__name h2"><span>Екатерина&nbsp;</span><span>Матвеева</span></div>
             <div class="agents-modal__text text">
-                <p style="text-align: justify;"><span style="font-weight: 400;">Обладает способностью находить нестандартные решения </span><span style="font-weight: 400;">для реализации любой задачи клиента. Ценит работу в&nbsp; «Парадайс» за истинные ценности, грамотное руководство и дружный коллектив.</span></p>
-                <p style="text-align: justify;"><span style="font-weight: 400;">«Сфера недвижимости позволяет мне воплотить свои лучшие качества, – </span><span style="font-weight: 400;">я всегда слышу своего клиента и максимально учитываю все пожелания!»</span></p>							</div>
+                <p><span style="font-weight: 400;">Уверенно ведет переговоры, отстаивает&nbsp;</span><span style="font-weight: 400;">интересы и приоритеты клиентов.</span></p>
+                <p><span style="font-weight: 400;">В качестве клиента агентства оценила индивидуальный подход, экспертность и профессионализм сотрудников, приняла решение&nbsp; присоединиться к команде!</span></p>
+                <p><span style="font-weight: 400;">«Если вам необходимо решить вопрос с недвижимостью спокойно, профессионально, юридически грамотно, легко и без стресса – это ко мне! Пока я занимаюсь техническими моментами по организации сделки вы можете спокойно выбирать новые шторы в будущую квартиру».</span></p>							</div>
         </div>
     </div>
 </div>
@@ -228,21 +212,24 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <picture class="agents-modal__img">
-                            <source type="image/webp" data-srcset="./assets/cache_image/agents/agent1-x2_1272x720_b33.webp 2x, ./assets/cache_image/agents/agent1-x2_636x360_5ee.webp 1x">
-                            <source type="image/jpeg" data-srcset="./assets/cache_image/agents/agent1-x2_1272x720_460.jpg 2x, ./assets/cache_image/agents/agent1-x2_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/agents/agent1-x2_636x360_1f4.jpg" alt="Эльвина  Каримова " width="636" height="360" role="presentation">
+                            <source type="image/webp" data-srcset="./assets/cache_image/agents/agent3-x2_1272x720_b33.webp 2x, ./assets/cache_image/agents/agent3-x2_636x360_5ee.webp 1x">
+                            <source type="image/jpeg" data-srcset="./assets/cache_image/agents/agent3-x2_1272x720_460.jpg 2x, ./assets/cache_image/agents/agent3-x2_636x360_1f4.jpg 1x">
+                            <img class="swiper-lazy" src="./assets/cache_image/agents/agent3-x2_636x360_1f4.jpg" alt="Алла  Акчурина" width="636" height="360" role="presentation">
                         </picture>
                     </div>
                 </div>
             </div>
+
             <div class="agents-modal__pagination carousel__pagination"></div>
         </div>
 
         <div class="agents-modal__content">
-            <div class="agents-modal__name h2"><span>Эльвина &nbsp;</span><span>Каримова </span></div>
+            <div class="agents-modal__name h2"><span>Алла &nbsp;</span><span>Акчурина</span></div>
+
+
             <div class="agents-modal__text text">
-                <p><span style="font-weight: 400;">Специализируется на вторичном рынке и инвестициях в недвижимость.</span></p>
-                <p><span style="font-weight: 400;">«Со мной всегда клиент извлекает максимальную выгоду и находит лучший вариант решения вопроса!» </span></p>							</div>
+                <p style="text-align: justify;"><span style="font-weight: 400;">Обладает способностью находить нестандартные решения </span><span style="font-weight: 400;">для реализации любой задачи клиента. Ценит работу в&nbsp; «Парадайс» за истинные ценности, грамотное руководство и дружный коллектив.</span></p>
+                <p style="text-align: justify;"><span style="font-weight: 400;">«Сфера недвижимости позволяет мне воплотить свои лучшие качества, – </span><span style="font-weight: 400;">я всегда слышу своего клиента и максимально учитываю все пожелания!»</span></p>							</div>
         </div>
     </div>
 </div>
@@ -261,9 +248,42 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <picture class="agents-modal__img">
+                            <source type="image/webp" data-srcset="./assets/cache_image/agents/agent1-x2_1272x720_b33.webp 2x, ./assets/cache_image/agents/agent1-x2_636x360_5ee.webp 1x">
+                            <source type="image/jpeg" data-srcset="./assets/cache_image/agents/agent1-x2_1272x720_460.jpg 2x, ./assets/cache_image/agents/agent1-x2_636x360_1f4.jpg 1x">
+                            <img class="swiper-lazy" src="./assets/cache_image/agents/agent1-x2_636x360_1f4.jpg" alt="Эльвина  Каримова " width="636" height="360" role="presentation">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="agents-modal__pagination carousel__pagination"></div>
+        </div>
+
+        <div class="agents-modal__content">
+            <div class="agents-modal__name h2"><span>Эльвина &nbsp;</span><span>Каримова </span></div>
+            <div class="agents-modal__text text">
+                <p><span style="font-weight: 400;">Специализируется на вторичном рынке и инвестициях в недвижимость.</span></p>
+                <p><span style="font-weight: 400;">«Со мной всегда клиент извлекает максимальную выгоду и находит лучший вариант решения вопроса!» </span></p>							</div>
+        </div>
+    </div>
+</div>
+<div class="agents-modal modal" data-item="team-8">
+    <div class="agents-modal__block hidden-scroll">
+        <button class="agents-modal__close" type="button" role="button">
+            <span>
+                <svg width="14" height="14">
+                    <use xlink:href="./assets/img/sprite.svg#close"></use>
+                </svg>
+            </span>
+        </button>
+
+        <div class="agents-modal__carousel-wrap">
+            <div class="agents-modal__carousel swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture class="agents-modal__img">
                             <source type="image/webp" data-srcset="./assets/cache_image/agents/agent2-x2_1272x720_b33.webp 2x, ./assets/cache_image/agents/agent2-x2_636x360_5ee.webp 1x">
                             <source type="image/jpeg" data-srcset="./assets/cache_image/agents/agent2-x2_1272x720_460.jpg 2x, ./assets/cache_image/agents/agent2-x2_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/agents/agent2-x2_636x360_1f4.jpg" alt="Наталья  Горбунова " width="636" height="360" role="presentation">
+                            <img class="swiper-lazy" src="./assets/cache_image/agents/agent2-x2_636x360_1f4.jpg" alt="Наталья  Горбунова " width="636" height="360" role="presentation">
                         </picture>
                     </div>
                 </div>
@@ -283,7 +303,7 @@
         </div>
     </div>
 </div>
-<div class="agents-modal modal" data-item="team-8">
+<div class="agents-modal modal" data-item="team-9">
     <div class="agents-modal__block hidden-scroll">
         <button class="agents-modal__close" type="button" role="button">
             <span>
@@ -300,7 +320,7 @@
                         <picture class="agents-modal__img">
                             <source type="image/webp" data-srcset="./assets/cache_image/agents/600_1272x720_b33.webp 2x, ./assets/cache_image/agents/600_636x360_5ee.webp 1x">
                             <source type="image/jpeg" data-srcset="./assets/cache_image/agents/600_1272x720_460.jpg 2x, ./assets/cache_image/agents/600_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/agents/600_636x360_1f4.jpg" alt="Юлия Закаблук" width="636" height="360" role="presentation">
+                            <img class="swiper-lazy" src="./assets/cache_image/agents/600_636x360_1f4.jpg" alt="Юлия Закаблук" width="636" height="360" role="presentation">
                         </picture>
                     </div>
                 </div>
@@ -317,7 +337,7 @@
             </div>
         </div>
     </div>
-</div><div class="agents-modal modal" data-item="team-9">
+</div><div class="agents-modal modal" data-item="team-10">
     <div class="agents-modal__block hidden-scroll">
         <button class="agents-modal__close" type="button" role="button">
             <span>
@@ -334,7 +354,7 @@
                         <picture class="agents-modal__img">
                             <source type="image/webp" data-srcset="./assets/cache_image/team/snimok-ekrana-2024-02-26-v-15.57.07_1272x720_b33.webp 2x, ./assets/cache_image/team/snimok-ekrana-2024-02-26-v-15.57.07_636x360_5ee.webp 1x">
                             <source type="image/jpeg" data-srcset="./assets/cache_image/team/snimok-ekrana-2024-02-26-v-15.57.07_1272x720_460.jpg 2x, ./assets/cache_image/team/snimok-ekrana-2024-02-26-v-15.57.07_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/team/snimok-ekrana-2024-02-26-v-15.57.07_636x360_1f4.jpg" alt="Дарья Богданова" width="636" height="360" role="presentation">
+                            <img class="swiper-lazy" src="./assets/cache_image/team/snimok-ekrana-2024-02-26-v-15.57.07_636x360_1f4.jpg" alt="Дарья Богданова" width="636" height="360" role="presentation">
                         </picture>
                     </div>
                 </div>
@@ -354,7 +374,7 @@
         </div>
     </div>
 </div>
-<div class="agents-modal modal" data-item="team-10">
+<div class="agents-modal modal" data-item="team-11">
     <div class="agents-modal__block hidden-scroll">
         <button class="agents-modal__close" type="button" role="button">
             <span>
@@ -371,7 +391,7 @@
                         <picture class="agents-modal__img">
                             <source type="image/webp" data-srcset="./assets/cache_image/600a6397_1272x720_b33.webp 2x, ./assets/cache_image/600a6397_636x360_5ee.webp 1x">
                             <source type="image/jpeg" data-srcset="./assets/cache_image/600a6397_1272x720_460.jpg 2x, ./assets/cache_image/600a6397_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/600a6397_636x360_1f4.jpg" alt="Иван Дайнеко" width="636" height="360" role="presentation">
+                            <img class="swiper-lazy" src="./assets/cache_image/600a6397_636x360_1f4.jpg" alt="Иван Дайнеко" width="636" height="360" role="presentation">
                         </picture>
                     </div>
                 </div>
@@ -390,7 +410,7 @@
         </div>
     </div>
 </div>
-<div class="agents-modal modal" data-item="team-11">
+<div class="agents-modal modal" data-item="team-12">
     <div class="agents-modal__block hidden-scroll">
         <button class="agents-modal__close" type="button" role="button">
             <span>
@@ -407,7 +427,7 @@
                         <picture class="agents-modal__img">
                             <source type="image/webp" data-srcset="./assets/cache_image/600a6462_1272x720_b33.webp 2x, ./assets/cache_image/600a6462_636x360_5ee.webp 1x">
                             <source type="image/jpeg" data-srcset="./assets/cache_image/600a6462_1272x720_460.jpg 2x, ./assets/cache_image/600a6462_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/600a6462_636x360_1f4.jpg" alt="Евгения Архипова" width="636" height="360" role="presentation">
+                            <img class="swiper-lazy" src="./assets/cache_image/600a6462_636x360_1f4.jpg" alt="Евгения Архипова" width="636" height="360" role="presentation">
                         </picture>
                     </div>
                 </div>
@@ -426,7 +446,7 @@
         </div>
     </div>
 </div>
-<div class="agents-modal modal" data-item="team-12">
+<div class="agents-modal modal" data-item="team-13">
     <div class="agents-modal__block hidden-scroll">
         <button class="agents-modal__close" type="button" role="button">
             <span>
@@ -443,7 +463,7 @@
                         <picture class="agents-modal__img">
                             <source type="image/webp" data-srcset="./assets/cache_image/team/snimok-ekrana-2024-02-27-v-10.18.43_1272x720_b33.webp 2x, ./assets/cache_image/team/snimok-ekrana-2024-02-27-v-10.18.43_636x360_5ee.webp 1x">
                             <source type="image/jpeg" data-srcset="./assets/cache_image/team/snimok-ekrana-2024-02-27-v-10.18.43_1272x720_460.jpg 2x, ./assets/cache_image/team/snimok-ekrana-2024-02-27-v-10.18.43_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/team/snimok-ekrana-2024-02-27-v-10.18.43_636x360_1f4.jpg" alt="Сергей Шаленый" width="636" height="360" role="presentation">
+                            <img class="swiper-lazy" src="./assets/cache_image/team/snimok-ekrana-2024-02-27-v-10.18.43_636x360_1f4.jpg" alt="Сергей Шаленый" width="636" height="360" role="presentation">
                         </picture>
                     </div>
                 </div>
@@ -458,75 +478,6 @@
 
             <div class="agents-modal__text text">
                 <p>Высококвалифицированный специалист с обширным опытом работы в сфере недвижимости. Персональный подход к каждому клиенту. Действует исключительно в интересах клиента. Понимает потребности клиента и реализует их в жизнь.</p>							</div>
-        </div>
-    </div>
-</div>
-<div class="agents-modal modal" data-item="team-13">
-    <div class="agents-modal__block hidden-scroll">
-        <button class="agents-modal__close" type="button" role="button">
-            <span>
-                <svg width="14" height="14">
-                    <use xlink:href="./assets/img/sprite.svg#close"></use>
-                </svg>
-            </span>
-        </button>
-
-        <div class="agents-modal__carousel-wrap">
-            <div class="agents-modal__carousel swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <picture class="agents-modal__img">
-                            <source type="image/webp" data-srcset="./assets/cache_image/snimok-ekrana-2024-08-20-v-11.16.18_1272x720_b33.webp 2x, ./assets/cache_image/snimok-ekrana-2024-08-20-v-11.16.18_636x360_5ee.webp 1x">
-                            <source type="image/jpeg" data-srcset="./assets/cache_image/snimok-ekrana-2024-08-20-v-11.16.18_1272x720_460.jpg 2x, ./assets/cache_image/snimok-ekrana-2024-08-20-v-11.16.18_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/snimok-ekrana-2024-08-20-v-11.16.18_636x360_1f4.jpg" alt="Наталья Малютина" width="636" height="360" role="presentation">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-
-            <div class="agents-modal__pagination carousel__pagination"></div>
-        </div>
-
-        <div class="agents-modal__content">
-            <div class="agents-modal__name h2"><span>Наталья&nbsp;</span><span>Малютина</span></div>
-
-
-            <div class="agents-modal__text text">
-                <p>"Мой профессиональный огромный опыт работы с недвижимостью оперативно поможет Вам с решением любого жилищного вопроса с гарантированным успехом!"</p>							</div>
-        </div>
-    </div>
-</div>
-<div class="agents-modal modal" data-item="team-13">
-    <div class="agents-modal__block hidden-scroll">
-        <button class="agents-modal__close" type="button" role="button">
-            <span>
-                <svg width="14" height="14">
-                    <use xlink:href="./assets/img/sprite.svg#close"></use>
-                </svg>
-            </span>
-        </button>
-
-        <div class="agents-modal__carousel-wrap">
-            <div class="agents-modal__carousel swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <picture class="agents-modal__img">
-                            <source type="image/webp" data-srcset="./assets/cache_image/snimok-ekrana-2024-08-20-v-11.16.18_1272x720_b33.webp 2x, ./assets/cache_image/snimok-ekrana-2024-08-20-v-11.16.18_636x360_5ee.webp 1x">
-                            <source type="image/jpeg" data-srcset="./assets/cache_image/snimok-ekrana-2024-08-20-v-11.16.18_1272x720_460.jpg 2x, ./assets/cache_image/snimok-ekrana-2024-08-20-v-11.16.18_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/snimok-ekrana-2024-08-20-v-11.16.18_636x360_1f4.jpg" alt="Наталья Малютина" width="636" height="360" role="presentation">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-
-            <div class="agents-modal__pagination carousel__pagination"></div>
-        </div>
-
-        <div class="agents-modal__content">
-            <div class="agents-modal__name h2"><span>Наталья&nbsp;</span><span>Малютина</span></div>
-
-            <div class="agents-modal__text text">
-                <p>"Мой профессиональный огромный опыт работы с недвижимостью оперативно поможет Вам с решением любого жилищного вопроса с гарантированным успехом!"</p>							</div>
         </div>
     </div>
 </div>
@@ -545,9 +496,9 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <picture class="agents-modal__img">
-                            <source type="image/webp" data-srcset="./assets/cache_image/team/snimok-ekrana-2024-02-27-v-10.30.02_1272x720_b33.webp 2x, ./assets/cache_image/team/snimok-ekrana-2024-02-27-v-10.30.02_636x360_5ee.webp 1x">
-                            <source type="image/jpeg" data-srcset="./assets/cache_image/team/snimok-ekrana-2024-02-27-v-10.30.02_1272x720_460.jpg 2x, ./assets/cache_image/team/snimok-ekrana-2024-02-27-v-10.30.02_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/team/snimok-ekrana-2024-02-27-v-10.30.02_636x360_1f4.jpg" alt="Александр Богданов" width="636" height="360" role="presentation">
+                            <source type="image/webp" data-srcset="./assets/cache_image/snimok-ekrana-2024-08-20-v-11.16.18_1272x720_b33.webp 2x, ./assets/cache_image/snimok-ekrana-2024-08-20-v-11.16.18_636x360_5ee.webp 1x">
+                            <source type="image/jpeg" data-srcset="./assets/cache_image/snimok-ekrana-2024-08-20-v-11.16.18_1272x720_460.jpg 2x, ./assets/cache_image/snimok-ekrana-2024-08-20-v-11.16.18_636x360_1f4.jpg 1x">
+                            <img class="swiper-lazy" src="./assets/cache_image/snimok-ekrana-2024-08-20-v-11.16.18_636x360_1f4.jpg" alt="Наталья Малютина" width="636" height="360" role="presentation">
                         </picture>
                     </div>
                 </div>
@@ -557,12 +508,11 @@
         </div>
 
         <div class="agents-modal__content">
-            <div class="agents-modal__name h2"><span>Александр&nbsp;</span><span>Богданов</span></div>
+            <div class="agents-modal__name h2"><span>Наталья&nbsp;</span><span>Малютина</span></div>
 
 
             <div class="agents-modal__text text">
-                <p>"Мне важно, чтобы взаимоотношения с клиентом строились на доверии. Поэтому я делаю свою работу максимально прозрачно и открыто.</p>
-                <p>Думаю это главный фактор, почему<span class="Apple-converted-space">&nbsp; </span>клиенты всегда уверены в результате и рекомендуют меня своим друзьям!"</p>							</div>
+                <p>"Мой профессиональный огромный опыт работы с недвижимостью оперативно поможет Вам с решением любого жилищного вопроса с гарантированным успехом!"</p>							</div>
         </div>
     </div>
 </div>
@@ -581,9 +531,45 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <picture class="agents-modal__img">
+                            <source type="image/webp" data-srcset="./assets/cache_image/team/snimok-ekrana-2024-02-27-v-10.30.02_1272x720_b33.webp 2x, ./assets/cache_image/team/snimok-ekrana-2024-02-27-v-10.30.02_636x360_5ee.webp 1x">
+                            <source type="image/jpeg" data-srcset="./assets/cache_image/team/snimok-ekrana-2024-02-27-v-10.30.02_1272x720_460.jpg 2x, ./assets/cache_image/team/snimok-ekrana-2024-02-27-v-10.30.02_636x360_1f4.jpg 1x">
+                            <img class="swiper-lazy" src="./assets/cache_image/team/snimok-ekrana-2024-02-27-v-10.30.02_636x360_1f4.jpg" alt="Александр Богданов" width="636" height="360" role="presentation">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+
+            <div class="agents-modal__pagination carousel__pagination"></div>
+        </div>
+
+        <div class="agents-modal__content">
+            <div class="agents-modal__name h2"><span>Александр&nbsp;</span><span>Богданов</span></div>
+
+
+            <div class="agents-modal__text text">
+                <p>"Мне важно, чтобы взаимоотношения с клиентом строились на доверии. Поэтому я делаю свою работу максимально прозрачно и открыто.</p>
+                <p>Думаю это главный фактор, почему<span class="Apple-converted-space">&nbsp; </span>клиенты всегда уверены в результате и рекомендуют меня своим друзьям!"</p>							</div>
+        </div>
+    </div>
+</div>
+<div class="agents-modal modal" data-item="team-16">
+    <div class="agents-modal__block hidden-scroll">
+        <button class="agents-modal__close" type="button" role="button">
+            <span>
+                <svg width="14" height="14">
+                    <use xlink:href="./assets/img/sprite.svg#close"></use>
+                </svg>
+            </span>
+        </button>
+
+        <div class="agents-modal__carousel-wrap">
+            <div class="agents-modal__carousel swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture class="agents-modal__img">
                             <source type="image/webp" data-srcset="./assets/cache_image/logotip-na-chernom-fonecmyk-1a_1272x720_b33.webp 2x, ./assets/cache_image/logotip-na-chernom-fonecmyk-1a_636x360_5ee.webp 1x">
                             <source type="image/jpeg" data-srcset="./assets/cache_image/logotip-na-chernom-fonecmyk-1a_1272x720_460.jpg 2x, ./assets/cache_image/logotip-na-chernom-fonecmyk-1a_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/logotip-na-chernom-fonecmyk-1a_636x360_1f4.jpg" alt="Никита  Сушко" width="636" height="360" role="presentation">
+                            <img class="swiper-lazy" src="./assets/cache_image/logotip-na-chernom-fonecmyk-1a_636x360_1f4.jpg" alt="Никита  Сушко" width="636" height="360" role="presentation">
                         </picture>
                     </div>
                 </div>
@@ -603,7 +589,7 @@
         </div>
     </div>
 </div>
-<div class="agents-modal modal" data-item="team-16">
+<div class="agents-modal modal" data-item="team-17">
     <div class="agents-modal__block hidden-scroll">
         <button class="agents-modal__close" type="button" role="button">
             <span>
@@ -620,7 +606,7 @@
                         <picture class="agents-modal__img">
                             <source type="image/webp" data-srcset="./assets/cache_image/snimok-ekrana-2024-08-15-v-11.07.34_1272x720_b33.webp 2x, ./assets/cache_image/snimok-ekrana-2024-08-15-v-11.07.34_636x360_5ee.webp 1x">
                             <source type="image/jpeg" data-srcset="./assets/cache_image/snimok-ekrana-2024-08-15-v-11.07.34_1272x720_460.jpg 2x, ./assets/cache_image/snimok-ekrana-2024-08-15-v-11.07.34_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/snimok-ekrana-2024-08-15-v-11.07.34_636x360_1f4.jpg" alt="Дмитрий  Медведев" width="636" height="360" role="presentation">
+                            <img class="swiper-lazy" src="./assets/cache_image/snimok-ekrana-2024-08-15-v-11.07.34_636x360_1f4.jpg" alt="Дмитрий  Медведев" width="636" height="360" role="presentation">
                         </picture>
                     </div>
                 </div>
@@ -639,7 +625,7 @@
         </div>
     </div>
 </div>
-<div class="agents-modal modal" data-item="team-17">
+<div class="agents-modal modal" data-item="team-18">
     <div class="agents-modal__block hidden-scroll">
         <button class="agents-modal__close" type="button" role="button">
             <span>
@@ -656,7 +642,7 @@
                         <picture class="agents-modal__img">
                             <source type="image/webp" data-srcset="./assets/cache_image/snimok-ekrana-2024-08-15-v-11.09.46_1272x720_b33.webp 2x, ./assets/cache_image/snimok-ekrana-2024-08-15-v-11.09.46_636x360_5ee.webp 1x">
                             <source type="image/jpeg" data-srcset="./assets/cache_image/snimok-ekrana-2024-08-15-v-11.09.46_1272x720_460.jpg 2x, ./assets/cache_image/snimok-ekrana-2024-08-15-v-11.09.46_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/snimok-ekrana-2024-08-15-v-11.09.46_636x360_1f4.jpg" alt="Павел Сердюков" width="636" height="360" role="presentation">
+                            <img class="swiper-lazy" src="./assets/cache_image/snimok-ekrana-2024-08-15-v-11.09.46_636x360_1f4.jpg" alt="Павел Сердюков" width="636" height="360" role="presentation">
                         </picture>
                     </div>
                 </div>
@@ -677,7 +663,7 @@
         </div>
     </div>
 </div>
-<div class="agents-modal modal" data-item="team-18">
+<div class="agents-modal modal" data-item="team-19">
     <div class="agents-modal__block hidden-scroll">
         <button class="agents-modal__close" type="button" role="button">
             <span>
@@ -694,7 +680,7 @@
                         <picture class="agents-modal__img">
                             <source type="image/webp" data-srcset="./assets/cache_image/snimok-ekrana-2024-08-15-v-11.14.02_1272x720_b33.webp 2x, ./assets/cache_image/snimok-ekrana-2024-08-15-v-11.14.02_636x360_5ee.webp 1x">
                             <source type="image/jpeg" data-srcset="./assets/cache_image/snimok-ekrana-2024-08-15-v-11.14.02_1272x720_460.jpg 2x, ./assets/cache_image/snimok-ekrana-2024-08-15-v-11.14.02_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/snimok-ekrana-2024-08-15-v-11.14.02_636x360_1f4.jpg" alt="Кристина Кузьмина" width="636" height="360" role="presentation">
+                            <img class="swiper-lazy" src="./assets/cache_image/snimok-ekrana-2024-08-15-v-11.14.02_636x360_1f4.jpg" alt="Кристина Кузьмина" width="636" height="360" role="presentation">
                         </picture>
                     </div>
                 </div>
@@ -716,7 +702,7 @@
         </div>
     </div>
 </div>
-<div class="agents-modal modal" data-item="team-19">
+<div class="agents-modal modal" data-item="team-20">
     <div class="agents-modal__block hidden-scroll">
         <button class="agents-modal__close" type="button" role="button">
             <span>
@@ -733,7 +719,7 @@
                         <picture class="agents-modal__img">
                             <source type="image/webp" data-srcset="./assets/cache_image/snimok-ekrana-2024-08-15-v-11.16.25_1272x720_b33.webp 2x, ./assets/cache_image/snimok-ekrana-2024-08-15-v-11.16.25_636x360_5ee.webp 1x">
                             <source type="image/jpeg" data-srcset="./assets/cache_image/snimok-ekrana-2024-08-15-v-11.16.25_1272x720_460.jpg 2x, ./assets/cache_image/snimok-ekrana-2024-08-15-v-11.16.25_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/snimok-ekrana-2024-08-15-v-11.16.25_636x360_1f4.jpg" alt="Валерия Люстгартен" width="636" height="360" role="presentation">
+                            <img class="swiper-lazy" src="./assets/cache_image/snimok-ekrana-2024-08-15-v-11.16.25_636x360_1f4.jpg" alt="Валерия Люстгартен" width="636" height="360" role="presentation">
                         </picture>
                     </div>
                 </div>
@@ -751,7 +737,7 @@
         </div>
     </div>
 </div>
-<div class="agents-modal modal" data-item="team-20">
+<div class="agents-modal modal" data-item="team-21">
     <div class="agents-modal__block hidden-scroll">
         <button class="agents-modal__close" type="button" role="button">
             <span>
@@ -768,7 +754,7 @@
                         <picture class="agents-modal__img">
                             <source type="image/webp" data-srcset="./assets/cache_image/snimok-ekrana-2024-08-15-v-12.06.13_1272x720_b33.webp 2x, ./assets/cache_image/snimok-ekrana-2024-08-15-v-12.06.13_636x360_5ee.webp 1x">
                             <source type="image/jpeg" data-srcset="./assets/cache_image/snimok-ekrana-2024-08-15-v-12.06.13_1272x720_460.jpg 2x, ./assets/cache_image/snimok-ekrana-2024-08-15-v-12.06.13_636x360_1f4.jpg 1x">
-                            <img class="swiper-lazy" data-src="./assets/cache_image/snimok-ekrana-2024-08-15-v-12.06.13_636x360_1f4.jpg" alt="Александр Ильин" width="636" height="360" role="presentation">
+                            <img class="swiper-lazy" src="./assets/cache_image/snimok-ekrana-2024-08-15-v-12.06.13_636x360_1f4.jpg" alt="Александр Ильин" width="636" height="360" role="presentation">
                         </picture>
                     </div>
                 </div>

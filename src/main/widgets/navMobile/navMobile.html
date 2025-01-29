@@ -1,48 +1,117 @@
 <nav class="nav-mobile" role="navigation">
     <div class="container nav-mobile__content hidden-scroll">
-        {'pdoMenu' | snippet : [
-        'parents' => 0,
-        'level' => 2,
-        'includeTVs' => '',
-        'plPrefix' => '',
-        'selfClass' => '_active',
-        'tplOuter' => '@INLINE <ul class="nav-mobile__list" role="list">{$wrapper}</ul>',
-        'tpl' => '@INLINE <li class="nav-mobile__list-item" role="listitem"><a class="nav-mobile__link {$classnames}" href="{$link}" role="link" {$link_attributes}>{$menutitle}</a></li>',
-        'tplParentRow' => '@INLINE
-        <li class="nav-mobile__list-item _parent" role="listitem">
-            <a class="nav-mobile__link {$classnames}" href="{$link}" role="link" {$link_attributes}>{$menutitle}
-                <svg width="18" height="17">
-                    <use xlink:href="./assets/img/sprite.svg#nav-arrow"></use>
-                </svg>
-            </a>
-            {$wrapper}
-        </li>',
-        'tplInner' => '@INLINE
-        <ul class="nav-mobile__list _sub" role="list">
+        <ul class="nav-mobile__list" role="list">
             <li class="nav-mobile__list-item" role="listitem">
-                <a class="nav-mobile__link _back" href="#" role="link">
-                    <svg width="18" height="17">
-                        <use xlink:href="./assets/img/sprite.svg#nav-arrow-back"></use>
-                    </svg>
-                    Назад
+                <a class="nav-mobile__link first" href="kvartiryi/" role="link">Квартиры</a>
+            </li>
+            <li class="nav-mobile__list-item" role="listitem">
+                <a class="nav-mobile__link " href="trejd-in/" role="link">
+                    Трейд-ин
                 </a>
             </li>
-            {$wrapper}
-        </ul>',
-        'tplInnerRow' => '@INLINE <li class="nav-mobile__list-item" role="listitem"><a class="nav-mobile__link {$classnames}" href="{$link}" role="link" {$link_attributes}>{$menutitle}</a></li>'
-        ]}
-
+            <li class="nav-mobile__list-item" role="listitem">
+                <a class="nav-mobile__link " href="novostrojki/" role="link">
+                    Новостройки
+                </a>
+            </li>
+            <li class="nav-mobile__list-item" role="listitem">
+                <a class="nav-mobile__link " href="investirovanie/" role="link">
+                    Инвестирование
+                </a>
+            </li>
+            <li class="nav-mobile__list-item _parent" role="listitem">
+                <a class="nav-mobile__link active" href="about/" role="link" data-toggle=".nav._about">
+                    О компании
+                    <svg width="18" height="17">
+                        <use xlink:href="./assets/img/sprite.svg#nav-arrow"></use>
+                    </svg>
+            </a>
+            <ul class="nav-mobile__list _sub" role="list">
+                <li class="nav-mobile__list-item" role="listitem">
+                    <a class="nav-mobile__link _back" href="#" role="link">
+                        <svg width="18" height="17">
+                            <use xlink:href="./assets/img/sprite.svg#nav-arrow-back"></use>
+                        </svg>
+                        Назад
+                    </a>
+                </li>
+                <li class="nav-mobile__list-item" role="listitem">
+                    <a class="nav-mobile__link first" href="o-kompanii/" role="link">
+                        Компания
+                    </a>
+                </li>
+                <li class="nav-mobile__list-item" role="listitem">
+                    <a class="nav-mobile__link last active _active" href="otzyivyi/" role="link">
+                        Отзывы
+                    </a>
+                </li>
+            </ul>
+            </li>
+            <li class="nav-mobile__list-item _parent" role="listitem">
+                <a class="nav-mobile__link " href="uslugi/" role="link" data-toggle=".nav._services">
+                    Услуги
+                    <svg width="18" height="17">
+                        <use xlink:href="./assets/img/sprite.svg#nav-arrow"></use>
+                </svg>
+                </a>
+                <ul class="nav-mobile__list _sub" role="list">
+                    <li class="nav-mobile__list-item" role="listitem">
+                        <a class="nav-mobile__link _back" href="#" role="link">
+                            <svg width="18" height="17">
+                                <use xlink:href="./assets/img/sprite.svg#nav-arrow-back"></use>
+                            </svg>
+                            Назад
+                        </a>
+                    </li>
+                    <li class="nav-mobile__list-item" role="listitem">
+                        <a class="nav-mobile__link first" href="odobrenie-ipoteki/" role="link">
+                            Одобрение ипотеки
+                        </a>
+                    </li>
+                    <li class="nav-mobile__list-item" role="listitem">
+                        <a class="nav-mobile__link " href="yuridicheskie-uslugi/" role="link">
+                            Юридические услуги
+                        </a>
+                    </li>
+                    <li class="nav-mobile__list-item" role="listitem">
+                        <a class="nav-mobile__link " href="regionalnyie-sdelki/" role="link">
+                            Региональные сделки
+                        </a>
+                    </li>
+                    <li class="nav-mobile__list-item" role="listitem">
+                        <a class="nav-mobile__link " href="zagorodnaya-nedvizhimost/" role="link">
+                            Загородная недвижимость
+                        </a>
+                    </li>
+                    <li class="nav-mobile__list-item" role="listitem">
+                        <a class="nav-mobile__link " href="kommercheskaya-nedvizhimost/" role="link">
+                            Коммерческая недвижимость
+                        </a>
+                    </li>
+                    <li class="nav-mobile__list-item" role="listitem">
+                        <a class="nav-mobile__link last" href="arenda-nedvizhimosti/" role="link">
+                            Аренда недвижимости
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-mobile__list-item" role="listitem">
+                <a class="nav-mobile__link last" href="kontaktyi/" role="link">
+                    Контакты
+                </a>
+            </li>
+        </ul>
         <div class="nav-mobile__controls">
             <button class="nav-mobile__start btn scroll _yellow-border" type="button" data-scroll="#feedback" role="button">Начать работу</button>
 
             <div class="nav-mobile__actions">
-                <a class="nav-mobile__action" href="tg://resolve?domain={5 | resource : 'telegram'}" target="_blank" rel="nofollow" role="link">
+                <a class="nav-mobile__action" href="tg://resolve?domain=#" target="_blank" rel="nofollow" role="link">
                     <svg class="_fill" width="30" height="30">
                         <use xlink:href="./assets/img/sprite.svg#telegram-header"></use>
                     </svg>
                 </a>
 
-                <a class="nav-mobile__action" href="tel:{'formatPhone' | snippet : [ 'input' => 5 | resource : 'phone' ]}" role="link">
+                <a class="nav-mobile__action" href="tel:#" role="link">
                     <svg class="_stroke" width="22" height="22">
                         <use xlink:href="./assets/img/sprite.svg#phone"></use>
                     </svg>

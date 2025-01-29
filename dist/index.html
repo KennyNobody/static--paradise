@@ -2,31 +2,1441 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Главная</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="#">
+<meta name="keywords" content="#">
+<link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+<meta name="yandex-verification" content="7bf7c53cf139a0bb" />
+
+<!-- TODO: Раскомментировать на продакшене -->
+<!--<base href="https://paradise-nedvizhimost.ru/">-->
+<!-- -->
+<!-- TODO: Раньше скрипты, которые были отдельными файлами, подключались внутри MODX по отдельности. Я вынес их оттуда, и теперь они объединяются предварительно вебпаком. Тебе нужно подключить только один JS файл из папки dist и один css файл взамен вороха старых -->
+
+<!--{'!MinifyX' | snippet : [-->
+<!--'minifyCss' => 1,-->
+<!--'minifyJs' => 1,-->
+<!--'jsSources' => '-->
+<!--assets/templates/js/libs/lazyload.min.js,-->
+<!--assets/templates/js/libs/swiper-bundle.min.js,-->
+<!--assets/templates/js/libs/aos.js,-->
+<!--assets/templates/js/libs/jquery-3.6.2.min.js,-->
+<!--assets/templates/js/libs/nice-select2.js,-->
+<!--assets/templates/js/scripts.js-->
+<!--',-->
+<!--'cssSources' => '-->
+<!--assets/templates/css/libs/swiper-bundle.min.css,-->
+<!--assets/templates/css/libs/aos.css,-->
+<!--assets/templates/css/libs/nice-select2.css,-->
+<!--assets/templates/scss/style.scss-->
+<!--'-->
+<!--]}-->
+
+<!--{$_modx->getPlaceholder('MinifyX.css')}-->
+
+<!-- TODO: Раскомментировать на продакшене -->
+
+<!--<script type="text/javascript">!function(){ var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src='https://vk.com/js/api/openapi.js?169',t.onload=function(){ VK.Retargeting.Init("VK-RTRG-1854842-fzfUn"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-1854842-fzfUn" style="position:fixed; left:-999px;" alt=""/></noscript>-->
+
+<!--<script type="text/javascript" >-->
+<!--    (function(m,e,t,r,i,k,a){ m[i]=m[i]||function(){ (m[i].a=m[i].a||[]).push(arguments)};-->
+<!--        m[i].l=1*new Date();-->
+<!--        for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; }}-->
+<!--        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})-->
+<!--    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");-->
+
+<!--    ym(98645430, "init", {-->
+<!--        clickmap:true,-->
+<!--        trackLinks:true,-->
+<!--        accurateTrackBounce:true,-->
+<!--        webvisor:true-->
+<!--    });-->
+<!--</script>-->
+<!--<noscript><div><img src="https://mc.yandex.ru/watch/98645430" style="position:absolute; left:-9999px;" alt="" /></div></noscript>-->
+<!--  -->
+
 <link href="css/main.css" rel="stylesheet"></head>
-<body>
-    <header class="header">
-    <div class="container">
-        <a href="./">
-            Главная
-        </a>
-        <a href="./list.html">
-            Список
-        </a>
+<body class="body _home">
+    <header class="header" role="banner">
+    <div class="container header__cols">
+        <div class="header__col">
+            <a class="header__logo" href="./" role="link">
+                <svg class="header__logo-svg _icon" width="44" height="43">
+                    <use xlink:href="./assets/img/sprite.svg#logo-icon"></use>
+                </svg>
+                <svg class="header__logo-svg _letters" width="84" height="24">
+                    <use xlink:href="./assets/img/sprite.svg#logo-letters"></use>
+                </svg>
+            </a>
+            <nav class="header__nav" role="navigation">
+                <ul role="list">
+                    <li role="listitem">
+                        <a href="./kvartiryi.html" role="link" class="first">Квартиры</a>
+                    </li>
+                    <li role="listitem">
+                        <a href="./trejdIn.html" role="link" class="">Трейд-ин</a>
+                    </li>
+                    <li role="listitem">
+                        <a href="./novostrojki.html" role="link" class="">Новостройки</a>
+                    </li>
+                    <li role="listitem">
+                        <a href="./investirovanie.html" role="link" class="">Инвестирование</a>
+                    </li>
+                    <li role="listitem">
+                        <a href="./about.html" role="link" data-toggle=".nav._about" class="">О компании</a>
+                    </li>
+                    <li role="listitem">
+                        <a href="./uslugi.html" role="link" data-toggle=".nav._services" class="">Услуги</a>
+                    </li>
+                    <li role="listitem">
+                        <a href="./kontaktyi.html" role="link" class="last">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header__col">
+            <button class="header__start btn js-show-modal _yellow-border" type="button" role="button" data-item="feedback">
+                Начать работу
+            </button>
+
+            <a class="header__phone" href="tel:#" role="link">
+                <svg width="15" height="15">
+                    <use xlink:href="./assets/img/sprite.svg#phone"></use>
+                </svg>
+            </a>
+
+            <a class="header__phone header__telegram" href="tg://resolve?domain='#'" role="link" target="_blank" rel="nofollow">
+                <svg width="20" height="20">
+                    <use xlink:href="./assets/img/sprite.svg#telegram-header"></use>
+                </svg>
+            </a>
+
+            <button class="header__burger" type="button" role="button"></button>
+        </div>
     </div>
 </header>
 
-    <div class="main">
-        <svg class="icon">
-            <use href="assets/sprite.svg#icon-ball"></use>
-        </svg>
-        <img class="image" src="./assets/images/404.webp" alt="">
+    <nav class="nav _services" role="navigation">
+    <div class="container nav__content hidden-scroll">
+        <div class="nav__top">
+            <ul class="nav__list" role="list"><li role="listitem"><a href="odobrenie-ipoteki/" class="first" role="link" data-item="14">Одобрение ипотеки</a></li><li role="listitem"><a href="yuridicheskie-uslugi/" role="link" data-item="16">Юридические услуги</a></li><li role="listitem"><a href="regionalnyie-sdelki/" role="link" data-item="17">Региональные сделки</a></li><li role="listitem"><a href="zagorodnaya-nedvizhimost/" role="link" data-item="18">Загородная недвижимость</a></li><li role="listitem"><a href="kommercheskaya-nedvizhimost/" role="link" data-item="19">Коммерческая недвижимость</a></li><li role="listitem"><a href="arenda-nedvizhimosti/" class="last" role="link" data-item="20">Аренда недвижимости</a></li></ul>
+            <div class="nav__item _active" data-item="14">
+                <div class="nav__text _hide">
+                    <p>Поможем одобрить ипотеку в надежном банке при различных условиях, даже если вы уже получили отказ или у вас нет официального трудоустройства.</p>
+                    <p>Мы знаем, какие факторы важны для одобрения, а какие приведут к автоматическому отказу, решаем даже самые сложные задачи, сотрудничаем с банками – лидерами финансового рынка России и предлагаем нашим клиентам лучшие условия кредитования.</p>	</div>
+
+                <picture class="nav__img">
+                    <source type="image/webp" data-srcset="./assets/cache_image/odobrenie-ipoteki/nav-img_840x1020_9ba.webp 2x, ./assets/cache_image/odobrenie-ipoteki/nav-img_420x510_07b.webp 1x">
+                    <source type="image/jpeg" data-srcset="./assets/cache_image/odobrenie-ipoteki/nav-img_840x1020_8e6.jpg 2x, ./assets/cache_image/odobrenie-ipoteki/nav-img_420x510_ddd.jpg 1x">
+                    <img class="lazy _animate" data-src="./assets/cache_image/odobrenie-ipoteki/nav-img_420x510_ddd.jpg" alt="Одобрение ипотеки" width="420" height="510" role="presentation">
+                </picture>
+            </div>
+            <div class="nav__item " data-item="16">
+                <div class="nav__text ">
+                    <p>В нашей компании работают высококвалифицированные специалисты, которые оказывают юридические услуги, связанные с недвижимостью.</p>
+                    <p>Юристы Парадайс не только сопровождают сделки, но и готовы взять на себя дополнительные юридические действия, связанные с недвижимостью.</p>	</div>
+
+                <picture class="nav__img">
+                    <source type="image/webp" data-srcset="./assets/cache_image/yuridicheskie-uslugi/nav-img_840x1020_9ba.webp 2x, ./assets/cache_image/yuridicheskie-uslugi/nav-img_420x510_07b.webp 1x">
+                    <source type="image/jpeg" data-srcset="./assets/cache_image/yuridicheskie-uslugi/nav-img_840x1020_8e6.jpg 2x, ./assets/cache_image/yuridicheskie-uslugi/nav-img_420x510_ddd.jpg 1x">
+                    <img class="lazy " data-src="./assets/cache_image/yuridicheskie-uslugi/nav-img_420x510_ddd.jpg" alt="Юридические услуги" width="420" height="510" role="presentation">
+                </picture>
+            </div>
+            <div class="nav__item " data-item="17">
+                <div class="nav__text ">
+                    <p>Организуем и проведём сделку купли-продажи квартир в любом регионе России, в том числе с одновременной покупкой недвижимости в Москве.</p>	</div>
+
+                <picture class="nav__img">
+                    <source type="image/webp" data-srcset="./assets/cache_image/regionalnye-sdelki/nav-img_840x1020_9ba.webp 2x, ./assets/cache_image/regionalnye-sdelki/nav-img_420x510_07b.webp 1x">
+                    <source type="image/jpeg" data-srcset="./assets/cache_image/regionalnye-sdelki/nav-img_840x1020_8e6.jpg 2x, ./assets/cache_image/regionalnye-sdelki/nav-img_420x510_ddd.jpg 1x">
+                    <img class="lazy " data-src="./assets/cache_image/regionalnye-sdelki/nav-img_420x510_ddd.jpg" alt="Региональные сделки" width="420" height="510" role="presentation">
+                </picture>
+            </div>
+            <div class="nav__item " data-item="18">
+                <div class="nav__text ">
+                    <p>Продажа и покупка загородной недвижимости в Московской области.</p>	</div>
+
+                <picture class="nav__img">
+                    <source type="image/webp" data-srcset="./assets/cache_image/zagorodnaya-nedvizhimost/nav-img_840x1020_9ba.webp 2x, ./assets/cache_image/zagorodnaya-nedvizhimost/nav-img_420x510_07b.webp 1x">
+                    <source type="image/jpeg" data-srcset="./assets/cache_image/zagorodnaya-nedvizhimost/nav-img_840x1020_8e6.jpg 2x, ./assets/cache_image/zagorodnaya-nedvizhimost/nav-img_420x510_ddd.jpg 1x">
+                    <img class="lazy " data-src="./assets/cache_image/zagorodnaya-nedvizhimost/nav-img_420x510_ddd.jpg" alt="Загородная недвижимость" width="420" height="510" role="presentation">
+                </picture>
+            </div>
+            <div class="nav__item " data-item="19">
+                <div class="nav__text ">
+                    <p>Покупка, продажа и аренда коммерческой недвижимости. Реализуем выгодную инвестицию с получением максимальной прибыли.</p>	</div>
+
+                <picture class="nav__img">
+                    <source type="image/webp" data-srcset="./assets/cache_image/kommercheskaya-nedvizhimost/kommercheskaya-nedvizhimost_840x1020_9ba.webp 2x, /assets/cache_image/kommercheskaya-nedvizhimost/kommercheskaya-nedvizhimost_420x510_07b.webp 1x">
+                    <source type="image/jpeg" data-srcset="./assets/cache_image/kommercheskaya-nedvizhimost/kommercheskaya-nedvizhimost_840x1020_8e6.jpg 2x, /assets/cache_image/kommercheskaya-nedvizhimost/kommercheskaya-nedvizhimost_420x510_ddd.jpg 1x">
+                    <img class="lazy " data-src="./assets/cache_image/kommercheskaya-nedvizhimost/kommercheskaya-nedvizhimost_420x510_ddd.jpg" alt="Коммерческая недвижимость" width="420" height="510" role="presentation">
+                </picture>
+            </div>
+            <div class="nav__item " data-item="20">
+                <div class="nav__text ">
+                    <p>Обращаясь к нам, вы легко найдете арендаторов или подходящие условия для проживания.</p>	</div>
+
+                <picture class="nav__img">
+                    <source type="image/webp" data-srcset="./assets/cache_image/arenda-nedvizhimosti/arenda-nedvizhimosti_840x1020_9ba.webp 2x, /assets/cache_image/arenda-nedvizhimosti/arenda-nedvizhimosti_420x510_07b.webp 1x">
+                    <source type="image/jpeg" data-srcset="./assets/cache_image/arenda-nedvizhimosti/arenda-nedvizhimosti_840x1020_8e6.jpg 2x, /assets/cache_image/arenda-nedvizhimosti/arenda-nedvizhimosti_420x510_ddd.jpg 1x">
+                    <img class="lazy " data-src="./assets/cache_image/arenda-nedvizhimosti/arenda-nedvizhimosti_420x510_ddd.jpg" alt="Аренда недвижимости" width="420" height="510" role="presentation">
+                </picture>
+            </div>		</div>
+
+        <div class="nav__socials">
+            <a class="nav__social" href="https://api.whatsapp.com/send?phone=79067317731" target="_blank" rel="nofollow" role="link">
+			<span class="footer__social-icon">
+				<svg width="19" height="18">
+					<use xlink:href="./assets/img/sprite.svg#whatsapp"></use>
+				</svg>
+			</span>
+                Whatsapp
+            </a>
+
+            <a class="nav__social" href="https://vk.com/paradasenedvizhimost" target="_blank" rel="nofollow" role="link">
+                <svg width="20" height="12">
+                    <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                </svg>
+                Вконтакте
+            </a>
+
+            <a class="nav__social" href="tg://resolve?domain=paradise_nedvizhimost" target="_blank" rel="nofollow" role="link">
+                <svg width="19" height="16">
+                    <use xlink:href="./assets/img/sprite.svg#telegram"></use>
+                </svg>
+                Telegram
+            </a>
+
+            <a class="nav__social" href="http://dzen.ru/paradise_nedvizhimost" target="_blank" rel="nofollow" role="link">
+                <svg width="24" height="24">
+                    <use xlink:href="./assets/img/sprite.svg#dzen"></use>
+                </svg>
+                Дзен
+            </a>
+
+            <a class="nav__social" href="https://www.youtube.com/@paradise_nedvizhimost " target="_blank" rel="nofollow" role="link">
+                <svg width="26" height="18">
+                    <use xlink:href="./assets/img/sprite.svg#youtube"></use>
+                </svg>
+                Ютуб
+            </a>
+        </div>
     </div>
-    <footer class="footer">
+</nav>
+
+
+<nav class="nav _about" role="navigation">
+    <div class="container nav__content hidden-scroll">
+        <div class="nav__top">
+            <ul class="nav__list" role="list"><li role="listitem"><a href="o-kompanii/" class="first active _active" role="link" data-item="2">Компания</a></li><li role="listitem"><a href="otzyivyi/" class="last" role="link" data-item="4">Отзывы</a></li></ul>
+            <div class="nav__item _active" data-item="2">
+                <div class="nav__text _hide">
+                    <p>Опытная команда профессионалов, нацеленная на достижение результата, которого желает клиент.</p>
+                    <p>Мы глубоко прорабатываем каждый запрос, выявляем его истинные причины и находим лучшее персональное решение.</p>	</div>
+
+                <picture class="nav__img">
+                    <source type="image/webp" data-srcset="./assets/cache_image/about/nav-img_840x1020_9ba.webp 2x, ./assets/cache_image/about/nav-img_420x510_07b.webp 1x">
+                    <source type="image/jpeg" data-srcset="./assets/cache_image/about/nav-img_840x1020_8e6.jpg 2x, ./assets/cache_image/about/nav-img_420x510_ddd.jpg 1x">
+                    <img class="lazy _animate" data-src="./assets/cache_image/about/nav-img_420x510_ddd.jpg" alt="Компания" width="420" height="510" role="presentation">
+                </picture>
+            </div>
+            <div class="nav__item " data-item="4">
+                <div class="nav__text ">
+                    <p>Для нас ценно и важно получать отзывы благодарности от клиентов, поэтому мы качественно выполняем свою работу</p>	</div>
+
+                <picture class="nav__img">
+                    <source type="image/webp" data-srcset="./assets/cache_image/reviews/nav-img_840x1020_9ba.webp 2x, ./assets/cache_image/reviews/nav-img_420x510_07b.webp 1x">
+                    <source type="image/jpeg" data-srcset="./assets/cache_image/reviews/nav-img_840x1020_8e6.jpg 2x, ./assets/cache_image/reviews/nav-img_420x510_ddd.jpg 1x">
+                    <img class="lazy " data-src="./assets/cache_image/reviews/nav-img_420x510_ddd.jpg" alt="Отзывы" width="420" height="510" role="presentation">
+                </picture>
+            </div>		</div>
+
+        <div class="nav__socials">
+            <a class="nav__social" href="https://api.whatsapp.com/send?phone=79067317731" target="_blank" rel="nofollow" role="link">
+			<span class="footer__social-icon">
+				<svg width="19" height="18">
+					<use xlink:href="./assets/img/sprite.svg#whatsapp"></use>
+				</svg>
+			</span>
+                Whatsapp
+            </a>
+
+            <a class="nav__social" href="https://vk.com/paradasenedvizhimost" target="_blank" rel="nofollow" role="link">
+                <svg width="20" height="12">
+                    <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                </svg>
+                Вконтакте
+            </a>
+
+            <a class="nav__social" href="tg://resolve?domain=paradise_nedvizhimost" target="_blank" rel="nofollow" role="link">
+                <svg width="19" height="16">
+                    <use xlink:href="./assets/img/sprite.svg#telegram"></use>
+                </svg>
+                Telegram
+            </a>
+
+            <a class="nav__social" href="http://dzen.ru/paradise_nedvizhimost" target="_blank" rel="nofollow" role="link">
+                <svg width="24" height="24">
+                    <use xlink:href="./assets/img/sprite.svg#dzen"></use>
+                </svg>
+                Дзен
+            </a>
+
+            <a class="nav__social" href="https://www.youtube.com/@paradise_nedvizhimost " target="_blank" rel="nofollow" role="link">
+                <svg width="26" height="18">
+                    <use xlink:href="./assets/img/sprite.svg#youtube"></use>
+                </svg>
+                Ютуб
+            </a>
+        </div>
+    </div>
+</nav>
+
+    <nav class="nav-mobile" role="navigation">
+    <div class="container nav-mobile__content hidden-scroll">
+        <ul class="nav-mobile__list" role="list">
+            <li class="nav-mobile__list-item" role="listitem">
+                <a class="nav-mobile__link first" href="kvartiryi/" role="link">Квартиры</a>
+            </li>
+            <li class="nav-mobile__list-item" role="listitem">
+                <a class="nav-mobile__link " href="trejd-in/" role="link">
+                    Трейд-ин
+                </a>
+            </li>
+            <li class="nav-mobile__list-item" role="listitem">
+                <a class="nav-mobile__link " href="novostrojki/" role="link">
+                    Новостройки
+                </a>
+            </li>
+            <li class="nav-mobile__list-item" role="listitem">
+                <a class="nav-mobile__link " href="investirovanie/" role="link">
+                    Инвестирование
+                </a>
+            </li>
+            <li class="nav-mobile__list-item _parent" role="listitem">
+                <a class="nav-mobile__link active" href="about/" role="link" data-toggle=".nav._about">
+                    О компании
+                    <svg width="18" height="17">
+                        <use xlink:href="./assets/img/sprite.svg#nav-arrow"></use>
+                    </svg>
+            </a>
+            <ul class="nav-mobile__list _sub" role="list">
+                <li class="nav-mobile__list-item" role="listitem">
+                    <a class="nav-mobile__link _back" href="#" role="link">
+                        <svg width="18" height="17">
+                            <use xlink:href="./assets/img/sprite.svg#nav-arrow-back"></use>
+                        </svg>
+                        Назад
+                    </a>
+                </li>
+                <li class="nav-mobile__list-item" role="listitem">
+                    <a class="nav-mobile__link first" href="o-kompanii/" role="link">
+                        Компания
+                    </a>
+                </li>
+                <li class="nav-mobile__list-item" role="listitem">
+                    <a class="nav-mobile__link last active _active" href="otzyivyi/" role="link">
+                        Отзывы
+                    </a>
+                </li>
+            </ul>
+            </li>
+            <li class="nav-mobile__list-item _parent" role="listitem">
+                <a class="nav-mobile__link " href="uslugi/" role="link" data-toggle=".nav._services">
+                    Услуги
+                    <svg width="18" height="17">
+                        <use xlink:href="./assets/img/sprite.svg#nav-arrow"></use>
+                </svg>
+                </a>
+                <ul class="nav-mobile__list _sub" role="list">
+                    <li class="nav-mobile__list-item" role="listitem">
+                        <a class="nav-mobile__link _back" href="#" role="link">
+                            <svg width="18" height="17">
+                                <use xlink:href="./assets/img/sprite.svg#nav-arrow-back"></use>
+                            </svg>
+                            Назад
+                        </a>
+                    </li>
+                    <li class="nav-mobile__list-item" role="listitem">
+                        <a class="nav-mobile__link first" href="odobrenie-ipoteki/" role="link">
+                            Одобрение ипотеки
+                        </a>
+                    </li>
+                    <li class="nav-mobile__list-item" role="listitem">
+                        <a class="nav-mobile__link " href="yuridicheskie-uslugi/" role="link">
+                            Юридические услуги
+                        </a>
+                    </li>
+                    <li class="nav-mobile__list-item" role="listitem">
+                        <a class="nav-mobile__link " href="regionalnyie-sdelki/" role="link">
+                            Региональные сделки
+                        </a>
+                    </li>
+                    <li class="nav-mobile__list-item" role="listitem">
+                        <a class="nav-mobile__link " href="zagorodnaya-nedvizhimost/" role="link">
+                            Загородная недвижимость
+                        </a>
+                    </li>
+                    <li class="nav-mobile__list-item" role="listitem">
+                        <a class="nav-mobile__link " href="kommercheskaya-nedvizhimost/" role="link">
+                            Коммерческая недвижимость
+                        </a>
+                    </li>
+                    <li class="nav-mobile__list-item" role="listitem">
+                        <a class="nav-mobile__link last" href="arenda-nedvizhimosti/" role="link">
+                            Аренда недвижимости
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-mobile__list-item" role="listitem">
+                <a class="nav-mobile__link last" href="kontaktyi/" role="link">
+                    Контакты
+                </a>
+            </li>
+        </ul>
+        <div class="nav-mobile__controls">
+            <button class="nav-mobile__start btn scroll _yellow-border" type="button" data-scroll="#feedback" role="button">Начать работу</button>
+
+            <div class="nav-mobile__actions">
+                <a class="nav-mobile__action" href="tg://resolve?domain=#" target="_blank" rel="nofollow" role="link">
+                    <svg class="_fill" width="30" height="30">
+                        <use xlink:href="./assets/img/sprite.svg#telegram-header"></use>
+                    </svg>
+                </a>
+
+                <a class="nav-mobile__action" href="tel:#" role="link">
+                    <svg class="_stroke" width="22" height="22">
+                        <use xlink:href="./assets/img/sprite.svg#phone"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <main class="main _home" role="main">
+        <!-- TODO: заменили секцию с видео на эту -->
+<section>
+    <div class="slider-preview" data-slider="preview">
+        <div class="swiper slider-preview__container" data-slider="container">
+            <div class="swiper-wrapper slider-preview__wrapper">
+                <div class="swiper-slide slider-preview__slide">
+                    <article class="article-preview">
+                        <picture class="article-preview__picture">
+                            <img src="./assets/images/main-intro.jpg" alt="">
+                        </picture>
+                        <div class="container article-preview__container">
+                            <h1 class="article-preview__title">
+                                Лучшие решения <br> <strong>для каждого</strong>
+                            </h1>
+                            <div class="article-preview__toolbar">
+                                <button class="btn _fill _icon-right _yellow _full-m js-show-modal" data-item="feedback">
+                                    Получить консультацию
+                                    <svg width="12" height="13">
+                                        <use xlink:href="./assets/img/sprite.svg#btn-plus"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="swiper-slide slider-preview__slide">
+                    <article class="article-preview">
+                        <picture class="article-preview__picture">
+                            <img src="./assets/images/main-intro.jpg" alt="">
+                        </picture>
+                        <div class="container article-preview__container">
+                            <h1 class="article-preview__title">
+                                Лучшие решения <br> <strong>для каждого</strong>
+                            </h1>
+                            <div class="article-preview__toolbar">
+                                <button class="btn _fill _icon-right _yellow _full-m js-show-modal" data-item="feedback">
+                                    Получить консультацию
+                                    <svg width="12" height="13">
+                                        <use xlink:href="./assets/img/sprite.svg#btn-plus"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="slider-preview__pagination pagination" data-slider="pagination"></div>
+        </div>
+    </div>
+</section>
+<!-- -->
+
+        <!-- TODO: Новая секция -->
+<section class="section _grey">
     <div class="container">
-        Footer
+        <div class="factoids">
+            <div class="factoids__col">
+                <article class="article-factoid">
+                    <strong class="article-factoid__accent aos-init aos-animate" data-aos="slide-up" data-aos-duration="2500">
+                        14 лет
+                    </strong>
+                    <p class="article-factoid__caption aos-init aos-animate" data-aos="slide-up" data-aos-duration="2500">
+                        на рынке <br> недвижимости
+                    </p>
+                </article>
+            </div>
+            <div class="factoids__col">
+                <article class="article-factoid">
+                    <strong class="article-factoid__accent aos-init aos-animate" data-aos="slide-up" data-aos-duration="2500">
+                        10 000 +
+                    </strong>
+                    <p class="article-factoid__caption aos-init aos-animate" data-aos="slide-up" data-aos-duration="2500">
+                        успешно проведенных <br> сделок
+                    </p>
+                </article>
+            </div>
+            <div class="factoids__col">
+                <article class="article-factoid">
+                    <strong class="article-factoid__accent aos-init aos-animate" data-aos="slide-up" data-aos-duration="2500">
+                        7000 +
+                    </strong>
+                    <p class="article-factoid__caption aos-init aos-animate" data-aos="slide-up" data-aos-duration="2500">
+                        одобренных <br> ипотек
+                    </p>
+                </article>
+            </div>
+            <div class="factoids__col">
+                <article class="article-factoid">
+                    <strong class="article-factoid__accent aos-init aos-animate" data-aos="slide-up" data-aos-duration="2500">
+                        Топ 1
+                    </strong>
+                    <p class="article-factoid__caption aos-init aos-animate" data-aos="slide-up" data-aos-duration="2500">
+                        по программе <br>
+                        Трейд-ин
+                    </p>
+                </article>
+            </div>
+        </div>
     </div>
+</section>
+<!-- -->
+
+
+        <!-- TODO: Тут была секция с директором, ее удалили -->
+        <!-- -->
+
+        <section class="section main-section _pt0 _pb0">
+            <div class="section__big-title">
+                <div class="container">
+                    <!-- TODO: Отредактирован заголовок -->
+                    <h2 data-aos="slide-up" data-aos-duration="2000" role="heading">
+                        О компании
+                    </h2>
+                    <!-- -->
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="main-section__cols">
+                    <!-- TODO: Изменена разметка блока -->
+                    <div class="main-section__col _content">
+                        <div class="main-section__text text _big">
+                            <p style="text-align: left;">Специалисты Парадайс всегда в курсе последних изменений в сфере недвижимости и формируют актуальные прогнозы итогов сделки для каждого уникального случая.&nbsp;</p>
+                            <p style="text-align: left;">Мы сотрудничаем с надежными представителями финансового и строительного рынка, имеем широкую базу объектов и предлагаем полный спектр услуг, а всю организацию совершения сделок берем на себя, что значит - никаких лишних действий и забот для наших клиентов.&nbsp;</p>
+                            <p style="text-align: left;">С нами вы реализуете свой запрос с максимальной выгодой.</p>
+                            <a class="main-section__btn btn" href="./o-kompanii/" role="link">Подробнее о Парадайс</a>
+                        </div>
+                    </div>
+                    <!-- -->
+
+                    <div class="main-section__col _img">
+                        <video class="main-section__video lazy _mr" width="100%" poster="./assets/cache_image/experience/team-video-bg_495x698_8ec.jpg" autoplay loop playsinline muted>
+                            <source type="video/mp4" data-src="./assets/video/team.mp4" src="./assets/video/team.mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TODO: Новая секция -->
+<section class="section main-section _grey">
+    <div class="container">
+        <div class="section__big-title mb-60 mbm-50">
+            <h2 data-aos="slide-up" data-aos-duration="2000" role="heading">
+                Преимущества
+            </h2>
+        </div>
+        <div class="tabs" data-tabs="block">
+            <div class="tabs__aside">
+                <picture class="picture picture--advantage" data-tabs="picture">
+                    <img src="./assets/images/advantages/image-1.jpg" alt="#" />
+                </picture>
+                <picture class="picture picture--advantage" data-tabs="picture" hidden="hidden">
+                    <img src="./assets/images/advantages/image-2.jpg" alt="#" />
+                </picture>
+                <picture class="picture picture--advantage" data-tabs="picture" hidden="hidden">
+                    <img src="./assets/images/advantages/image-3.jpg" alt="#" />
+                </picture>
+                <picture class="picture picture--advantage" data-tabs="picture" hidden="hidden">
+                    <img src="./assets/images/advantages/image-4.jpg" alt="#" />
+                </picture>
+                <picture class="picture picture--advantage" data-tabs="picture" hidden="hidden">
+                    <img src="./assets/images/advantages/image-5.jpg" alt="#" />
+                </picture>
+            </div>
+            <div class="tabs__main">
+                <article class="article-advantage" data-tabs="item">
+                    <button class="article-advantage__button" data-tabs="button">
+                        Качество сервиса
+                    </button>
+                    <div class="article-advantage__content" data-tabs="item-content">
+                        <p>
+                            Мы знает рынок и какую цену установить, чтобы быстро и выгодно провести сделку для нашего клиента. Каждая сделка уникальна! Наши специалисты помогут найти не просто недвижимость, а пространство, где Вы будете успешны и счастливы.
+                        </p>
+                    </div>
+                </article>
+                <article class="article-advantage" data-tabs="item">
+                    <button class="article-advantage__button" data-tabs="button">
+                        Гарантия результата
+                    </button>
+                    <div class="article-advantage__content isHidden" data-tabs="item-content">
+                        <p>
+                            Мы уверены в качестве своей работы и готовы бесплатно консультировать наших клиентов. А когда решение о сотрудничестве принято, Вы платите за сделку (подбор, продажа или сопровождение) только тогда, когда цель достигнута.
+                        </p>
+                    </div>
+                </article>
+                <article class="article-advantage" data-tabs="item">
+                    <button class="article-advantage__button" data-tabs="button">
+                        Специальные условия
+                    </button>
+                    <div class="article-advantage__content isHidden" data-tabs="item-content">
+                        <p>
+                            Все переговоры мы берем на себя, ограждая вас от рутины и экономя Ваше время. Наши отношения с клиентами строятся на доверии, поэтому мы открыто обсуждаем стратегические шаги сделки и гарантируем прозрачность всех действий.
+                        </p>
+                        <p>
+                            Вместе с нами Вы получаете лучшие условия от партнеров застройщиков, банков, страховых и оценочных компаний.
+                        </p>
+                    </div>
+                </article>
+                <article class="article-advantage" data-tabs="item">
+                    <button class="article-advantage__button" data-tabs="button">
+                        Современный подход
+                    </button>
+                    <div class="article-advantage__content isHidden" data-tabs="item-content">
+                        <p>
+                            Наше агентство внедряет новые технологии для повышения эффективности поиска и продажи недвижимости. Мы используем современные платформы и цифровые инструменты.
+                        </p>
+                    </div>
+                </article>
+                <article class="article-advantage" data-tabs="item">
+                    <button class="article-advantage__button" data-tabs="button">
+                        Доказанная репутация и опыт
+                    </button>
+                    <div class="article-advantage__content isHidden" data-tabs="item-content">
+                        <p>
+                            Мы гордимся, что уже много лет работаем на рынке недвижимости, накопили огромный опыт и провели тысячи сделок. Наши клиенты возвращаются к нам, зная, что получат профессиональный и честный сервис.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Блок Комнада удалили -->
+        <!-- -->
+
+        <!-- TODO: Новая секции -->
+<section class="section main-section _black">
+    <div class="section__big-title">
+        <div class="container">
+            <div class="animation-wrap">
+                <h2 class="h2" data-aos="slide-up" data-aos-duration="2500" role="heading" role="heading">
+                    Отзывы
+                </h2>
+                <div class="dropdown-reviews mt-60 mtm-50" data-dropdown="block">
+                    <div class="dropdown-reviews__content">
+                        <div class="slider-reviews" data-slider="reviews">
+                            <div class="swiper slider-reviews__container" data-slider="container">
+                                <div class="swiper-wrapper slider-reviews__wrapper">
+                                    <div class="swiper-slide slider-reviews__slide">
+                                        <article class="article-review" data-article-review="block">
+                                            <div class="article-review__header">
+                                                <h3 class="article-review__name">
+                                                    Фатима Эциева
+                                                </h3>
+                                                <div class="article-review__info">
+                                                    <div class="rating">
+                                                        <svg class="rating__icon _active">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon _active">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon _active">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <time class="article-review__date">
+                                                        24 июня 2024
+                                                    </time>
+                                                </div>
+                                            </div>
+                                            <div class="article-review__main" data-article-review="main">
+                                                <div class="article-review__inner" data-article-review="inner">
+                                                    <p>
+                                                        Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
+                                                    </p>
+                                                    <p>
+                                                        Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
+                                                    </p>
+                                                    <p>
+                                                        Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="article-review__toolbar" data-article-review="toolbar">
+                                                <button class="article-review__button" data-article-review="button">
+                                                    Показать все
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide slider-reviews__slide">
+                                        <article class="article-review" data-article-review="block">
+                                            <div class="article-review__header">
+                                                <h3 class="article-review__name">
+                                                    Фатима Эциева
+                                                </h3>
+                                                <div class="article-review__info">
+                                                    <div class="rating">
+                                                        <svg class="rating__icon _active">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon _active">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon _active">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <time class="article-review__date">
+                                                        24 июня 2024
+                                                    </time>
+                                                </div>
+                                            </div>
+                                            <div class="article-review__main" data-article-review="main">
+                                                <div class="article-review__inner" data-article-review="inner">
+                                                    <p>
+                                                        Спасибо!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="article-review__toolbar" data-article-review="toolbar">
+                                                <button class="article-review__button" data-article-review="button">
+                                                    Показать все
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide slider-reviews__slide">
+                                        <article class="article-review" data-article-review="block">
+                                            <div class="article-review__header">
+                                                <h3 class="article-review__name">
+                                                    Фатима Эциева
+                                                </h3>
+                                                <div class="article-review__info">
+                                                    <div class="rating">
+                                                        <svg class="rating__icon _active">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon _active">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon _active">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <time class="article-review__date">
+                                                        24 июня 2024
+                                                    </time>
+                                                </div>
+                                            </div>
+                                            <div class="article-review__main" data-article-review="main">
+                                                <div class="article-review__inner" data-article-review="inner">
+                                                    <p>
+                                                        Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
+                                                    </p>
+                                                    <p>
+                                                        Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
+                                                    </p>
+                                                    <p>
+                                                        Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="article-review__toolbar" data-article-review="toolbar">
+                                                <button class="article-review__button" data-article-review="button">
+                                                    Показать все
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide slider-reviews__slide">
+                                        <article class="article-review" data-article-review="block">
+                                            <div class="article-review__header">
+                                                <h3 class="article-review__name">
+                                                    Фатима Эциева
+                                                </h3>
+                                                <div class="article-review__info">
+                                                    <div class="rating">
+                                                        <svg class="rating__icon _active">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon _active">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon _active">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <time class="article-review__date">
+                                                        24 июня 2024
+                                                    </time>
+                                                </div>
+                                            </div>
+                                            <div class="article-review__main" data-article-review="main">
+                                                <div class="article-review__inner" data-article-review="inner">
+                                                    <p>
+                                                        Спасибо!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="article-review__toolbar" data-article-review="toolbar">
+                                                <button class="article-review__button" data-article-review="button">
+                                                    Показать все
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide slider-reviews__slide">
+                                        <article class="article-review" data-article-review="block">
+                                            <div class="article-review__header">
+                                                <h3 class="article-review__name">
+                                                    Фатима Эциева
+                                                </h3>
+                                                <div class="article-review__info">
+                                                    <div class="rating">
+                                                        <svg class="rating__icon _active">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon _active">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon _active">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <time class="article-review__date">
+                                                        24 июня 2024
+                                                    </time>
+                                                </div>
+                                            </div>
+                                            <div class="article-review__main" data-article-review="main">
+                                                <div class="article-review__inner" data-article-review="inner">
+                                                    <p>
+                                                        Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
+                                                    </p>
+                                                    <p>
+                                                        Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
+                                                    </p>
+                                                    <p>
+                                                        Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="article-review__toolbar" data-article-review="toolbar">
+                                                <button class="article-review__button" data-article-review="button">
+                                                    Показать все
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="swiper-slide slider-reviews__slide">
+                                        <article class="article-review" data-article-review="block">
+                                            <div class="article-review__header">
+                                                <h3 class="article-review__name">
+                                                    Фатима Эциева
+                                                </h3>
+                                                <div class="article-review__info">
+                                                    <div class="rating">
+                                                        <svg class="rating__icon _active">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon _active">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon _active">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg class="rating__icon">
+                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <time class="article-review__date">
+                                                        24 июня 2024
+                                                    </time>
+                                                </div>
+                                            </div>
+                                            <div class="article-review__main" data-article-review="main">
+                                                <div class="article-review__inner" data-article-review="inner">
+                                                    <p>
+                                                        Спасибо!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="article-review__toolbar" data-article-review="toolbar">
+                                                <button class="article-review__button" data-article-review="button">
+                                                    Показать все
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-reviews__toolbar">
+                        <button class="btn _stroke _full-m" data-dropdown="button">
+                            Показать еще отзывы
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- -->
+
+
+        <section class="section main-section _pt0 _pb0">
+            <div class="section__big-title _no-border _mb0">
+                <div class="container">
+                    <h2 data-aos="slide-up" data-aos-duration="2000" role="heading" class="aos-init aos-animate">Услуги</h2>
+                </div>
+            </div>
+
+            <div class="services">
+                <a class="services__item" href="./kvartiryi/" role="link">
+                    <picture class="services__img">
+                        <source type="image/webp" media="(min-width: 992px)" data-srcset="./assets/cache_image/services/services-img-12x_960x960_33f.webp 2x, ./assets/cache_image/services/services-img-12x_480x480_a47.webp 1x" srcset="./assets/cache_image/services/services-img-12x_960x960_33f.webp 2x, ./assets/cache_image/services/services-img-12x_480x480_a47.webp 1x">
+                        <source type="image/jpeg" media="(min-width: 992px)" data-srcset="./assets/cache_image/services/services-img-12x_960x960_751.jpg 2x, ./assets/cache_image/services/services-img-12x_480x480_dcb.jpg 1x" srcset="./assets/cache_image/services/services-img-12x_960x960_751.jpg 2x, ./assets/cache_image/services/services-img-12x_480x480_dcb.jpg 1x">
+                        <source type="image/webp" media="(max-width: 991px)" data-srcset="./assets/cache_image/services/services-img-12x_128x128_547.webp 2x, ./assets/cache_image/services/services-img-12x_64x64_338.webp 1x" srcset="./assets/cache_image/services/services-img-12x_128x128_547.webp 2x, ./assets/cache_image/services/services-img-12x_64x64_338.webp 1x">
+                        <source type="image/jpeg" media="(max-width: 991px)" data-srcset="./assets/cache_image/services/services-img-12x_128x128_10f.jpg 2x, ./assets/cache_image/services/services-img-12x_64x64_af0.jpg 1x" srcset="./assets/cache_image/services/services-img-12x_128x128_10f.jpg 2x, ./assets/cache_image/services/services-img-12x_64x64_af0.jpg 1x">
+                        <img class="lazy entered loaded" src="./assets/cache_image/services/services-img-12x_480x480_dcb.jpg" data-src="./assets/cache_image/services/services-img-12x_480x480_dcb.jpg" alt="Квартиры" width="480" height="480" role="presentation">
+                    </picture>
+
+                    <div class="services__title">Квартиры</div>
+                </a>
+                <a class="services__item" href="./trejdIn/" role="link">
+                    <picture class="services__img">
+                        <source type="image/webp" media="(min-width: 992px)" data-srcset="./assets/cache_image/services/services-img-22x_960x960_33f.webp 2x, ./assets/cache_image/services/services-img-22x_480x480_a47.webp 1x" srcset="./assets/cache_image/services/services-img-22x_960x960_33f.webp 2x, ./assets/cache_image/services/services-img-22x_480x480_a47.webp 1x">
+                        <source type="image/jpeg" media="(min-width: 992px)" data-srcset="./assets/cache_image/services/services-img-22x_960x960_751.jpg 2x, ./assets/cache_image/services/services-img-22x_480x480_dcb.jpg 1x" srcset="./assets/cache_image/services/services-img-22x_960x960_751.jpg 2x, ./assets/cache_image/services/services-img-22x_480x480_dcb.jpg 1x">
+                        <source type="image/webp" media="(max-width: 991px)" data-srcset="./assets/cache_image/services/services-img-22x_128x128_547.webp 2x, ./assets/cache_image/services/services-img-22x_64x64_338.webp 1x" srcset="./assets/cache_image/services/services-img-22x_128x128_547.webp 2x, ./assets/cache_image/services/services-img-22x_64x64_338.webp 1x">
+                        <source type="image/jpeg" media="(max-width: 991px)" data-srcset="./assets/cache_image/services/services-img-22x_128x128_10f.jpg 2x, ./assets/cache_image/services/services-img-22x_64x64_af0.jpg 1x" srcset="./assets/cache_image/services/services-img-22x_128x128_10f.jpg 2x, ./assets/cache_image/services/services-img-22x_64x64_af0.jpg 1x">
+                        <img class="lazy entered loaded" src="./assets/cache_image/services/services-img-22x_480x480_dcb.jpg" data-src="./assets/cache_image/services/services-img-22x_480x480_dcb.jpg" alt="Трейд-ин" width="480" height="480" role="presentation">
+                    </picture>
+
+                    <div class="services__title">Трейд-ин</div>
+                </a>
+                <a class="services__item" href="./novostrojki/" role="link">
+                    <picture class="services__img">
+                        <source type="image/webp" media="(min-width: 992px)" data-srcset="./assets/cache_image/services/services-img-32x_960x960_33f.webp 2x, ./assets/cache_image/services/services-img-32x_480x480_a47.webp 1x" srcset="./assets/cache_image/services/services-img-32x_960x960_33f.webp 2x, ./assets/cache_image/services/services-img-32x_480x480_a47.webp 1x">
+                        <source type="image/jpeg" media="(min-width: 992px)" data-srcset="./assets/cache_image/services/services-img-32x_960x960_751.jpg 2x, ./assets/cache_image/services/services-img-32x_480x480_dcb.jpg 1x" srcset="./assets/cache_image/services/services-img-32x_960x960_751.jpg 2x, ./assets/cache_image/services/services-img-32x_480x480_dcb.jpg 1x">
+                        <source type="image/webp" media="(max-width: 991px)" data-srcset="./assets/cache_image/services/services-img-32x_128x128_547.webp 2x, ./assets/cache_image/services/services-img-32x_64x64_338.webp 1x" srcset="./assets/cache_image/services/services-img-32x_128x128_547.webp 2x, ./assets/cache_image/services/services-img-32x_64x64_338.webp 1x">
+                        <source type="image/jpeg" media="(max-width: 991px)" data-srcset="./assets/cache_image/services/services-img-32x_128x128_10f.jpg 2x, ./assets/cache_image/services/services-img-32x_64x64_af0.jpg 1x" srcset="./assets/cache_image/services/services-img-32x_128x128_10f.jpg 2x, ./assets/cache_image/services/services-img-32x_64x64_af0.jpg 1x">
+                        <img class="lazy entered loaded" src="./assets/cache_image/services/services-img-32x_480x480_dcb.jpg" data-src="./assets/cache_image/services/services-img-32x_480x480_dcb.jpg" alt="Новостройки" width="480" height="480" role="presentation">
+                    </picture>
+
+                    <div class="services__title">Новостройки</div>
+                </a>
+                <a class="services__item" href="./investirovanie/" role="link">
+                    <picture class="services__img">
+                        <source type="image/webp" media="(min-width: 992px)" data-srcset="./assets/cache_image/services/services-img-42x_960x960_33f.webp 2x, ./assets/cache_image/services/services-img-42x_480x480_a47.webp 1x" srcset="./assets/cache_image/services/services-img-42x_960x960_33f.webp 2x, ./assets/cache_image/services/services-img-42x_480x480_a47.webp 1x">
+                        <source type="image/jpeg" media="(min-width: 992px)" data-srcset="./assets/cache_image/services/services-img-42x_960x960_751.jpg 2x, ./assets/cache_image/services/services-img-42x_480x480_dcb.jpg 1x" srcset="./assets/cache_image/services/services-img-42x_960x960_751.jpg 2x, ./assets/cache_image/services/services-img-42x_480x480_dcb.jpg 1x">
+                        <source type="image/webp" media="(max-width: 991px)" data-srcset="./assets/cache_image/services/services-img-42x_128x128_547.webp 2x, ./assets/cache_image/services/services-img-42x_64x64_338.webp 1x" srcset="./assets/cache_image/services/services-img-42x_128x128_547.webp 2x, ./assets/cache_image/services/services-img-42x_64x64_338.webp 1x">
+                        <source type="image/jpeg" media="(max-width: 991px)" data-srcset="./assets/cache_image/services/services-img-42x_128x128_10f.jpg 2x, ./assets/cache_image/services/services-img-42x_64x64_af0.jpg 1x" srcset="./assets/cache_image/services/services-img-42x_128x128_10f.jpg 2x, ./assets/cache_image/services/services-img-42x_64x64_af0.jpg 1x">
+                        <img class="lazy entered loaded" src="./assets/cache_image/services/services-img-42x_480x480_dcb.jpg" data-src="./assets/cache_image/services/services-img-42x_480x480_dcb.jpg" alt="Инвестирование" width="480" height="480" role="presentation">
+                    </picture>
+
+                    <div class="services__title">Инвестирование</div>
+                </a>
+            </div>
+        </section>
+
+        <section class="section main-section _yellow" id="feedback">
+    <div class="section__big-title _mb40 _pt0">
+        <div class="container">
+            <h2 data-aos="slide-up" data-aos-duration="2000" role="heading">Форма связи</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="feedback__cols">
+            <div class="feedback__title">Оставьте контакты <br>и мы свяжемся с вами<br><br>Обсудим варианты решения<br>вашей задачи с недвижимостью</div>
+
+            <form class="feedback__form form _big" id="feedback-form" action="" method="post" role="form">
+                <input type="text" style="position: absolute; left: -9999px; top: -99999px;" name="info" value="">
+                <input type="hidden" name="nospam:blank" value="">
+                <input type="hidden" name="feedback" value="1">
+                <input type="hidden" name="page" value="https://paradise-nedvizhimost.ru/">
+                <input type="hidden" name="pageName" value="Главная">
+
+                <fieldset class="form__fieldset">
+                    <label class="hidden" for="feedback-name"></label>
+                    <input class="form__input no-digits" type="text" name="name" id="feedback-name" placeholder="Ваше имя *" autocomplete="off">
+                </fieldset>
+
+                <fieldset class="form__fieldset">
+                    <label class="hidden" for="feedback-phone"></label>
+                    <input class="form__input" type="tel" name="phone" id="feedback-phone" placeholder="+7 (999) 000-00-00 *" autocomplete="off">
+                </fieldset>
+
+                <!-- TODO: Добавился выбор услуги -->
+                <fieldset class="form__fieldset">
+                    <label class="hidden" for="feedback-service"></label>
+                    <select class="form__select" name="service" id="feedback-service" required>
+                        <option value="">Услуга*</option>
+                        <option value="Купля - продаже недвижимости">Купля - продаже недвижимости</option>
+                        <option value="Продажа квартир в трейд-ин">Продажа квартир в трейд-ин</option>
+                        <option value="Покупка квартир в новостройках">Покупка квартир в новостройках</option>
+                        <option value="Инвестиции в недвижимость">Инвестиции в недвижимость</option>
+                        <option value="Услуги ипотечного брокера">Услуги ипотечного брокера</option>
+                        <option value="Юридические услуги в недвижимости">Юридические услуги в недвижимости</option>
+                        <option value="Помощь в оформлении региональных сделок">Помощь в оформлении региональных сделок </option>
+                        <option value="Работа с загородной недвижимостью">Работа с загородной недвижимостью</option>
+                        <option value="Сделки по купле - продаже коммерческих помещений">Сделки по купле - продаже коммерческих помещений</option>
+                        <option value="Аренда недвижимости">Аренда недвижимости</option>
+                    </select>
+                </fieldset>
+                <!-- -->
+
+                <fieldset class="form__fieldset">
+                    <label class="hidden" for="feedback-message"></label>
+                    <textarea class="form__textarea" name="message" id="feedback-message" placeholder="Сообщение" autocomplete="off"></textarea>
+                </fieldset>
+
+                <fieldset class="form__fieldset form__checkbox">
+                    <input class="form__checkbox-input" type="checkbox" name="policy" id="feedback-policy" checked="">
+                    <label class="form__checkbox-label" for="feedback-policy">
+                        <span class="form__checkbox-check"></span>
+                        <span class="form__checkbox-title">
+                            Нажимая отправить вы даете согласие на обработку
+                            <a href="./obrabotka-personalnyix-dannyix/" target="_blank" role="link">персональных данных</a>
+                            соглашаетесь с условиями
+                            <a href="./politika-konfidenczialnosti/" target="_blank" role="link">
+                                политики конфиденциальности
+                            </a>
+                        </span>
+                    </label>
+                </fieldset>
+
+                <div class="form__btn">
+                    <button class="btn" type="submit" role="button">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+    <div class="footer__top">
+        <div class="container">
+            <div class="footer__cols">
+                <div class="footer__col _logo">
+                    <a class="header__logo footer__logo" href="./" role="link">
+                        <svg class="header__logo-svg footer__logo-svg _icon" width="75" height="73">
+                            <use xlink:href="./assets/img/sprite.svg#logo-icon"></use>
+                        </svg>
+
+                        <svg class="header__logo-svg footer__logo-svg _letters" width="146" height="41">
+                            <use xlink:href="./assets/img/sprite.svg#logo-letters"></use>
+                        </svg>
+                    </a>
+
+                    <div class="footer__copyright">© 2011–2025 «Парадайс» — <br>Агентство недвижимости</div>
+                </div>
+
+                <div class="footer__col _list">
+                    <ul class="footer__list" role="list">
+                        <li role="listitem">
+                            <a class="footer__link first" href="./kvartiryi.html" role="link">
+                                Квартиры
+                            </a>
+                        </li>
+                        <li role="listitem">
+                            <a class="footer__link " href="./trejdIn.html" role="link">
+                                Трейд-ин
+                            </a>
+                        </li>
+                        <li role="listitem">
+                            <a class="footer__link " href="./novostrojki.html" role="link">
+                                Новостройки
+                            </a>
+                        </li>
+                        <li role="listitem">
+                            <a class="footer__link last" href="./investirovanie.html" role="link">
+                                Инвестирование
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__list" role="list">
+                        <li role="listitem">
+                            <a class="footer__link first" href="./o-kompanii.html" role="link">
+                                Компания
+                            </a>
+                        </li>
+                        <li role="listitem">
+                            <a class="footer__link last" href="./otzyivyi.html" role="link">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li role="listitem">
+                            <a class="footer__link" href="./kontaktyi.html" role="link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__col _socials">
+                    <div class="footer__socials">
+
+                        <a class="footer__social" href="#" target="_blank" rel="nofollow" role="link">
+                            <span class="footer__social-icon">
+                                <svg width="19" height="18">
+                                    <use xlink:href="./assets/img/sprite.svg#whatsapp"></use>
+                                </svg>
+                            </span>
+                            Whatsapp
+                        </a>
+
+                        <a class="footer__social" href="#" target="_blank" rel="nofollow" role="link">
+                            <div class="footer__social-icon">
+                                <svg width="26" height="18">
+                                    <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                                </svg>
+                            </div>
+                            Вконтакте
+                        </a>
+
+                        <a class="footer__social" href="#" target="_blank" rel="nofollow" role="link">
+                            <span class="footer__social-icon">
+                                <svg width="19" height="16">
+                                    <use xlink:href="./assets/img/sprite.svg#telegram"></use>
+                                </svg>
+                            </span>
+                            Telegram
+                        </a>
+
+                        <a class="footer__social" href="#" target="_blank" rel="nofollow" role="link">
+                            <span class="footer__social-icon">
+                                <svg width="24" height="24">
+                                    <use xlink:href="./assets/img/sprite.svg#dzen"></use>
+                                </svg>
+                            </span>
+                            Дзен
+                        </a>
+
+                        <a class="footer__social" href="#" target="_blank" rel="nofollow" role="link">
+                            <div class="footer__social-icon">
+                                <svg width="26" height="18">
+                                    <use xlink:href="./assets/img/sprite.svg#youtube"></use>
+                                </svg>
+                            </div>
+                            Ютуб
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="footer__cols">
+                <div class="footer__col _presentation">
+                    <a class="btn _yellow _icon-left footer__presentation" href="#" target="_blank" role="link">
+                        <svg width="14" height="17">
+                            <use xlink:href="./assets/img/sprite.svg#download"></use>
+                        </svg>
+                        Скачать презентацию
+                    </a>
+                </div>
+
+                <div class="footer__col _policy">
+                    <a class="footer__link footer__policy footer__policy-col" href="./politika-konfidenczialnosti/" target="_blank" role="link">Конфиденциальность</a>
+                    <a class="footer__link footer__policy footer__policy-col _last" href="./obrabotka-personalnyix-dannyix/" target="_blank" role="link">Использование cookies</a>
+
+                    <div class="footer__copyright _vm">© 2011–2025 «Парадайс» — <br>Агентство недвижимости</div>
+                </div>
+
+                <div class="footer__col _dev">
+                    <a class="footer__link footer__policy" href="https://loftweb.ru" target="_blank" role="link" target="_blank" rel="nofollow">Сделано в Loftweb</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    <div class="footer__animation">-->
+<!--        <div class="container footer__animation-content">-->
+<!--            <svg width="1320" height="370">-->
+<!--                <use xlink:href="./assets/img/sprite.svg#footer-logo"></use>-->
+<!--            </svg>-->
+
+<!--            <div class="footer__animation-radial"></div>-->
+<!--        </div>-->
+<!--    </div>-->
 </footer>
+
+<div class="cookies">
+    <div class="cookies__content container">
+        <div class="cookies__text">Этот веб-сайт использует файлы cookie, чтобы обеспечить вам лучший опыт</div>
+
+        <button type="button" class="cookies__close" role="button">
+            <svg width="12" height="12">
+                <use xlink:href="./assets/img/sprite.svg#close">
+            </svg>
+        </button>
+    </div>
+</div>
+
+    <div class="agents-modal modal" data-item="feedback">
+    <div class="agents-modal__block hidden-scroll">
+        <button class="agents-modal__close" type="button" role="button">
+			<span>
+				<svg width="14" height="14">
+					<use xlink:href="./assets/img/sprite.svg#close"></use>
+				</svg>
+			</span>
+        </button>
+
+        <div class="agents-modal__content">
+            <div class="agents-modal__name h2">Оставить <br>заявку</div>
+
+            <div class="agents-modal__text text">
+                Поможем подобрать подходящий вариант для вас и вашей семьи
+            </div>
+
+            <form data-fetchit="b7b3e0e7e5052bae3a6b44975375f838" class="form _modal" id="feedback-modal-form" action="" method="post" role="form">
+                <input type="text" style="position: absolute; left: -9999px; top: -99999px;" name="info" value="">
+                <input type="hidden" name="nospam:blank" value="">
+                <input type="hidden" name="feedbackModal" value="1">
+                <input type="hidden" name="page" value="https://paradise-nedvizhimost.ru/">
+                <input type="hidden" name="pageName" value="Главная">
+
+                <fieldset class="form__fieldset">
+                    <label class="hidden" for="feedback-modal-name"></label>
+                    <input class="form__input no-digits" type="text" name="name" id="feedback-modal-name" placeholder="Ваше имя *" autocomplete="off">
+                </fieldset>
+
+                <fieldset class="form__fieldset">
+                    <label class="hidden" for="feedback-modal-phone"></label>
+                    <input class="form__input" type="tel" name="phone" id="feedback-modal-phone" placeholder="+7 (999) 000-00-00 *" autocomplete="off">
+                </fieldset>
+
+                <fieldset class="form__fieldset">
+                    <label class="hidden" for="feedback-modal-message"></label>
+                    <textarea class="form__textarea" name="message" id="feedback-modal-message" placeholder="Сообщение" autocomplete="off"></textarea>
+                </fieldset>
+
+
+
+                <fieldset class="form__fieldset form__checkbox">
+                    <input class="form__checkbox-input" type="checkbox" name="policy" id="feedback-modal-policy" checked="">
+                    <label class="form__checkbox-label" for="feedback-modal-policy">
+                        <span class="form__checkbox-check"></span>
+                        <span class="form__checkbox-title">
+                            Нажимая отправить вы даете согласие на обработку
+                            <a href="obrabotka-personalnyix-dannyix/" target="_blank" role="link">персональных данных</a>
+                            соглашаетесь с условиями
+                            <a href="politika-konfidenczialnosti/" target="_blank" role="link">политики конфиденциальности</a>
+                        </span>
+                    </label>
+                </fieldset>
+
+                <div class="form__btn">
+                    <button class="btn _yellow _fill _icon-right" type="submit" role="button">
+                        Оставить заявку
+                        <svg width="12" height="13">
+                            <use xlink:href="./assets/img/sprite.svg#btn-plus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <div class="agents-modal modal" id="thankyou">
+    <div class="agents-modal__block hidden-scroll">
+        <button class="agents-modal__close" type="button" role="button">
+			<span>
+				<svg width="14" height="14">
+					<use xlink:href="./assets/img/sprite.svg#close"></use>
+				</svg>
+			</span>
+        </button>
+
+        <div class="agents-modal__content _100vh">
+            <div class="agents-modal__name h2">Спасибо!</div>
+
+            <div class="agents-modal__text text">
+                <p>Ваша заявка была успешно отправлена. В ближайшее время мы с Вами свяжемся</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=448bb392-1351-42bf-9b8e-b698a6a6a8b8&amp;lang=ru_RU"
+        type="text/javascript"></script>
+
+<script>
+    const videoIframe = document.querySelector('#player');
+
+    if (videoIframe) {
+        const tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        const firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+
+        function onYouTubeIframeAPIReady() {
+            setTimeout(() => {
+                let heightVideo = videoIframe.closest('.video__container').offsetHeight;
+
+                player = new YT.Player('player', {
+                    height: heightVideo,
+                    width: '100%',
+                    videoId: '{$_modx->resource.videoID}',
+                    playerVars: {
+                        controls: 0,
+                        rel: 0,
+                        showinfo: 0,
+                        modestbranding: 1
+                    },
+                    events: {
+                        'onStateChange': onPlayerStateChange
+                    }
+                });
+            }, 1000);
+        }
+
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING) {
+                let heightVideo = document.querySelector('#player').closest('.video__container').offsetHeight;
+                document.querySelector('#player').style.height = heightVideo + 'px';
+
+                document.querySelector('.video__iframe').classList.add('_active');
+            } else if (event.data == YT.PlayerState.PAUSED) {
+                player.stopVideo();
+                document.querySelector('.video__iframe').classList.remove('_active');
+            }
+        }
+    }
+</script>
+
+    <!-- TODO: Это временный блок, его не должно быть на продакшене -->
+<div style="padding: 30px 0;">
+    <div class="container" style="display: flex; flex-wrap: wrap;">
+        <a href="./" style="width: 50%;">
+            Главная
+        </a>
+        <a href="./arenda.html" style="width: 50%;">
+            Аренда
+        </a>
+        <a href="./commerce.html" style="width: 50%;">
+            Коммерческая недвижимость
+        </a>
+        <a href="./company.html" style="width: 50%;">
+            О компании
+        </a>
+        <a href="./country.html" style="width: 50%;">
+            Загородная недвижимость
+        </a>
+        <a href="./investirovanie.html" style="width: 50%;">
+            Инвестирование
+        </a>
+        <a href="./ipoteka.html" style="width: 50%;">
+            Ипотека
+        </a>
+        <a href="./kontaktyi.html" style="width: 50%;">
+            Контакты
+        </a>
+        <a href="./kvartiryi.html" style="width: 50%;">
+            Квартиры
+        </a>
+        <a href="./lawyer.html" style="width: 50%;">
+            Юридические услуги
+        </a>
+        <a href="./novostrojki.html" style="width: 50%;">
+            Новостройки
+        </a>
+        <a href="./otzyivyi.html" style="width: 50%;">
+            Отзывы
+        </a>
+        <a href="./regions.html" style="width: 50%;">
+            Регионы
+        </a>
+        <a href="./template.html" style="width: 50%;">
+            Одиночная
+        </a>
+        <a href="./trejdIn.html" style="width: 50%;">
+            Трейд-ин
+        </a>
+    </div>
+</div>
 
 <script defer src="bundle.js"></script></body>
 </html>

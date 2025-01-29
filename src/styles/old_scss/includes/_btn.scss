@@ -64,7 +64,7 @@
 			@media (min-width: 992px) {
 				background: $color_black;
 					border-color: $color_white;
-				
+
 					&._fill {
 						& svg {
 							fill: $color_white;
@@ -116,4 +116,9 @@
 			}
 		}
 	}
+
+    &[disabled] {
+        opacity: 0.5;
+        pointer-events: none;
+    }
 }

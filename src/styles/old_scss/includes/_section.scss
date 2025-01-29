@@ -38,7 +38,7 @@
 	&__big-title {
 		margin-bottom: 70px;
 		padding: 25px 0;
-		border-bottom: 1px solid rgba(37,37,37,.5);
+		//border-bottom: 1px solid rgba(37,37,37,.5);
 		overflow: hidden;
 
 		@media (max-width: 991px) {
@@ -211,6 +211,12 @@
 				max-width: 100%;
 			}
 		}
+
+        &._mob-full {
+            @media (max-width: 991px) {
+                width: 100%;
+            }
+        }
 	}
 
 	&__sticky {

@@ -1,0 +1,19 @@
+.preview-partner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F8F8;
+
+    @media (max-width: 1280px) {
+        aspect-ratio: 16 / 9;
+    }
+
+    img {
+        width: 50%;
+        height: 50%;
+        display: block;
+        object-fit: contain;
+    }
+}

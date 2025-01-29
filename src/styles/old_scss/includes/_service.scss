@@ -1,0 +1,36 @@
+.mt {
+    &-60 {
+        margin-top: 60px;
+    }
+}
+
+.mtm {
+    &-50 {
+        @media (max-width: 1280px) {
+            margin-top: 50px;
+        }
+    }
+}
+
+.mb {
+    &-0 {
+        margin-bottom: 0;
+    }
+
+    &-60 {
+        margin-bottom: 60px;
+    }
+}
+
+.mbm {
+    &-0 {
+        @media (max-width: 1280px) {
+            margin-bottom: 0;
+        }
+    }
+    &-50 {
+        @media (max-width: 1280px) {
+            margin-bottom: 50px;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+.questionnaire {
+    min-height: 700px;
+
+    @media (max-width: 1280px) {
+        min-height: 100vh;
+    }
+}

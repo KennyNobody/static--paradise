@@ -1,0 +1,428 @@
+<!-- TODO: Новая секция -->
+<section class="section _grey questionnaire">
+    <div class="container">
+        <div class="section__cols">
+            <div class="section__col animation-wrap">
+                <h2 class="h2" data-aos="slide-up" data-aos-duration="2500" role="heading">
+                    Расчет стоимости квартиры
+                </h2>
+            </div>
+            <div class="section__col">
+                <form action="" class="form-questionnaire" data-form-questionnaire="block">
+                    <div class="form-questionnaire__progress" data-questionnaire-progress="block">
+                        <div class="progress">
+                            <p class="progress__text">
+                                <span data-form-progress="field">0</span> из 100%
+                            </p>
+                            <div class="progress__line">
+                                <div class="progress__inner" data-form-progress="line" style="width: 0"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-questionnaire__section" data-questionnaire-progress="0" data-step-section="0" data-radio-toggler="block">
+                        <p class="form-questionnaire__text">
+                            Какую сделку вы хотите совершить?
+                        </p>
+                        <div class="form-questionnaire__fields">
+                            <label class="checkbox">
+                                <input type="radio" name="target" class="checkbox__input" value="Только продать недвижимость" data-radio-toggler="input" data-radio-toggler-taget="1" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Только продать недвижимость
+                                </span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="radio" name="target" class="checkbox__input" value="Только купить недвижимость" data-radio-toggler="input" data-radio-toggler-taget="5" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Только купить недвижимость
+                                </span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="radio" name="target" class="checkbox__input" value="Покупка и продажа недвижимости" data-radio-toggler="input" data-radio-toggler-taget="7" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Покупка и продажа недвижимости
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-questionnaire__toolbar">
+                            <button class="btn _yellow" type="button" data-step-target="1" data-radio-toggler="button">
+                                Далее
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-questionnaire__section" data-questionnaire-progress="50" data-step-section="1" hidden="hidden">
+                        <p class="form-questionnaire__text">
+                            Где находится Ваша недвижимость?
+                        </p>
+                        <div class="form-questionnaire__fields">
+                            <label class="checkbox">
+                                <input type="radio" name="locationPropertyCell" class="checkbox__input" value="Москва" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Москва
+                                </span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="radio" name="locationPropertyCell" class="checkbox__input" value="Московская область" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Московская область
+                                </span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="radio" name="locationPropertyCell" class="checkbox__input" value="Регионы России" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Регионы России
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-questionnaire__toolbar">
+                            <button class="button-arrow button-arrow--primary button-arrow--small _prev" type="button" data-step-target="0">
+                                <svg width="20" height="20">
+                                    <use xlink:href="./assets/img/sprite.svg#carousel-arrow"></use>
+                                </svg>
+                            </button>
+                            <button class="btn _yellow" type="button" data-step-target="2">
+                                Далее
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-questionnaire__section" data-questionnaire-progress="75" data-step-section="2" hidden="hidden">
+                        <p class="form-questionnaire__text">
+                            Какой тип недвижимости Вас интересует?
+                        </p>
+                        <div class="form-questionnaire__fields">
+                            <label class="checkbox">
+                                <input type="radio" name="propertyTypeCell" class="checkbox__input" value="Новостройка" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Новостройка
+                                </span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="radio" name="propertyTypeCell" class="checkbox__input" value="Вторичный рынок" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Вторичный рынок
+                                </span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="radio" name="propertyTypeCell" class="checkbox__input" value="Другое" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Другое
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-questionnaire__toolbar">
+                            <button class="button-arrow button-arrow--primary button-arrow--small _prev" type="button" data-step-target="1">
+                                <svg width="20" height="20">
+                                    <use xlink:href="./assets/img/sprite.svg#carousel-arrow"></use>
+                                </svg>
+                            </button>
+                            <button class="btn _yellow" type="button" data-step-target="3">
+                                Далее
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-questionnaire__section" data-questionnaire-progress="50" data-step-section="5" hidden="hidden">
+                        <p class="form-questionnaire__text">
+                            Где Вы хотели приобрести объект недвижимости?
+                        </p>
+                        <div class="form-questionnaire__fields">
+                            <label class="checkbox">
+                                <input type="radio" name="locationPropertyBuy" class="checkbox__input" value="Москва" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Москва
+                                </span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="radio" name="locationPropertyBuy" class="checkbox__input" value="Московская область" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Московская область
+                                </span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="radio" name="locationPropertyBuy" class="checkbox__input" value="Регионы России" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Регионы России
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-questionnaire__toolbar">
+                            <button class="button-arrow button-arrow--primary button-arrow--small _prev" type="button" data-step-target="0">
+                                <svg width="20" height="20">
+                                    <use xlink:href="./assets/img/sprite.svg#carousel-arrow"></use>
+                                </svg>
+                            </button>
+                            <button class="btn _yellow" type="button" data-step-target="6">
+                                Далее
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-questionnaire__section" data-questionnaire-progress="75" data-step-section="6" hidden="hidden">
+                        <p class="form-questionnaire__text">
+                            Какой тип недвижимости собираетесь покупать?
+                        </p>
+                        <div class="form-questionnaire__fields">
+                            <label class="checkbox">
+                                <input type="radio" name="propertyTypeBuy" class="checkbox__input" value="Новостройка" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Новостройка
+                                </span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="radio" name="propertyTypeBuy" class="checkbox__input" value="Вторичный рынок" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Вторичный рынок
+                                </span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="radio" name="propertyTypeBuy" class="checkbox__input" value="Другое" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Другое
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-questionnaire__toolbar">
+                            <button class="button-arrow button-arrow--primary button-arrow--small _prev" type="button" data-step-target="5">
+                                <svg width="20" height="20">
+                                    <use xlink:href="./assets/img/sprite.svg#carousel-arrow"></use>
+                                </svg>
+                            </button>
+                            <button class="btn _yellow" type="button" data-step-target="3">
+                                Далее
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-questionnaire__section" data-questionnaire-progress="20" data-step-section="7" hidden="hidden">
+                        <p class="form-questionnaire__text">
+                            Где находится Ваша недвижимость?
+                        </p>
+                        <div class="form-questionnaire__fields">
+                            <label class="checkbox">
+                                <input type="radio" name="locationPropertySaleCombine" class="checkbox__input" value="Москва" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Москва
+                                </span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="radio" name="locationPropertySaleCombine" class="checkbox__input" value="Московская область" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Московская область
+                                </span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="radio" name="locationPropertySaleCombine" class="checkbox__input" value="Регионы России" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Регионы России
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-questionnaire__toolbar">
+                            <button class="button-arrow button-arrow--primary button-arrow--small _prev" type="button" data-step-target="0">
+                                <svg width="20" height="20">
+                                    <use xlink:href="./assets/img/sprite.svg#carousel-arrow"></use>
+                                </svg>
+                            </button>
+                            <button class="btn _yellow" type="button" data-step-target="8">
+                                Далее
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-questionnaire__section" data-questionnaire-progress="40" data-step-section="8" hidden="hidden">
+                        <p class="form-questionnaire__text">
+                            Где Вы хотели приобрести объект недвижимости?
+                        </p>
+                        <div class="form-questionnaire__fields">
+                            <label class="checkbox">
+                                <input type="radio" name="locationPropertyBuyCombine" class="checkbox__input" value="Москва" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Москва
+                                </span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="radio" name="locationPropertyBuyCombine" class="checkbox__input" value="Московская область" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Московская область
+                                </span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="radio" name="locationPropertyBuyCombine" class="checkbox__input" value="Регионы России" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Регионы России
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-questionnaire__toolbar">
+                            <button class="button-arrow button-arrow--primary button-arrow--small _prev" type="button" data-step-target="7">
+                                <svg width="20" height="20">
+                                    <use xlink:href="./assets/img/sprite.svg#carousel-arrow"></use>
+                                </svg>
+                            </button>
+                            <button class="btn _yellow" type="button" data-step-target="9">
+                                Далее
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-questionnaire__section" data-questionnaire-progress="60" data-step-section="9" hidden="hidden">
+                        <p class="form-questionnaire__text">
+                            Какой тип недвижимости Вас интересует?
+                        </p>
+                        <div class="form-questionnaire__fields">
+                            <label class="checkbox">
+                                <input type="radio" name="propertyTypeBuyCombine" class="checkbox__input" value="Новостройка" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Новостройка
+                                </span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="radio" name="propertyTypeBuyCombine" class="checkbox__input" value="Вторичный рынок" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Вторичный рынок
+                                </span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="radio" name="propertyTypeBuyCombine" class="checkbox__input" value="Другое" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Другое
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-questionnaire__toolbar">
+                            <button class="button-arrow button-arrow--primary button-arrow--small _prev" type="button" data-step-target="8">
+                                <svg width="20" height="20">
+                                    <use xlink:href="./assets/img/sprite.svg#carousel-arrow"></use>
+                                </svg>
+                            </button>
+                            <button class="btn _yellow" type="button" data-step-target="10">
+                                Далее
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-questionnaire__section" data-questionnaire-progress="80" data-step-section="10" hidden="hidden">
+                        <p class="form-questionnaire__text">
+                            Какой тип недвижимости собираетесь продавать?
+                        </p>
+                        <div class="form-questionnaire__fields">
+                            <label class="checkbox">
+                                <input type="radio" name="propertyTypeSaleCombine" class="checkbox__input" value="Новостройка" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Новостройка
+                                </span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="radio" name="propertyTypeSaleCombine" class="checkbox__input" value="Вторичный рынок" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Вторичный рынок
+                                </span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="radio" name="propertyTypeSaleCombine" class="checkbox__input" value="Другое" required>
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">
+                                    Другое
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-questionnaire__toolbar">
+                            <button class="button-arrow button-arrow--primary button-arrow--small _prev" type="button" data-step-target="9">
+                                <svg width="20" height="20">
+                                    <use xlink:href="./assets/img/sprite.svg#carousel-arrow"></use>
+                                </svg>
+                            </button>
+                            <button class="btn _yellow" type="button" data-step-target="3">
+                                Далее
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-questionnaire__section" data-questionnaire-progress="100" data-step-section="3" hidden="hidden">
+                        <p class="form-questionnaire__text">
+                            Введите ваши контактные данные, чтобы получить бесплатную оценку стоимости вашей недвижимости:
+                        </p>
+                        <div class="form-questionnaire__form">
+                            <div class="form _big">
+                                <fieldset class="form__fieldset">
+                                    <label class="hidden" for="feedback-name-input"></label>
+                                    <input class="form__input no-digits" type="text" name="name" id="feedback-name-input" placeholder="Ваше имя *" autocomplete="off" required>
+                                </fieldset>
+
+                                <fieldset class="form__fieldset">
+                                    <label class="hidden" for="feedback-phone-input"></label>
+                                    <input class="form__input" type="tel" name="phone" id="feedback-phone-input" placeholder="+7 (999) 000-00-00 *" autocomplete="off" required>
+                                </fieldset>
+
+                                <fieldset class="form__fieldset">
+                                    <label class="hidden" for="email-input"></label>
+                                    <input class="form__input no-digits" type="text" name="name" id="email-input" placeholder="Email" autocomplete="off">
+                                </fieldset>
+
+                                <fieldset class="form__fieldset form__checkbox">
+                                    <input class="form__checkbox-input" type="checkbox" name="policy-input" id="feedback-policy-questions" checked="" data-form-questionare="policy">
+                                    <label class="form__checkbox-label" for="feedback-policy-questions">
+                                        <span class="form__checkbox-check"></span>
+                                        <span class="form__checkbox-title">
+                                            Нажимая отправить вы даете согласие на обработку
+                                            <a href="./obrabotka-personalnyix-dannyix/" target="_blank" role="link">персональных данных</a>
+                                            соглашаетесь с условиями
+                                            <a href="./politika-konfidenczialnosti/" target="_blank" role="link">
+                                                политики конфиденциальности
+                                            </a>
+                                        </span>
+                                    </label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="form-questionnaire__toolbar">
+                            <button class="button-arrow button-arrow--primary button-arrow--small _prev" type="button" data-step-back>
+                                <svg width="20" height="20">
+                                    <use xlink:href="./assets/img/sprite.svg#carousel-arrow"></use>
+                                </svg>
+                            </button>
+                            <button class="btn _fill _yellow _large _icon-right" type="button" data-step-target="2" data-form-questionare="submit-button">
+                                Получить предложение
+                                <svg width="12" height="13">
+                                    <use xlink:href="./assets/img/sprite.svg#btn-plus"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-questionnaire__section" data-step-section="completed" hidden="hidden">
+                        <p class="form-questionnaire__result-title">
+                            Спасибо!
+                        </p>
+                        <p class="form-questionnaire__result-message">
+                            Ваш запрос принят! Мы предложим варианты недвижимости, соответствующие вашим предпочтениям.
+                        </p>
+                        <div class="form-questionnaire__toolbar">
+                            <button class="btn _stroke _large" type="button" data-form-questionare="button-reset">
+                                Отправить запрос заново
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- -->

@@ -1,0 +1,17 @@
+.rating {
+    gap: 2px;
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        width: 16px;
+        height: 16px;
+        display: block;
+        flex-shrink: 0;
+        fill: $color_grey;
+
+        &._active {
+            fill: $color_yellow;
+        }
+    }
+}

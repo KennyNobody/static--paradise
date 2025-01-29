@@ -15,52 +15,16 @@
         <%= htmlWebpackPlugin.options.widgets.serviceImg %>
         <%= htmlWebpackPlugin.options.widgets.serviceBlocks %>
         <%= htmlWebpackPlugin.options.widgets.plusesBlack %>
-        <%= htmlWebpackPlugin.options.widgets.otherServices %>
+        <%= htmlWebpackPlugin.options.widgets.questionareRooms %>
+        <%= htmlWebpackPlugin.options.widgets.sliderServicesRooms %>
         <%= htmlWebpackPlugin.options.widgets.feedback %>
     </main>
 
     <%= htmlWebpackPlugin.options.widgets.footer %>
-
-
+    <%= htmlWebpackPlugin.options.widgets.modalServiceRooms %>
     <%= htmlWebpackPlugin.options.widgets.modalFeedback %>
-    {set $otherServices = json_decode($_modx->resource.otherServices, true)}
-    {if $otherServices | length > 0}
-    {foreach $otherServices as $idx => $row}
-    {set $image = 'assets/images/' ~ $row.image}
+    <%= htmlWebpackPlugin.options.widgets.thankYou %>
 
-    <div class="agents-modal modal" data-item="other-services-{$idx}">
-        <div class="agents-modal__block hidden-scroll">
-            <button class="agents-modal__close" type="button" role="button">
-                <span>
-                    <svg width="14" height="14">
-                        <use xlink:href="./assets/img/sprite.svg#close"></use>
-                    </svg>
-                </span>
-            </button>
-
-            <div class="agents-modal__carousel-wrap">
-                <picture class="agents-modal__img">
-                    <source type="image/webp" data-srcset="{$image | phpthumbon : 'w=1272&h=718&zc=1&q=90&f=webp'} 2x, {$image | phpthumbon : 'w=636&h=359&zc=1&q=90&f=webp'} 1x">
-                    <source type="image/jpeg" data-srcset="{$image | phpthumbon : 'w=1272&h=718&zc=1&q=90&f=jpg'} 2x, {$image | phpthumbon : 'w=636&h=359&zc=1&q=90&f=jpg'} 1x">
-                    <img class="lazy" data-src="{$image | phpthumbon : 'w=636&h=359&zc=1&q=90&f=jpg'}" alt="{$row.title | escape}" width="636" height="359" role="presentation">
-                </picture>
-            </div>
-
-            <div class="agents-modal__content">
-                {if $row.title}
-                <div class="agents-modal__name h2">{$row.title}</div>
-                {/if}
-
-                {if $row.richtext}
-                <div class="agents-modal__text text">
-                    {$row.richtext}
-                </div>
-                {/if}
-            </div>
-        </div>
-    </div>
-    {/foreach}
-    {/if}
     <%= htmlWebpackPlugin.options.widgets.scripts %>
     <%= htmlWebpackPlugin.options.widgets.temp %>
 </body>

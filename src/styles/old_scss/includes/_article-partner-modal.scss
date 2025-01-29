@@ -1,0 +1,45 @@
+.article-partner-modal {
+    &__picture {
+        display: flex;
+        padding: 30px;
+        min-height: 330px;
+        align-items: center;
+        justify-content: center;
+        background-color: #F8F8F8;
+
+        img {
+            display: block;
+        }
+    }
+
+
+    &__content {
+        gap: 24px;
+        width: 100%;
+        display: flex;
+        padding: 80px 16px;
+        flex-direction: column;
+        background-color: $color_white;
+    }
+
+    &__title {
+        font-size: 32px;
+        line-height: 1.25;
+        margin-bottom: 0;
+        color: rgba(37, 37, 37, 1);
+    }
+
+    &__main {
+        color: #252525;
+        font-size: 24px;
+        line-height: 1.5;
+
+        & :last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__toolbar {
+
+    }
+}

@@ -1,0 +1,31 @@
+.tabs {
+    gap: 60px;
+    display: flex;
+
+    @media (max-width: 1280px) {
+        display: block;
+    }
+
+    &__aside {
+        width: 540px;
+        flex-shrink: 0;
+
+        @media (max-width: 1280px) {
+            display: none;
+            visibility: hidden;
+        }
+    }
+
+    &__main {
+        min-width: 0;
+        flex-grow: 1;
+
+        & > * {
+            border-top: 1px solid rgba(37, 37, 37, 0.25);
+
+            &:last-of-type {
+                border-bottom: 1px solid rgba(37, 37, 37, 0.25);
+            }
+        }
+    }
+}

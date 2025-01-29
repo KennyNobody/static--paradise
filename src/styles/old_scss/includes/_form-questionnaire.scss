@@ -1,0 +1,72 @@
+.form-questionnaire {
+    display: block;
+    padding-top: 20px;
+
+    &__progress {
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: 400;
+        margin-bottom: 24px;
+    }
+
+    &__fields {
+        gap: 12px;
+        display: flex;
+        max-width: 420px;
+        flex-direction: column;
+
+        @media (max-width: 1280px) {
+            max-width: 100%;
+        }
+    }
+
+    &__form,
+    &__fields {
+        min-height: 340px;
+
+        @media (max-width: 1280px) {
+            min-height: 0;
+        }
+    }
+
+    &__toolbar {
+        gap: 12px;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 1280px) {
+            margin-top: 40px;
+        }
+
+        .btn {
+            width: 240px;
+
+            @media (max-width: 1280px) {
+                flex-grow: 1;
+            }
+
+            &._large {
+                width: 300px;
+            }
+        }
+    }
+
+    &__result-title {
+        line-height: 1;
+        font-size: 64px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+
+    &__result-message {
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+
+    &__toolbar {}
+}

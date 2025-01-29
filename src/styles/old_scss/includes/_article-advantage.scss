@@ -1,0 +1,86 @@
+.article-advantage {
+    gap: 34px;
+    display: flex;
+    padding: 40px 0;
+    flex-direction: column;
+
+    @media (max-width: 1280px) {
+        gap: 24px;
+    }
+
+    &__button {
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 1.25;
+
+        @media (max-width: 1280px) {
+
+        }
+    }
+
+    &__content {
+        opacity: 1;
+        display: block;
+        font-size: 18px;
+        overflow: hidden;
+        line-height: 1.35;
+        visibility: visible;
+        transition: 0.3s opacity;
+        color: rgba(37, 37, 37, 0.5);
+
+        animation-name: openAdvantage;
+        animation-duration: 0.3s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        animation-delay: 0s;
+
+        @media (max-width: 1280px) {
+            font-size: 16px;
+            line-height: 1.45;
+        }
+
+        & > :last-child {
+            margin-bottom: 0;
+        }
+
+        &.isHidden {
+            //opacity: 0;
+            display: none;
+            animation-name: closeAdvantage;
+            //visibility: hidden;
+
+            @media (max-width: 1280px) {
+                display: block;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+@keyframes openAdvantage {
+    0% {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes closedvantage {
+    100% {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    0% {
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+}

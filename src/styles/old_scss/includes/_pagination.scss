@@ -1,0 +1,45 @@
+.pagination {
+    gap: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__bullet {
+        width: 40px;
+        height: 2px;
+        display: block;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.5);
+
+        &:after {
+            top: 0;
+            left: 0;
+            bottom: 0;
+            content: "";
+            display: block;
+            position: absolute;
+            transition: width 5s ease;
+            background-color: $color_yellow;
+        }
+
+        &--active {
+            &:after {
+                animation: expandWidth 5s linear forwards;
+            }
+        }
+
+        &:not(&--active)::after {
+            animation: none; /* Мгновенное изменение */
+            width: 0; /* Возврат к начальному состоянию */
+        }
+    }
+}
+
+@keyframes expandWidth {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}

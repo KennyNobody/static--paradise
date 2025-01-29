@@ -1,0 +1,100 @@
+.modal-partner  {
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    z-index: -10;
+    opacity: 0;
+    justify-content: flex-end;
+    background: rgba(26, 26, 26, 0.8);
+
+    &._active {
+        z-index: 15;
+        opacity: 1;
+
+        & .modal-partner__block {
+            right: 0;
+        }
+    }
+
+    &__block {
+        height: 100vh;
+        width: 100%;
+        max-width: 720px;
+        overflow-y: auto;
+        right: -100vw;
+        transition: 1s ease;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 768px) {
+            max-width: 100%;
+        }
+    }
+
+    &__content {
+        background: $color_white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        z-index: 2;
+        flex-grow: 1;
+
+        &._100vh {
+            min-height: 100vh;
+        }
+    }
+
+    &__close {
+        position: fixed;
+        top: 13px;
+        right: 50px;
+        z-index: 5;
+        padding: 10px;
+
+        @media (max-width: 768px) {
+            top: 18px;
+            right: 24px;
+        }
+
+        @media (max-width: 575px) {
+            top: 4px;
+            right: 4px;
+        }
+
+        & span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(37, 37, 37, 0.15);
+            border: 1px solid $color_white;
+            border-radius: 50%;
+
+            @media (max-width: 575px) {
+                width: 32px;
+                height: 32px;
+            }
+        }
+
+        & svg {
+            stroke: $color_white;
+
+            @media (max-width: 575px) {
+                width: 15px;
+                height: auto;
+            }
+        }
+
+        &:hover {
+            & span {
+                background: $color_black;
+                border-color: $color_black;
+            }
+        }
+    }
+}

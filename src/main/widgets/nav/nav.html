@@ -1,59 +1,175 @@
 <nav class="nav _services" role="navigation">
     <div class="container nav__content hidden-scroll">
         <div class="nav__top">
-            {'pdoMenu' | snippet : [
-            'parents' => 3,
-            'level' => 1,
-            'includeTVs' => '',
-            'plPrefix' => '',
-            'selfClass' => '_active',
-            'tplOuter' => '@INLINE <ul class="nav__list" role="list">{$wrapper}</ul>',
-            'tpl' => '@INLINE <li role="listitem"><a href="{$link}" {$classes} role="link" data-item="{$id}">{$menutitle}</a></li>'
-            ]}
+            <ul class="nav__list" role="list"><li role="listitem"><a href="odobrenie-ipoteki/" class="first" role="link" data-item="14">Одобрение ипотеки</a></li><li role="listitem"><a href="yuridicheskie-uslugi/" role="link" data-item="16">Юридические услуги</a></li><li role="listitem"><a href="regionalnyie-sdelki/" role="link" data-item="17">Региональные сделки</a></li><li role="listitem"><a href="zagorodnaya-nedvizhimost/" role="link" data-item="18">Загородная недвижимость</a></li><li role="listitem"><a href="kommercheskaya-nedvizhimost/" role="link" data-item="19">Коммерческая недвижимость</a></li><li role="listitem"><a href="arenda-nedvizhimosti/" class="last" role="link" data-item="20">Аренда недвижимости</a></li></ul>
+            <div class="nav__item _active" data-item="14">
+                <div class="nav__text _hide">
+                    <p>Поможем одобрить ипотеку в надежном банке при различных условиях, даже если вы уже получили отказ или у вас нет официального трудоустройства.</p>
+                    <p>Мы знаем, какие факторы важны для одобрения, а какие приведут к автоматическому отказу, решаем даже самые сложные задачи, сотрудничаем с банками – лидерами финансового рынка России и предлагаем нашим клиентам лучшие условия кредитования.</p>	</div>
 
-            {'pdoResources' | snippet : [
-            'parents'  => 3,
-            'depth' => 0,
-            'sortby' => 'menuindex',
-            'sortdir' => 'ASC',
-            'limit' => 0,
-            'tpl' => 'tpl.serviceIntro.item',
-            'includeContent' => 0,
-            'includeTVs' => 'serviceIntroText,serviceIntroImg',
-            'tvPrefix' => ''
-            ]}
+                <picture class="nav__img">
+                    <source type="image/webp" data-srcset="./assets/cache_image/odobrenie-ipoteki/nav-img_840x1020_9ba.webp 2x, ./assets/cache_image/odobrenie-ipoteki/nav-img_420x510_07b.webp 1x">
+                    <source type="image/jpeg" data-srcset="./assets/cache_image/odobrenie-ipoteki/nav-img_840x1020_8e6.jpg 2x, ./assets/cache_image/odobrenie-ipoteki/nav-img_420x510_ddd.jpg 1x">
+                    <img class="lazy _animate" data-src="./assets/cache_image/odobrenie-ipoteki/nav-img_420x510_ddd.jpg" alt="Одобрение ипотеки" width="420" height="510" role="presentation">
+                </picture>
+            </div>
+            <div class="nav__item " data-item="16">
+                <div class="nav__text ">
+                    <p>В нашей компании работают высококвалифицированные специалисты, которые оказывают юридические услуги, связанные с недвижимостью.</p>
+                    <p>Юристы Парадайс не только сопровождают сделки, но и готовы взять на себя дополнительные юридические действия, связанные с недвижимостью.</p>	</div>
+
+                <picture class="nav__img">
+                    <source type="image/webp" data-srcset="./assets/cache_image/yuridicheskie-uslugi/nav-img_840x1020_9ba.webp 2x, ./assets/cache_image/yuridicheskie-uslugi/nav-img_420x510_07b.webp 1x">
+                    <source type="image/jpeg" data-srcset="./assets/cache_image/yuridicheskie-uslugi/nav-img_840x1020_8e6.jpg 2x, ./assets/cache_image/yuridicheskie-uslugi/nav-img_420x510_ddd.jpg 1x">
+                    <img class="lazy " data-src="./assets/cache_image/yuridicheskie-uslugi/nav-img_420x510_ddd.jpg" alt="Юридические услуги" width="420" height="510" role="presentation">
+                </picture>
+            </div>
+            <div class="nav__item " data-item="17">
+                <div class="nav__text ">
+                    <p>Организуем и проведём сделку купли-продажи квартир в любом регионе России, в том числе с одновременной покупкой недвижимости в Москве.</p>	</div>
+
+                <picture class="nav__img">
+                    <source type="image/webp" data-srcset="./assets/cache_image/regionalnye-sdelki/nav-img_840x1020_9ba.webp 2x, ./assets/cache_image/regionalnye-sdelki/nav-img_420x510_07b.webp 1x">
+                    <source type="image/jpeg" data-srcset="./assets/cache_image/regionalnye-sdelki/nav-img_840x1020_8e6.jpg 2x, ./assets/cache_image/regionalnye-sdelki/nav-img_420x510_ddd.jpg 1x">
+                    <img class="lazy " data-src="./assets/cache_image/regionalnye-sdelki/nav-img_420x510_ddd.jpg" alt="Региональные сделки" width="420" height="510" role="presentation">
+                </picture>
+            </div>
+            <div class="nav__item " data-item="18">
+                <div class="nav__text ">
+                    <p>Продажа и покупка загородной недвижимости в Московской области.</p>	</div>
+
+                <picture class="nav__img">
+                    <source type="image/webp" data-srcset="./assets/cache_image/zagorodnaya-nedvizhimost/nav-img_840x1020_9ba.webp 2x, ./assets/cache_image/zagorodnaya-nedvizhimost/nav-img_420x510_07b.webp 1x">
+                    <source type="image/jpeg" data-srcset="./assets/cache_image/zagorodnaya-nedvizhimost/nav-img_840x1020_8e6.jpg 2x, ./assets/cache_image/zagorodnaya-nedvizhimost/nav-img_420x510_ddd.jpg 1x">
+                    <img class="lazy " data-src="./assets/cache_image/zagorodnaya-nedvizhimost/nav-img_420x510_ddd.jpg" alt="Загородная недвижимость" width="420" height="510" role="presentation">
+                </picture>
+            </div>
+            <div class="nav__item " data-item="19">
+                <div class="nav__text ">
+                    <p>Покупка, продажа и аренда коммерческой недвижимости. Реализуем выгодную инвестицию с получением максимальной прибыли.</p>	</div>
+
+                <picture class="nav__img">
+                    <source type="image/webp" data-srcset="./assets/cache_image/kommercheskaya-nedvizhimost/kommercheskaya-nedvizhimost_840x1020_9ba.webp 2x, /assets/cache_image/kommercheskaya-nedvizhimost/kommercheskaya-nedvizhimost_420x510_07b.webp 1x">
+                    <source type="image/jpeg" data-srcset="./assets/cache_image/kommercheskaya-nedvizhimost/kommercheskaya-nedvizhimost_840x1020_8e6.jpg 2x, /assets/cache_image/kommercheskaya-nedvizhimost/kommercheskaya-nedvizhimost_420x510_ddd.jpg 1x">
+                    <img class="lazy " data-src="./assets/cache_image/kommercheskaya-nedvizhimost/kommercheskaya-nedvizhimost_420x510_ddd.jpg" alt="Коммерческая недвижимость" width="420" height="510" role="presentation">
+                </picture>
+            </div>
+            <div class="nav__item " data-item="20">
+                <div class="nav__text ">
+                    <p>Обращаясь к нам, вы легко найдете арендаторов или подходящие условия для проживания.</p>	</div>
+
+                <picture class="nav__img">
+                    <source type="image/webp" data-srcset="./assets/cache_image/arenda-nedvizhimosti/arenda-nedvizhimosti_840x1020_9ba.webp 2x, /assets/cache_image/arenda-nedvizhimosti/arenda-nedvizhimosti_420x510_07b.webp 1x">
+                    <source type="image/jpeg" data-srcset="./assets/cache_image/arenda-nedvizhimosti/arenda-nedvizhimosti_840x1020_8e6.jpg 2x, /assets/cache_image/arenda-nedvizhimosti/arenda-nedvizhimosti_420x510_ddd.jpg 1x">
+                    <img class="lazy " data-src="./assets/cache_image/arenda-nedvizhimosti/arenda-nedvizhimosti_420x510_ddd.jpg" alt="Аренда недвижимости" width="420" height="510" role="presentation">
+                </picture>
+            </div>		</div>
+
+        <div class="nav__socials">
+            <a class="nav__social" href="https://api.whatsapp.com/send?phone=79067317731" target="_blank" rel="nofollow" role="link">
+			<span class="footer__social-icon">
+				<svg width="19" height="18">
+					<use xlink:href="./assets/img/sprite.svg#whatsapp"></use>
+				</svg>
+			</span>
+                Whatsapp
+            </a>
+
+            <a class="nav__social" href="https://vk.com/paradasenedvizhimost" target="_blank" rel="nofollow" role="link">
+                <svg width="20" height="12">
+                    <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                </svg>
+                Вконтакте
+            </a>
+
+            <a class="nav__social" href="tg://resolve?domain=paradise_nedvizhimost" target="_blank" rel="nofollow" role="link">
+                <svg width="19" height="16">
+                    <use xlink:href="./assets/img/sprite.svg#telegram"></use>
+                </svg>
+                Telegram
+            </a>
+
+            <a class="nav__social" href="http://dzen.ru/paradise_nedvizhimost" target="_blank" rel="nofollow" role="link">
+                <svg width="24" height="24">
+                    <use xlink:href="./assets/img/sprite.svg#dzen"></use>
+                </svg>
+                Дзен
+            </a>
+
+            <a class="nav__social" href="https://www.youtube.com/@paradise_nedvizhimost " target="_blank" rel="nofollow" role="link">
+                <svg width="26" height="18">
+                    <use xlink:href="./assets/img/sprite.svg#youtube"></use>
+                </svg>
+                Ютуб
+            </a>
         </div>
-
-        {include 'tpl.nav_socials'}
     </div>
 </nav>
+
 
 <nav class="nav _about" role="navigation">
     <div class="container nav__content hidden-scroll">
         <div class="nav__top">
-            {'pdoMenu' | snippet : [
-            'parents' => 15,
-            'level' => 1,
-            'includeTVs' => '',
-            'plPrefix' => '',
-            'selfClass' => '_active',
-            'tplOuter' => '@INLINE <ul class="nav__list" role="list">{$wrapper}</ul>',
-            'tpl' => '@INLINE <li role="listitem"><a href="{$link}" {$classes} role="link" data-item="{$id}">{$menutitle}</a></li>'
-            ]}
+            <ul class="nav__list" role="list"><li role="listitem"><a href="o-kompanii/" class="first active _active" role="link" data-item="2">Компания</a></li><li role="listitem"><a href="otzyivyi/" class="last" role="link" data-item="4">Отзывы</a></li></ul>
+            <div class="nav__item _active" data-item="2">
+                <div class="nav__text _hide">
+                    <p>Опытная команда профессионалов, нацеленная на достижение результата, которого желает клиент.</p>
+                    <p>Мы глубоко прорабатываем каждый запрос, выявляем его истинные причины и находим лучшее персональное решение.</p>	</div>
 
-            {'pdoResources' | snippet : [
-            'parents'  => 15,
-            'depth' => 0,
-            'sortby' => 'menuindex',
-            'sortdir' => 'ASC',
-            'limit' => 0,
-            'tpl' => 'tpl.serviceIntro.item',
-            'includeContent' => 0,
-            'includeTVs' => 'serviceIntroText,serviceIntroImg',
-            'tvPrefix' => ''
-            ]}
+                <picture class="nav__img">
+                    <source type="image/webp" data-srcset="./assets/cache_image/about/nav-img_840x1020_9ba.webp 2x, ./assets/cache_image/about/nav-img_420x510_07b.webp 1x">
+                    <source type="image/jpeg" data-srcset="./assets/cache_image/about/nav-img_840x1020_8e6.jpg 2x, ./assets/cache_image/about/nav-img_420x510_ddd.jpg 1x">
+                    <img class="lazy _animate" data-src="./assets/cache_image/about/nav-img_420x510_ddd.jpg" alt="Компания" width="420" height="510" role="presentation">
+                </picture>
+            </div>
+            <div class="nav__item " data-item="4">
+                <div class="nav__text ">
+                    <p>Для нас ценно и важно получать отзывы благодарности от клиентов, поэтому мы качественно выполняем свою работу</p>	</div>
+
+                <picture class="nav__img">
+                    <source type="image/webp" data-srcset="./assets/cache_image/reviews/nav-img_840x1020_9ba.webp 2x, ./assets/cache_image/reviews/nav-img_420x510_07b.webp 1x">
+                    <source type="image/jpeg" data-srcset="./assets/cache_image/reviews/nav-img_840x1020_8e6.jpg 2x, ./assets/cache_image/reviews/nav-img_420x510_ddd.jpg 1x">
+                    <img class="lazy " data-src="./assets/cache_image/reviews/nav-img_420x510_ddd.jpg" alt="Отзывы" width="420" height="510" role="presentation">
+                </picture>
+            </div>		</div>
+
+        <div class="nav__socials">
+            <a class="nav__social" href="https://api.whatsapp.com/send?phone=79067317731" target="_blank" rel="nofollow" role="link">
+			<span class="footer__social-icon">
+				<svg width="19" height="18">
+					<use xlink:href="./assets/img/sprite.svg#whatsapp"></use>
+				</svg>
+			</span>
+                Whatsapp
+            </a>
+
+            <a class="nav__social" href="https://vk.com/paradasenedvizhimost" target="_blank" rel="nofollow" role="link">
+                <svg width="20" height="12">
+                    <use xlink:href="./assets/img/sprite.svg#vk"></use>
+                </svg>
+                Вконтакте
+            </a>
+
+            <a class="nav__social" href="tg://resolve?domain=paradise_nedvizhimost" target="_blank" rel="nofollow" role="link">
+                <svg width="19" height="16">
+                    <use xlink:href="./assets/img/sprite.svg#telegram"></use>
+                </svg>
+                Telegram
+            </a>
+
+            <a class="nav__social" href="http://dzen.ru/paradise_nedvizhimost" target="_blank" rel="nofollow" role="link">
+                <svg width="24" height="24">
+                    <use xlink:href="./assets/img/sprite.svg#dzen"></use>
+                </svg>
+                Дзен
+            </a>
+
+            <a class="nav__social" href="https://www.youtube.com/@paradise_nedvizhimost " target="_blank" rel="nofollow" role="link">
+                <svg width="26" height="18">
+                    <use xlink:href="./assets/img/sprite.svg#youtube"></use>
+                </svg>
+                Ютуб
+            </a>
         </div>
-
-        {include 'tpl.nav_socials'}
     </div>
 </nav>

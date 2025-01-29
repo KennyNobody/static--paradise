@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Контакты</title>
     <%= htmlWebpackPlugin.options.widgets.meta %>
 </head>
 <body class="body _home">
@@ -56,25 +56,6 @@
                                 <a class="contacts__value contacts__link" href="mailto:office@paradise-nedvizhimost.ru" role="link">office@paradise-nedvizhimost.ru</a>
                             </div>
                         </div>
-                        <div class="contacts__item" data-map-lat="55.788515" data-map-long="37.567482" data-map-marker="./assets/images/map/placemark-moscow.png">
-
-                            <div class="contacts__name">Офис метро Динамо</div>
-
-                            <div class="contacts__row">
-                                <div class="contacts__value">Адрес</div>
-                                <div class="contacts__value">Москва, Ленинградский проспект, 36с1, этаж 3, офис 309</div>
-                            </div>
-
-                            <div class="contacts__row">
-                                <div class="contacts__value">Телефон</div>
-                                <a class="contacts__value contacts__link" href="tel:+74997317731" role="link">+7 499 731-7-731</a>
-                            </div>
-
-                            <div class="contacts__row">
-                                <div class="contacts__value">Email</div>
-                                <a class="contacts__value contacts__link" href="mailto:office@paradise-nedvizhimost.ru" role="link">office@paradise-nedvizhimost.ru</a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -87,11 +68,8 @@
 
     <%= htmlWebpackPlugin.options.widgets.footer %>
 
-
     <%= htmlWebpackPlugin.options.widgets.modalFeedback %>
-    {block 'modals'}{/block}
     <%= htmlWebpackPlugin.options.widgets.thankYou %>
-    {insert 'tpl.thankyou'}
     <%= htmlWebpackPlugin.options.widgets.scripts %>
     <%= htmlWebpackPlugin.options.widgets.temp %>
 </body>

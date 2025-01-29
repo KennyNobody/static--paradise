@@ -1,15 +1,16 @@
+import Swiper, { Navigation, Pagination } from "swiper";
+
 const initOldCode = () => {
     const lazyLoadInstance = new LazyLoad();
 
-    const body = document.querySelector('body'),
-        header = document.querySelector('.header');
+    const header = document.querySelector('.header');
 
-    if ( header && body.classList.contains('_home') ) {
-        window.addEventListener('scroll', () => {
-            document.documentElement.scrollTop > 1 ?
-                header.classList.remove('_transparent') : header.classList.add('_transparent');
-        });
-    }
+    // if ( header && body.classList.contains('_header-overlay') ) {
+    //     window.addEventListener('scroll', () => {
+    //         document.documentElement.scrollTop > 1 ?
+    //             header.classList.remove('_transparent') : header.classList.add('_transparent');
+    //     });
+    // }
 
     const headerNav = document.querySelector('.header__nav'),
         nav = document.querySelector('.nav__list');
@@ -262,6 +263,7 @@ const initOldCode = () => {
             spaceBetween: 60,
             slidesPerView: 3,
             loop: true,
+            modules: [Navigation],
             lazy: {
                 checkInView: true,
                 loadPrevNext: true
@@ -299,6 +301,7 @@ const initOldCode = () => {
                 spaceBetween: 0,
                 slidesPerView: 1,
                 loop: false,
+                modules: [Pagination],
                 lazy: {
                     loadPrevNext: true
                 },
@@ -317,6 +320,7 @@ const initOldCode = () => {
         jsShowModal.forEach((item) => {
             item.addEventListener('click', (e) => {
                 e.stopPropagation();
+                closeAll();
 
                 let dataItem = item.getAttribute('data-item'),
                     modal = document.querySelector('.modal[data-item="'+dataItem+'"]');
@@ -331,7 +335,7 @@ const initOldCode = () => {
         });
     }
 
-    const jsCloseModal = document.querySelectorAll('.agents-modal__close');
+    const jsCloseModal = [...document.querySelectorAll('.agents-modal__close'), ...document.querySelectorAll('[data-modal="close"]')];
 
     if ( jsCloseModal.length > 0 ) {
         jsCloseModal.forEach((item) => {
@@ -355,6 +359,15 @@ const initOldCode = () => {
                     item.closest('.modal').classList.remove('_active');
                 }
             });
+        });
+    }
+
+    function closeAll() {
+        const modals = document.querySelectorAll('.modal');
+        document.querySelector('body').classList.remove('_no-scroll');
+
+        modals.forEach((item) => {
+            item.closest('.modal').classList.remove('_active');
         });
     }
 

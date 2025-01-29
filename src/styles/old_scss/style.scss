@@ -26,6 +26,7 @@ $transition: 0.5s ease;
 @import "includes/main";
 @import "includes/header";
 @import "includes/intro";
+@import "includes/checkbox";
 @import "includes/main-section";
 @import "includes/nav";
 @import "includes/nav-mobile";
@@ -48,9 +49,33 @@ $transition: 0.5s ease;
 @import "includes/cookies";
 @import "includes/animation";
 @import "includes/banner";
+@import "includes/factoids";
+@import "includes/rating";
+@import "includes/slider-reviews";
+@import "includes/article-factoid";
+@import "includes/article-review";
+@import "includes/article-advantage";
+@import "includes/dropdown-reviews";
+@import "includes/button-arrow";
+@import "includes/tabs";
+@import "includes/picture";
+@import "includes/questionnaire";
+@import "includes/form-questionnaire";
+@import "includes/progress";
+@import "includes/slider-preview";
+@import "includes/article-preview";
+@import "includes/pagination";
+@import "includes/slider-services";
+@import "includes/list-profits";
+@import "includes/article-profit";
+@import "includes/grid-partners";
+@import "includes/article-partner";
+@import "includes/article-partner-modal";
+@import "includes/preview-partner";
+@import "includes/modal-partner";
 
+@import "includes/service";
 
+@media (max-width: 1280px) {
 
-
-
-
+}

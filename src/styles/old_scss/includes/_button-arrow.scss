@@ -1,0 +1,58 @@
+.button-arrow {
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    transition: 0.3s border;
+    justify-content: center;
+    & svg {
+        transition: 0.3s all;
+    }
+
+    &:hover {
+        border: 1px solid $color_yellow;
+
+        & svg {
+            stroke: $color_yellow;
+        }
+    }
+
+    &._prev {
+        left: 0;
+    }
+
+    &._next {
+        right: 0;
+        transform: rotate(180deg);
+    }
+
+    &[disabled] {
+        opacity: 0.3;
+        pointer-events: none;
+    }
+
+    &--primary {
+        border: 1px solid rgba(37,37,37,.3);
+
+        svg {
+            stroke: rgba(37,37,37,1);
+        }
+    }
+
+    &--inverted {
+        border: 1px solid rgba(255,255,255,.3);
+
+        svg {
+            stroke: $color_white;
+        }
+    }
+
+    &--small {
+        width: 48px;
+        height: 48px;
+    }
+
+    &--regular {
+        width: 58px;
+        height: 58px;
+    }
+}

@@ -1,0 +1,9 @@
+.slider-preview {
+    &__pagination {
+        z-index: 1;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 38px !important;
+        position: absolute;
+    }
+}
