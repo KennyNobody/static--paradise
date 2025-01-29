@@ -7,6 +7,10 @@
         justify-content: center;
         background-color: #F8F8F8;
 
+        @media (max-width: 1280px) {
+
+        }
+
         img {
             display: block;
         }
@@ -20,13 +24,24 @@
         padding: 80px 16px;
         flex-direction: column;
         background-color: $color_white;
+
+        @media (max-width: 1280px) {
+
+        }
     }
 
     &__title {
-        font-size: 32px;
-        line-height: 1.25;
+        line-height: 1;
+        font-size: 64px;
         margin-bottom: 0;
+        font-weight: 500;
         color: rgba(37, 37, 37, 1);
+
+        @media (max-width: 1280px) {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 1.25;
+        }
     }
 
     &__main {
@@ -36,6 +51,10 @@
 
         & :last-child {
             margin-bottom: 0;
+        }
+
+        @media (max-width: 1280px) {
+
         }
     }
 
