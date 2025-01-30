@@ -93,6 +93,11 @@
 
         option {
             color: $color_black;
+
+            &:disabled {
+                //opacity: 0.5;
+                color: rgba(37, 37, 37, 0.5);
+            }
         }
     }
 

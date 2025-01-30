@@ -34,6 +34,7 @@ class Questionnaire {
 
         this.setListeners();
         this.initRadioTogglers();
+        this.initResultMessage();
     }
 
     setListeners = () => {
@@ -142,6 +143,30 @@ class Questionnaire {
         });
 
         return flag;
+    }
+
+    initResultMessage = () => {
+        const self = this;
+
+        try {
+            // @ts-ignore
+            $(document).on('af_complete', function(event, response) {
+                const form = response.form;
+
+                if (response['success'] === true) {
+                    if (
+                        (form.attr('id') === 'form-ipoteka')
+                        || (form.attr('id') === 'form-lawyer')
+                        || (form.attr('id') === 'form-rooms')
+                    ) {
+                        self.changeSection('completed');
+                        console.log('Вывести последний блок');
+                    }
+                }
+            });
+        } catch {
+            console.error('Неизвестная ошибка во время отправки');
+        }
     }
 }
 

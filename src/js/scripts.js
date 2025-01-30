@@ -348,15 +348,20 @@ const initOldCode = () => {
 
     const modals = document.querySelectorAll('.modal');
 
-    if ( modals.length > 0 ) {
+
+    if (modals.length > 0) {
         modals.forEach((item) => {
-            let modalClose = item.querySelector('.agents-modal__close'),
-                modalBlock = item.querySelector('.agents-modal__block');
+            const modalClose = item.querySelector('.agents-modal__close') || item.querySelector('.modal-partner__close');
+            const modalBlock = item.querySelector('.agents-modal__block') || item.querySelector('.modal-partner__block');
 
             document.addEventListener('click', (e) => {
-                if ( !modalClose.contains(e.target) && !modalBlock.contains(e.target) && item.classList.contains('_active') ) {
+                if (
+                    modalClose && !modalClose.contains(e.target) &&
+                    modalBlock && !modalBlock.contains(e.target) &&
+                    item.classList.contains('_active')
+                ) {
                     document.querySelector('body').classList.remove('_no-scroll');
-                    item.closest('.modal').classList.remove('_active');
+                    item.classList.remove('_active');
                 }
             });
         });

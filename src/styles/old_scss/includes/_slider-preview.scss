@@ -1,4 +1,19 @@
 .slider-preview {
+    position: relative;
+
+    &__container {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+    }
+
+    &__content {
+        z-index: 1;
+        position: relative;
+    }
+
     &__pagination {
         z-index: 1;
         left: 0 !important;

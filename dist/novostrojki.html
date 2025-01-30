@@ -486,10 +486,14 @@
     </div>
 </section>
 
-    <section class="section _grey">
+    <!--TODO: Добавлен класс _visible -->
+<section class="section _grey _visible">
+<!-- -->
     <div class="container">
         <div class="section__cols">
-            <div class="section__col animation-wrap">
+            <!--TODO: Добавлен класс section__sticky -->
+            <div class="section__col section__sticky animation-wrap">
+            <!-- -->
                 <h2 class="h2" data-aos="slide-up" data-aos-duration="2500" role="heading">Этапы покупки</h2>
             </div>
 
@@ -604,7 +608,7 @@
                 <fieldset class="form__fieldset">
                     <label class="hidden" for="feedback-service"></label>
                     <select class="form__select" name="service" id="feedback-service" required>
-                        <option value="">Услуга*</option>
+                        <option value="" selected disabled>Услуга*</option>
                         <option value="Купля - продаже недвижимости">Купля - продаже недвижимости</option>
                         <option value="Продажа квартир в трейд-ин">Продажа квартир в трейд-ин</option>
                         <option value="Покупка квартир в новостройках">Покупка квартир в новостройках</option>
@@ -845,6 +849,25 @@
                     <label class="hidden" for="feedback-modal-phone"></label>
                     <input class="form__input" type="tel" name="phone" id="feedback-modal-phone" placeholder="+7 (999) 000-00-00 *" autocomplete="off">
                 </fieldset>
+
+                <!-- TODO: Добавился выбор услуги -->
+                <fieldset class="form__fieldset">
+                    <label class="hidden" for="feedback-service"></label>
+                    <select class="form__select" name="service" id="feedback-service" required>
+                        <option value="" selected disabled>Услуга*</option>
+                        <option value="Купля - продаже недвижимости">Купля - продаже недвижимости</option>
+                        <option value="Продажа квартир в трейд-ин">Продажа квартир в трейд-ин</option>
+                        <option value="Покупка квартир в новостройках">Покупка квартир в новостройках</option>
+                        <option value="Инвестиции в недвижимость">Инвестиции в недвижимость</option>
+                        <option value="Услуги ипотечного брокера">Услуги ипотечного брокера</option>
+                        <option value="Юридические услуги в недвижимости">Юридические услуги в недвижимости</option>
+                        <option value="Помощь в оформлении региональных сделок">Помощь в оформлении региональных сделок </option>
+                        <option value="Работа с загородной недвижимостью">Работа с загородной недвижимостью</option>
+                        <option value="Сделки по купле - продаже коммерческих помещений">Сделки по купле - продаже коммерческих помещений</option>
+                        <option value="Аренда недвижимости">Аренда недвижимости</option>
+                    </select>
+                </fieldset>
+                <!-- -->
 
                 <fieldset class="form__fieldset">
                     <label class="hidden" for="feedback-modal-message"></label>

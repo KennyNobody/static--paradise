@@ -431,19 +431,6 @@
                         <picture class="article-preview__picture">
                             <img src="./assets/images/main-intro.jpg" alt="">
                         </picture>
-                        <div class="container article-preview__container">
-                            <h1 class="article-preview__title">
-                                Лучшие решения <br> <strong>для каждого</strong>
-                            </h1>
-                            <div class="article-preview__toolbar">
-                                <button class="btn _fill _icon-right _yellow _full-m js-show-modal" data-item="feedback">
-                                    Получить консультацию
-                                    <svg width="12" height="13">
-                                        <use xlink:href="./assets/img/sprite.svg#btn-plus"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
                     </article>
                 </div>
                 <div class="swiper-slide slider-preview__slide">
@@ -451,24 +438,28 @@
                         <picture class="article-preview__picture">
                             <img src="./assets/images/main-intro.jpg" alt="">
                         </picture>
-                        <div class="container article-preview__container">
-                            <h1 class="article-preview__title">
-                                Лучшие решения <br> <strong>для каждого</strong>
-                            </h1>
-                            <div class="article-preview__toolbar">
-                                <button class="btn _fill _icon-right _yellow _full-m js-show-modal" data-item="feedback">
-                                    Получить консультацию
-                                    <svg width="12" height="13">
-                                        <use xlink:href="./assets/img/sprite.svg#btn-plus"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
                     </article>
                 </div>
             </div>
-            <div class="slider-preview__pagination pagination" data-slider="pagination"></div>
         </div>
+        <div class="slider-preview__content">
+            <article class="article-preview">
+                <div class="container article-preview__container">
+                    <h1 class="article-preview__title">
+                        Лучшие решения <br> <strong>для каждого</strong>
+                    </h1>
+                    <div class="article-preview__toolbar">
+                        <button class="btn _fill _icon-right _yellow _full-m js-show-modal" data-item="feedback">
+                            Получить консультацию
+                            <svg width="12" height="13">
+                                <use xlink:href="./assets/img/sprite.svg#btn-plus"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="slider-preview__pagination pagination" data-slider="pagination"></div>
     </div>
 </section>
 <!-- -->
@@ -657,296 +648,302 @@
                 <h2 class="h2" data-aos="slide-up" data-aos-duration="2500" role="heading" role="heading">
                     Отзывы
                 </h2>
-                <div class="dropdown-reviews mt-60 mtm-50" data-dropdown="block">
-                    <div class="dropdown-reviews__content">
-                        <div class="slider-reviews" data-slider="reviews">
-                            <div class="swiper slider-reviews__container" data-slider="container">
-                                <div class="swiper-wrapper slider-reviews__wrapper">
-                                    <div class="swiper-slide slider-reviews__slide">
-                                        <article class="article-review" data-article-review="block">
-                                            <div class="article-review__header">
-                                                <h3 class="article-review__name">
-                                                    Фатима Эциева
-                                                </h3>
-                                                <div class="article-review__info">
-                                                    <div class="rating">
-                                                        <svg class="rating__icon _active">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon _active">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon _active">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                    </div>
-                                                    <time class="article-review__date">
-                                                        24 июня 2024
-                                                    </time>
+            </div>
+            <div class="dropdown-reviews mt-60 mtm-50" data-dropdown="block">
+                <div class="dropdown-reviews__content">
+                    <div class="slider-reviews" data-slider="reviews">
+                        <div class="swiper slider-reviews__container" data-slider="container">
+                            <div class="swiper-wrapper slider-reviews__wrapper">
+                                <div class="swiper-slide slider-reviews__slide">
+                                    <article class="article-review" data-article-review="block">
+                                        <div class="article-review__header">
+                                            <h3 class="article-review__name">
+                                                Фатима Эциева
+                                            </h3>
+                                            <div class="article-review__info">
+                                                <!-- TODO: Чтобы звездочка стала серой, нужно удалить класс _active -->
+                                                <div class="rating">
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
                                                 </div>
+                                                <time class="article-review__date">
+                                                    24 июня 2024
+                                                </time>
                                             </div>
-                                            <div class="article-review__main" data-article-review="main">
-                                                <div class="article-review__inner" data-article-review="inner">
-                                                    <p>
-                                                        Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
-                                                    </p>
-                                                    <p>
-                                                        Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
-                                                    </p>
-                                                    <p>
-                                                        Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
-                                                    </p>
+                                        </div>
+                                        <div class="article-review__main" data-article-review="main">
+                                            <div class="article-review__inner" data-article-review="inner">
+                                                <p>
+                                                    Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
+                                                </p>
+                                                <p>
+                                                    Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
+                                                </p>
+                                                <p>
+                                                    Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="article-review__toolbar" data-article-review="toolbar">
+                                            <button class="article-review__button" data-article-review="button">
+                                                Показать все
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide slider-reviews__slide">
+                                    <article class="article-review" data-article-review="block">
+                                        <div class="article-review__header">
+                                            <h3 class="article-review__name">
+                                                Фатима Эциева
+                                            </h3>
+                                            <div class="article-review__info">
+                                                <!-- TODO: Чтобы звездочка стала серой, нужно удалить класс _active -->
+                                                <div class="rating">
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
                                                 </div>
+                                                <time class="article-review__date">
+                                                    24 июня 2024
+                                                </time>
                                             </div>
-                                            <div class="article-review__toolbar" data-article-review="toolbar">
-                                                <button class="article-review__button" data-article-review="button">
-                                                    Показать все
-                                                </button>
+                                        </div>
+                                        <div class="article-review__main" data-article-review="main">
+                                            <div class="article-review__inner" data-article-review="inner">
+                                                <p>
+                                                    Спасибо!
+                                                </p>
                                             </div>
-                                        </article>
-                                    </div>
-                                    <div class="swiper-slide slider-reviews__slide">
-                                        <article class="article-review" data-article-review="block">
-                                            <div class="article-review__header">
-                                                <h3 class="article-review__name">
-                                                    Фатима Эциева
-                                                </h3>
-                                                <div class="article-review__info">
-                                                    <div class="rating">
-                                                        <svg class="rating__icon _active">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon _active">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon _active">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                    </div>
-                                                    <time class="article-review__date">
-                                                        24 июня 2024
-                                                    </time>
+                                        </div>
+                                        <div class="article-review__toolbar" data-article-review="toolbar">
+                                            <button class="article-review__button" data-article-review="button">
+                                                Показать все
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide slider-reviews__slide">
+                                    <article class="article-review" data-article-review="block">
+                                        <div class="article-review__header">
+                                            <h3 class="article-review__name">
+                                                Фатима Эциева
+                                            </h3>
+                                            <div class="article-review__info">
+                                                <!-- TODO: Чтобы звездочка стала серой, нужно удалить класс _active -->
+                                                <div class="rating">
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
                                                 </div>
+                                                <time class="article-review__date">
+                                                    24 июня 2024
+                                                </time>
                                             </div>
-                                            <div class="article-review__main" data-article-review="main">
-                                                <div class="article-review__inner" data-article-review="inner">
-                                                    <p>
-                                                        Спасибо!
-                                                    </p>
+                                        </div>
+                                        <div class="article-review__main" data-article-review="main">
+                                            <div class="article-review__inner" data-article-review="inner">
+                                                <p>
+                                                    Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
+                                                </p>
+                                                <p>
+                                                    Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
+                                                </p>
+                                                <p>
+                                                    Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="article-review__toolbar" data-article-review="toolbar">
+                                            <button class="article-review__button" data-article-review="button">
+                                                Показать все
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide slider-reviews__slide">
+                                    <article class="article-review" data-article-review="block">
+                                        <div class="article-review__header">
+                                            <h3 class="article-review__name">
+                                                Фатима Эциева
+                                            </h3>
+                                            <div class="article-review__info">
+                                                <!-- TODO: Чтобы звездочка стала серой, нужно удалить класс _active -->
+                                                <div class="rating">
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
                                                 </div>
+                                                <time class="article-review__date">
+                                                    24 июня 2024
+                                                </time>
                                             </div>
-                                            <div class="article-review__toolbar" data-article-review="toolbar">
-                                                <button class="article-review__button" data-article-review="button">
-                                                    Показать все
-                                                </button>
+                                        </div>
+                                        <div class="article-review__main" data-article-review="main">
+                                            <div class="article-review__inner" data-article-review="inner">
+                                                <p>
+                                                    Спасибо!
+                                                </p>
                                             </div>
-                                        </article>
-                                    </div>
-                                    <div class="swiper-slide slider-reviews__slide">
-                                        <article class="article-review" data-article-review="block">
-                                            <div class="article-review__header">
-                                                <h3 class="article-review__name">
-                                                    Фатима Эциева
-                                                </h3>
-                                                <div class="article-review__info">
-                                                    <div class="rating">
-                                                        <svg class="rating__icon _active">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon _active">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon _active">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                    </div>
-                                                    <time class="article-review__date">
-                                                        24 июня 2024
-                                                    </time>
+                                        </div>
+                                        <div class="article-review__toolbar" data-article-review="toolbar">
+                                            <button class="article-review__button" data-article-review="button">
+                                                Показать все
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide slider-reviews__slide">
+                                    <article class="article-review" data-article-review="block">
+                                        <div class="article-review__header">
+                                            <h3 class="article-review__name">
+                                                Фатима Эциева
+                                            </h3>
+                                            <div class="article-review__info">
+                                                <!-- TODO: Чтобы звездочка стала серой, нужно удалить класс _active -->
+                                                <div class="rating">
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
                                                 </div>
+                                                <time class="article-review__date">
+                                                    24 июня 2024
+                                                </time>
                                             </div>
-                                            <div class="article-review__main" data-article-review="main">
-                                                <div class="article-review__inner" data-article-review="inner">
-                                                    <p>
-                                                        Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
-                                                    </p>
-                                                    <p>
-                                                        Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
-                                                    </p>
-                                                    <p>
-                                                        Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
-                                                    </p>
+                                        </div>
+                                        <div class="article-review__main" data-article-review="main">
+                                            <div class="article-review__inner" data-article-review="inner">
+                                                <p>
+                                                    Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
+                                                </p>
+                                                <p>
+                                                    Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
+                                                </p>
+                                                <p>
+                                                    Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="article-review__toolbar" data-article-review="toolbar">
+                                            <button class="article-review__button" data-article-review="button">
+                                                Показать все
+                                            </button>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="swiper-slide slider-reviews__slide">
+                                    <article class="article-review" data-article-review="block">
+                                        <div class="article-review__header">
+                                            <h3 class="article-review__name">
+                                                Фатима Эциева
+                                            </h3>
+                                            <div class="article-review__info">
+                                                <!-- TODO: Чтобы звездочка стала серой, нужно удалить класс _active -->
+                                                <div class="rating">
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
+                                                    <svg class="rating__icon _active">
+                                                        <use xlink:href="./assets/img/sprite.svg#star"></use>
+                                                    </svg>
                                                 </div>
+                                                <time class="article-review__date">
+                                                    24 июня 2024
+                                                </time>
                                             </div>
-                                            <div class="article-review__toolbar" data-article-review="toolbar">
-                                                <button class="article-review__button" data-article-review="button">
-                                                    Показать все
-                                                </button>
+                                        </div>
+                                        <div class="article-review__main" data-article-review="main">
+                                            <div class="article-review__inner" data-article-review="inner">
+                                                <p>
+                                                    Спасибо!
+                                                </p>
                                             </div>
-                                        </article>
-                                    </div>
-                                    <div class="swiper-slide slider-reviews__slide">
-                                        <article class="article-review" data-article-review="block">
-                                            <div class="article-review__header">
-                                                <h3 class="article-review__name">
-                                                    Фатима Эциева
-                                                </h3>
-                                                <div class="article-review__info">
-                                                    <div class="rating">
-                                                        <svg class="rating__icon _active">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon _active">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon _active">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                    </div>
-                                                    <time class="article-review__date">
-                                                        24 июня 2024
-                                                    </time>
-                                                </div>
-                                            </div>
-                                            <div class="article-review__main" data-article-review="main">
-                                                <div class="article-review__inner" data-article-review="inner">
-                                                    <p>
-                                                        Спасибо!
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="article-review__toolbar" data-article-review="toolbar">
-                                                <button class="article-review__button" data-article-review="button">
-                                                    Показать все
-                                                </button>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <div class="swiper-slide slider-reviews__slide">
-                                        <article class="article-review" data-article-review="block">
-                                            <div class="article-review__header">
-                                                <h3 class="article-review__name">
-                                                    Фатима Эциева
-                                                </h3>
-                                                <div class="article-review__info">
-                                                    <div class="rating">
-                                                        <svg class="rating__icon _active">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon _active">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon _active">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                    </div>
-                                                    <time class="article-review__date">
-                                                        24 июня 2024
-                                                    </time>
-                                                </div>
-                                            </div>
-                                            <div class="article-review__main" data-article-review="main">
-                                                <div class="article-review__inner" data-article-review="inner">
-                                                    <p>
-                                                        Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
-                                                    </p>
-                                                    <p>
-                                                        Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
-                                                    </p>
-                                                    <p>
-                                                        Безумно благодарна самому лучшему риелтору Богданову Александру! Невероятно профессиональный мастер своего дела! Решил все сложные вопросы. Договаривался всеми мыслимыми и немыслимыми способами со всеми госучреждениями где было необходимо! Практичесики всю сделку провел самостоятельно! Мне невероятно повезло что попала именно к Александру! Выражаю огромную благодарность фирме Парадайс за лучшего из лучших риелторов! Спасибо фирме и лично Александру!
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="article-review__toolbar" data-article-review="toolbar">
-                                                <button class="article-review__button" data-article-review="button">
-                                                    Показать все
-                                                </button>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <div class="swiper-slide slider-reviews__slide">
-                                        <article class="article-review" data-article-review="block">
-                                            <div class="article-review__header">
-                                                <h3 class="article-review__name">
-                                                    Фатима Эциева
-                                                </h3>
-                                                <div class="article-review__info">
-                                                    <div class="rating">
-                                                        <svg class="rating__icon _active">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon _active">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon _active">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                        <svg class="rating__icon">
-                                                            <use xlink:href="./assets/img/sprite.svg#star"></use>
-                                                        </svg>
-                                                    </div>
-                                                    <time class="article-review__date">
-                                                        24 июня 2024
-                                                    </time>
-                                                </div>
-                                            </div>
-                                            <div class="article-review__main" data-article-review="main">
-                                                <div class="article-review__inner" data-article-review="inner">
-                                                    <p>
-                                                        Спасибо!
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="article-review__toolbar" data-article-review="toolbar">
-                                                <button class="article-review__button" data-article-review="button">
-                                                    Показать все
-                                                </button>
-                                            </div>
-                                        </article>
-                                    </div>
+                                        </div>
+                                        <div class="article-review__toolbar" data-article-review="toolbar">
+                                            <button class="article-review__button" data-article-review="button">
+                                                Показать все
+                                            </button>
+                                        </div>
+                                    </article>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="dropdown-reviews__toolbar">
-                        <button class="btn _stroke _full-m" data-dropdown="button">
-                            Показать еще отзывы
-                        </button>
-                    </div>
+                </div>
+                <div class="dropdown-reviews__toolbar">
+                    <button class="btn _stroke _full-m" data-dropdown="button">
+                        Показать еще отзывы
+                    </button>
                 </div>
             </div>
         </div>
@@ -1042,7 +1039,7 @@
                 <fieldset class="form__fieldset">
                     <label class="hidden" for="feedback-service"></label>
                     <select class="form__select" name="service" id="feedback-service" required>
-                        <option value="">Услуга*</option>
+                        <option value="" selected disabled>Услуга*</option>
                         <option value="Купля - продаже недвижимости">Купля - продаже недвижимости</option>
                         <option value="Продажа квартир в трейд-ин">Продажа квартир в трейд-ин</option>
                         <option value="Покупка квартир в новостройках">Покупка квартир в новостройках</option>
@@ -1283,6 +1280,25 @@
                     <label class="hidden" for="feedback-modal-phone"></label>
                     <input class="form__input" type="tel" name="phone" id="feedback-modal-phone" placeholder="+7 (999) 000-00-00 *" autocomplete="off">
                 </fieldset>
+
+                <!-- TODO: Добавился выбор услуги -->
+                <fieldset class="form__fieldset">
+                    <label class="hidden" for="feedback-service"></label>
+                    <select class="form__select" name="service" id="feedback-service" required>
+                        <option value="" selected disabled>Услуга*</option>
+                        <option value="Купля - продаже недвижимости">Купля - продаже недвижимости</option>
+                        <option value="Продажа квартир в трейд-ин">Продажа квартир в трейд-ин</option>
+                        <option value="Покупка квартир в новостройках">Покупка квартир в новостройках</option>
+                        <option value="Инвестиции в недвижимость">Инвестиции в недвижимость</option>
+                        <option value="Услуги ипотечного брокера">Услуги ипотечного брокера</option>
+                        <option value="Юридические услуги в недвижимости">Юридические услуги в недвижимости</option>
+                        <option value="Помощь в оформлении региональных сделок">Помощь в оформлении региональных сделок </option>
+                        <option value="Работа с загородной недвижимостью">Работа с загородной недвижимостью</option>
+                        <option value="Сделки по купле - продаже коммерческих помещений">Сделки по купле - продаже коммерческих помещений</option>
+                        <option value="Аренда недвижимости">Аренда недвижимости</option>
+                    </select>
+                </fieldset>
+                <!-- -->
 
                 <fieldset class="form__fieldset">
                     <label class="hidden" for="feedback-modal-message"></label>

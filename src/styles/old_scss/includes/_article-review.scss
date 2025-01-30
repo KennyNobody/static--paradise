@@ -37,6 +37,7 @@
         font-size: 16px;
         margin-top: 30px;
         line-height: 1.8;
+        margin-bottom: 10px;
     }
 
     &__inner {
@@ -75,10 +76,20 @@
     }
 
     &__button {
+        display: block;
         font-size: 16px;
         line-height: 1.45;
-        text-decoration: underline;
+        width: fit-content;
+        text-decoration-line: underline;
+        text-decoration-style: dashed;
+        text-underline-offset: 5px;
+        text-decoration-thickness: 1px;
         text-decoration-color: rgba(255, 255, 255, 0.5);
+
+        &:hover {
+            opacity: 0.7;
+            transition: 0.3s opacity;
+        }
     }
 
     &._active {
