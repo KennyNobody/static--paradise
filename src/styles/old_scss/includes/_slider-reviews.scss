@@ -92,6 +92,18 @@
             width: 100%;
         }
     }
+
+    &--main {
+        .slider-reviews {
+            &__header {
+                align-items: flex-end;
+            }
+
+            &__controls {
+                padding-bottom: 25px;
+            }
+        }
+    }
 }
 
 .dropdown-reviews {

@@ -2,14 +2,29 @@
 <section class="section main-section _black">
     <div class="section__big-title">
         <div class="container">
-            <div class="animation-wrap">
-                <h2 class="h2" data-aos="slide-up" data-aos-duration="2500" role="heading" role="heading">
-                    Отзывы
-                </h2>
-            </div>
+            <!-- TODO: Изменение разметки слайдера -->
             <div class="dropdown-reviews mt-60 mtm-50" data-dropdown="block">
                 <div class="dropdown-reviews__content">
-                    <div class="slider-reviews" data-slider="reviews">
+                    <div class="slider-reviews slider-reviews--main" data-slider="reviews">
+                        <div class="slider-reviews__header">
+                            <div class="animation-wrap">
+                                <h2 class="h2" data-aos="slide-up" data-aos-duration="2500" role="heading" role="heading">
+                                    Отзывы
+                                </h2>
+                            </div>
+                            <div class="slider-reviews__controls">
+                                <button class="button-arrow button-arrow--inverted button-arrow--regular _prev" type="button" role="button" data-slider="nav-prev">
+                                    <svg width="25" height="25">
+                                        <use xlink:href="./assets/img/sprite.svg#carousel-arrow"></use>
+                                    </svg>
+                                </button>
+                                <button class="button-arrow button-arrow--inverted button-arrow--regular _next" type="button" role="button" data-slider="nav-next">
+                                    <svg width="25" height="25">
+                                        <use xlink:href="./assets/img/sprite.svg#carousel-arrow"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
                         <div class="swiper slider-reviews__container" data-slider="container">
                             <div class="swiper-wrapper slider-reviews__wrapper">
                                 <div class="swiper-slide slider-reviews__slide">

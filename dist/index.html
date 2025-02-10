@@ -521,9 +521,9 @@
         <section class="section main-section _pt0 _pb0">
             <div class="section__big-title">
                 <div class="container">
-                    <!-- TODO: Отредактирован заголовок -->
+                    <!-- TODO: Добавил элемент для переноса -->
                     <h2 data-aos="slide-up" data-aos-duration="2000" role="heading">
-                        О компании
+                        О компа&shy;нии
                     </h2>
                     <!-- -->
                 </div>
@@ -556,7 +556,9 @@
     <div class="container">
         <div class="section__big-title mb-60 mbm-50">
             <h2 data-aos="slide-up" data-aos-duration="2000" role="heading">
-                Преимущества
+                <!-- TODO: Добавил элемент для переноса -->
+                Преимуще&shy;ства
+                <!-- -->
             </h2>
         </div>
         <div class="tabs" data-tabs="block">
@@ -637,21 +639,44 @@
 </section>
 
 
-        <!-- Блок Комнада удалили -->
+        <!-- TODO: Секция с фото команды -->
+        <picture class="main-section__img _full-width _mt70 _pt0" data-aos="animation-picture" data-aos-offset="200">
+    <source type="image/webp" media="(min-width: 768px)" data-srcset="./assets/cache_image/team/600a8506-2_3840x2106_c5c.webp 2x, ./assets/cache_image/team/600a8506-2_1920x1053_524.webp 1x" srcset="./assets/cache_image/team/600a8506-2_3840x2106_c5c.webp 2x, ./assets/cache_image/team/600a8506-2_1920x1053_524.webp 1x">
+    <source type="image/jpeg" media="(min-width: 768px)" data-srcset="./assets/cache_image/team/600a8506-2_3840x2106_1a7.jpg 2x, ./assets/cache_image/team/600a8506-2_1920x1053_42a.jpg 1x" srcset="./assets/cache_image/team/600a8506-2_3840x2106_1a7.jpg 2x, ./assets/cache_image/team/600a8506-2_1920x1053_42a.jpg 1x">
+    <source type="image/webp" media="(max-width: 767px)" data-srcset="./assets/cache_image/team/600a8506-2_1536x843_e8b.webp 2x, ./assets/cache_image/team/600a8506-2_768x422_4a1.webp 1x" srcset="./assets/cache_image/team/600a8506-2_1536x843_e8b.webp 2x, ./assets/cache_image/team/600a8506-2_768x422_4a1.webp 1x">
+    <source type="image/jpeg" media="(max-width: 767px)" data-srcset="./assets/cache_image/team/600a8506-2_1536x843_f6a.jpg 2x, ./assets/cache_image/team/600a8506-2_768x422_a86.jpg 1x" srcset="./assets/cache_image/team/600a8506-2_1536x843_f6a.jpg 2x, ./assets/cache_image/team/600a8506-2_768x422_a86.jpg 1x">
+    <img class="lazy" src="./assets/cache_image/team/600a8506-2_1920x1053_42a.jpg" data-src="./assets/cache_image/team/600a8506-2_1920x1053_42a.jpg" alt="Команда" width="1920" height="1053" role="presentation" data-ll-status="loaded">
+</picture>
+
         <!-- -->
 
         <!-- TODO: Новая секции -->
 <section class="section main-section _black">
     <div class="section__big-title">
         <div class="container">
-            <div class="animation-wrap">
-                <h2 class="h2" data-aos="slide-up" data-aos-duration="2500" role="heading" role="heading">
-                    Отзывы
-                </h2>
-            </div>
+            <!-- TODO: Изменение разметки слайдера -->
             <div class="dropdown-reviews mt-60 mtm-50" data-dropdown="block">
                 <div class="dropdown-reviews__content">
-                    <div class="slider-reviews" data-slider="reviews">
+                    <div class="slider-reviews slider-reviews--main" data-slider="reviews">
+                        <div class="slider-reviews__header">
+                            <div class="animation-wrap">
+                                <h2 class="h2" data-aos="slide-up" data-aos-duration="2500" role="heading" role="heading">
+                                    Отзывы
+                                </h2>
+                            </div>
+                            <div class="slider-reviews__controls">
+                                <button class="button-arrow button-arrow--inverted button-arrow--regular _prev" type="button" role="button" data-slider="nav-prev">
+                                    <svg width="25" height="25">
+                                        <use xlink:href="./assets/img/sprite.svg#carousel-arrow"></use>
+                                    </svg>
+                                </button>
+                                <button class="button-arrow button-arrow--inverted button-arrow--regular _next" type="button" role="button" data-slider="nav-next">
+                                    <svg width="25" height="25">
+                                        <use xlink:href="./assets/img/sprite.svg#carousel-arrow"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
                         <div class="swiper slider-reviews__container" data-slider="container">
                             <div class="swiper-wrapper slider-reviews__wrapper">
                                 <div class="swiper-slide slider-reviews__slide">

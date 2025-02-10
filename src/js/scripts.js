@@ -356,9 +356,9 @@ const initOldCode = () => {
 
             document.addEventListener('click', (e) => {
                 if (
-                    modalClose && !modalClose.contains(e.target) &&
-                    modalBlock && !modalBlock.contains(e.target) &&
-                    item.classList.contains('_active')
+                    item.classList.contains('_active') &&
+                    (!modalClose || !modalClose.contains(e.target)) &&
+                    (!modalBlock || !modalBlock.contains(e.target))
                 ) {
                     document.querySelector('body').classList.remove('_no-scroll');
                     item.classList.remove('_active');
