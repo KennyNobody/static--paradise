@@ -1,4 +1,9 @@
 .progress {
+    &:before {
+        display: none;
+        visibility: hidden;
+    }
+
     &__text {
         padding: 7px 0;
         font-size: 16px;

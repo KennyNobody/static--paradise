@@ -1,2 +1,12 @@
 //@import "./styles/index.scss";
 @import "./styles/old_scss/style.scss";
+
+.line-break {
+    display: none;
+    visibility: hidden;
+
+    @media (max-width: 1400px) {
+        display: inline-block;
+        visibility: visible;
+    }
+}
