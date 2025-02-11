@@ -25,6 +25,12 @@
 	&__col {
 		display: flex;
 		align-items: center;
+
+        &:first-child {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+        }
 	}
 
 	&__logo {
@@ -64,6 +70,8 @@
 	&__nav {
 		margin-left: 80px;
 		margin-right: 80px;
+        width: 100%;
+        max-width: 775px;
 
 		@media (max-width: 1400px) {
 			margin-left: 20px;
@@ -75,18 +83,20 @@
 		}
 
 		& ul {
+            //gap: 40px;
 			margin: 0;
 			padding: 0;
 			list-style: none;
 			display: flex;
 			align-items: center;
+            justify-content: space-between;
 
 			& li {
-				margin-right: 40px;
-
-				&:last-child {
-					margin-right: 0;
-				}
+				//margin-right: 40px;
+                //
+				//&:last-child {
+				//	margin-right: 0;
+				//}
 
 				& a {
 					text-decoration: none;

@@ -82,15 +82,17 @@
 			padding: 0;
 			line-height: 100%;
 
-			@media (max-width: 1400px) {
+			//@media (max-width: 1400px) {
+			@media (max-width: 1600px) {
 				font-size: 6rem;
 			}
 
-			@media (max-width: 991px) {
-				font-size: 5.8rem;
-			}
+			//@media (max-width: 991px) {
+			//	font-size: 5.8rem;
+			//}
 
-			@media (max-width: 575px) {
+			//@media (max-width: 575px) {
+			@media (max-width: 1280px) {
 				font-size: 3.5rem;
 			}
 		}
