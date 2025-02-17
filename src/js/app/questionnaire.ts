@@ -130,19 +130,38 @@ class Questionnaire {
     }
 
     validateSection = (el: HTMLElement): boolean => {
-        let flag = true;
-        const inputs = el.querySelectorAll('input');
+        const inputs = el.querySelectorAll('input, textarea');
+        const fieldsByName: { [key: string]: (HTMLInputElement | HTMLTextAreaElement)[] } = {};
 
-        inputs.forEach((item) => {
-            const isValid = item.checkValidity();
-
-            if (!isValid) {
-                item.reportValidity();
-                if (flag) flag = false;
+        inputs.forEach((field: HTMLInputElement | HTMLTextAreaElement) => {
+            const name = field.name;
+            if (!fieldsByName[name]) {
+                fieldsByName[name] = [];
             }
+            fieldsByName[name].push(field);
         });
 
-        return flag;
+        for (const name in fieldsByName) {
+            if (fieldsByName.hasOwnProperty(name)) {
+                const fields = fieldsByName[name];
+
+                if (fields[0].type === 'radio' || fields[0].type === 'checkbox') {
+                    const isAnyChecked = fields.some((field: HTMLInputElement) => field.checked);
+                    if (!isAnyChecked) {
+                        return false;
+                    }
+                }
+
+                else if (fields[0].type === 'text' || fields[0].tagName.toLowerCase() === 'textarea') {
+                    const isEmpty = fields.every((field: HTMLInputElement | HTMLTextAreaElement) => field.value.trim() === '');
+                    if (isEmpty) {
+                        return false;
+                    }
+                }
+            }
+        }
+
+        return true;
     }
 
     initResultMessage = () => {
@@ -154,6 +173,10 @@ class Questionnaire {
                 const form = response.form;
 
                 if (response['success'] === true) {
+
+                    console.log(this);
+                    console.log(response);
+
                     if (
                         (form.attr('id') === 'form-ipoteka')
                         || (form.attr('id') === 'form-lawyer')
