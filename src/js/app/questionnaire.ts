@@ -168,25 +168,22 @@ class Questionnaire {
         const self = this;
 
         try {
-            // @ts-ignore
-            $(document).on('af_complete', function(event, response) {
-                const form = response.form;
+            document.addEventListener('fetchit:after', (e) => {
+                // @ts-ignore
+                const { response } = e.detail;
+                console.log(response);
 
                 if (response['success'] === true) {
-
-                    console.log(this);
-                    console.log(response);
-
                     if (
-                        (form.attr('id') === 'form-ipoteka')
-                        || (form.attr('id') === 'form-lawyer')
-                        || (form.attr('id') === 'form-rooms')
+                        this.el.id === 'form-ipoteka'
+                        || this.el.id === 'form-lawyer'
+                        || this.el.id === 'form-rooms'
                     ) {
                         self.changeSection('completed');
                         console.log('Вывести последний блок');
                     }
                 }
-            });
+            })
         } catch {
             console.error('Неизвестная ошибка во время отправки');
         }
