@@ -94,12 +94,18 @@ const initOldCode = () => {
 
                 if (!dataTarget.classList.contains('_active')) {
                     navToggle.forEach(row => {
+                        item.classList.remove('_underline');
                         row.classList.remove('_active');
                         header.classList.remove('_black');
+                    });
+
+                    headerToggle.forEach(headerItem => {
+                        headerItem.classList.remove('_underline');
                     });
                 }
 
                 if ( dataTarget ) {
+                    item.classList.toggle('_underline');
                     dataTarget.classList.toggle('_active');
                     header ? header.classList.toggle('_black') : '';
                 }
@@ -518,25 +524,6 @@ const initOldCode = () => {
     }
 
     AOS.init();
-
-    $(document).on('af_complete', function(event, response) {
-        var form = response.form;
-
-        if (response['success'] === true) {
-            let thankyou = document.querySelector('#thankyou');
-
-            if ((form.attr('id') === 'feedback-form') || (form.attr('id') === 'feedback-form2')) {
-                document.querySelector('body').classList.add('_no-scroll');
-                thankyou.classList.add('_active');
-            }
-
-            if (form.attr('id') === 'feedback-modal-form') {
-                document.querySelector('body').classList.add('_no-scroll');
-                document.querySelector('.modal[data-item="feedback"]').classList.remove('_active');
-                thankyou.classList.add('_active');
-            }
-        }
-    });
 
     document.addEventListener('fetchit:success', (e) => {
         const { form } = e.detail;

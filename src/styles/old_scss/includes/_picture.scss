@@ -3,12 +3,26 @@
 
     &--advantage {
         animation-name: openAdvantage;
-        animation-duration: 0.3s;
+        animation-duration: 0.5s;
         animation-iteration-count: 1;
         animation-direction: normal;
         animation-timing-function: ease-out;
         animation-fill-mode: forwards;
         animation-delay: 0s;
+
+        &.fade-out {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        &.fade-in {
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+
+        &.isHidden {
+            display: none;
+        }
     }
 
     img {

@@ -154,6 +154,7 @@ class Questionnaire {
 
                 else if (fields[0].type === 'text' || fields[0].tagName.toLowerCase() === 'textarea') {
                     const isEmpty = fields.every((field: HTMLInputElement | HTMLTextAreaElement) => field.value.trim() === '');
+
                     if (isEmpty) {
                         return false;
                     }

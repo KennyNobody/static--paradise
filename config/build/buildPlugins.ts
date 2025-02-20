@@ -21,7 +21,7 @@ export function buildPlugins(options: BuildOptions): webpack.WebpackPluginInstan
         new webpack.ProvidePlugin({
             LazyLoad: path.resolve(__dirname, '..', '..', 'src', 'js', 'libs', 'lazyload.min.js'),
             AOS: path.resolve(__dirname, '..', '..', 'src', 'js', 'libs', 'aos.js'),
-            $: path.resolve(__dirname, '..', '..', 'src', 'js', 'libs', 'jquery-3.6.2.min.js'),
+            // $: path.resolve(__dirname, '..', '..', 'src', 'js', 'libs', 'jquery-3.6.2.min.js'),
             // Swiper: path.resolve(__dirname, '..', '..', 'src', 'js', 'libs', 'swiper-bundle.min.js'),
         }),
         // @ts-ignore

@@ -109,6 +109,21 @@
 					&._opacity {
 						opacity: .5;
 					}
+
+                    &._underline {
+                        position: relative;
+
+                        &:after {
+                            left: 0;
+                            right: 0;
+                            height: 1px;
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: calc(100% + 27px);
+                            background-color: #ffffff;
+                        }
+                    }
 				}
 			}
 		}
