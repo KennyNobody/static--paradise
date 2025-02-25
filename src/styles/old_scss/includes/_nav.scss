@@ -53,6 +53,10 @@
 				text-decoration: none;
 				color: inherit;
 
+                &._active {
+                    color: $color_yellow;
+                }
+
 				&._opacity {
 					opacity: .5;
 				}
