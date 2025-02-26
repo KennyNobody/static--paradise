@@ -102,10 +102,6 @@
 					text-decoration: none;
 					color: inherit;
 
-					&._active {
-						color: $color_yellow;
-					}
-
 					&._opacity {
 						opacity: .5;
 					}
@@ -113,15 +109,26 @@
                     &._underline {
                         position: relative;
 
-                        &:after {
-                            left: 0;
-                            right: 0;
-                            height: 1px;
-                            content: "";
-                            display: block;
-                            position: absolute;
-                            top: calc(100% + 27px);
-                            background-color: #ffffff;
+                        svg {
+                            fill: #ffffff;
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        fill: #252525;
+                        transition: 0.3s all;
+                        display: inline-block;
+                        transform: rotate(0deg);
+                    }
+
+                    &._active {
+                        color: $color_yellow;
+
+                        svg {
+                            fill: $color_yellow;
                         }
                     }
 				}

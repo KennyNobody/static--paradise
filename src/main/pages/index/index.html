@@ -34,9 +34,16 @@
                     </div>
 
                     <div class="main-section__col _img">
-                        <video class="main-section__video lazy _mr" width="100%" poster="./assets/cache_image/experience/team-video-bg_495x698_8ec.jpg" autoplay loop playsinline muted>
-                            <source type="video/mp4" data-src="./assets/video/team.mp4" src="./assets/video/team.mp4">
-                        </video>
+
+                        <!-- TODO: Заменить видео на анимированную картинку -->
+                        <picture class="main-section__video lazy _mr" >
+                            <source  type="image/webp" data-srcset="./assets/video/team.webp">
+                            <img loading="lazy" class="lazy _animate" src="./assets/cache_image/experience/team-video-bg_495x698_8ec.jpg" alt="Компания" role="presentation">
+                        </picture>
+                        <!-- -->
+<!--                        <video class="main-section__video lazy _mr" width="100%" poster="./assets/cache_image/experience/team-video-bg_495x698_8ec.jpg" autoplay loop playsinline muted>-->
+<!--                            <source type="video/mp4" data-src="./assets/video/team.mp4" src="./assets/video/team.mp4">-->
+<!--                        </video>-->
                     </div>
                 </div>
             </div>

@@ -304,6 +304,13 @@
 
 	&__video {
 		height: auto;
+        display: block;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
 		@media (max-width: 767px) {
 			margin: 30px -24px 0;
