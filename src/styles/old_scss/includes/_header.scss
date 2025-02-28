@@ -318,5 +318,17 @@
 				background: $color_white;
 			}
 		}
+
+        & .header__nav ul li a {
+            svg {
+                fill: $color_white;
+            }
+
+            &.active {
+                svg {
+                    fill: $color-yellow;
+                }
+            }
+        }
 	}
 }
