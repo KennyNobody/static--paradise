@@ -124,7 +124,8 @@
                         transform: rotate(0deg);
                     }
 
-                    &._active {
+                    &._active,
+                    &.active {
                         color: $color_yellow;
 
                         svg {
