@@ -82,45 +82,41 @@ const initOldCode = () => {
         });
     }
 
-    const headerToggle = document.querySelectorAll('.header__nav a[data-toggle]'),
-        navToggle = document.querySelectorAll('.nav');
+    const headerToggles = document.querySelectorAll('.header__nav a[data-toggle]');
+    const navToggles = document.querySelectorAll('.nav');
+    const headerBlock = document.querySelector('.header');
 
-    if ( headerToggle.length > 0 && navToggle.length > 0 ) {
-        headerToggle.forEach(item => {
-            item.addEventListener('click', (e) => {
-                e.stopPropagation();
+    if (headerToggles.length > 0 && navToggles.length > 0 && headerBlock) {
+        const removeActiveClasses = () => {
+            navToggles.forEach(nav => nav.classList.remove('_active'));
+            headerToggles.forEach(toggle => toggle.classList.remove('_underline'));
+            headerBlock.classList.remove('_black');
+        };
 
-                let dataTarget = document.querySelector( item.getAttribute('data-toggle') );
-
-                if (!dataTarget.classList.contains('_active')) {
-                    navToggle.forEach(row => {
-                        item.classList.remove('_underline');
-                        row.classList.remove('_active');
-                        header.classList.remove('_black');
-                    });
-
-                    headerToggle.forEach(headerItem => {
-                        headerItem.classList.remove('_underline');
-                    });
-                }
-
-                if ( dataTarget ) {
-                    item.classList.toggle('_underline');
-                    dataTarget.classList.toggle('_active');
-                    header ? header.classList.toggle('_black') : '';
-                }
-
+        headerToggles.forEach(toggle => {
+            toggle.addEventListener('click', (e) => {
                 e.preventDefault();
-            });
+                const dataTarget = document.querySelector(toggle.getAttribute('data-toggle'));
 
-            navToggle.forEach(item_nav => {
-                document.addEventListener('click', (e) => {
-                    if ( !item_nav.contains(e.target) && !item.contains(e.target) && item_nav.classList.contains('_active') ) {
-                        item_nav.classList.remove('_active');
-                        header ? header.classList.remove('_black') : '';
+                if (dataTarget) {
+                    if (!dataTarget.classList.contains('_active')) {
+                        removeActiveClasses();
                     }
-                });
+
+                    toggle.classList.toggle('_underline');
+                    dataTarget.classList.toggle('_active');
+                    headerBlock.classList.toggle('_black');
+                }
             });
+        });
+
+        document.addEventListener('click', (e) => {
+            const isClickInsideNav = Array.from(navToggles).some(nav => nav.contains(e.target));
+            const isClickInsideHeaderToggle = Array.from(headerToggles).some(toggle => toggle.contains(e.target));
+
+            if (!isClickInsideNav && !isClickInsideHeaderToggle) {
+                removeActiveClasses();
+            }
         });
     }
 
