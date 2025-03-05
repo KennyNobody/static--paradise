@@ -327,8 +327,9 @@
 
             &.active,
             &._active {
+                color: $color_white;
                 svg {
-                    fill: $color-yellow;
+                    //fill: $color-yellow;
                 }
             }
         }
